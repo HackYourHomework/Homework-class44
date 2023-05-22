@@ -2,3 +2,88 @@
 2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
 2023-05-17 02:39:39 info: ----------------------------------------------
 2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-05-22 06:17:42 info: ----------------------------------------------
+2023-05-22 06:17:42 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-22 06:17:42 info: ----------------------------------------------
+2023-05-22 06:17:47 info: All unit tests passed.
+2023-05-22 06:17:56 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Seyma)
+
+2023-05-22 06:22:03 info: ----------------------------------------------
+2023-05-22 06:22:03 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-22 06:22:03 info: ----------------------------------------------
+2023-05-22 06:22:07 info: All unit tests passed.
+2023-05-22 06:22:15 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Seyma)
+
+2023-05-22 06:22:23 info: Disclaimer turned off
+2023-05-22 06:24:37 info: ----------------------------------------
+2023-05-22 06:24:37 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-05-22 06:24:37 info: ----------------------------------------
+2023-05-22 06:24:41 info: All unit tests passed.
+2023-05-22 06:24:49 info: All steps were completed successfully
+2023-05-22 06:25:01 info: -------------------------------------------
+2023-05-22 06:25:01 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-22 06:25:01 info: -------------------------------------------
+2023-05-22 06:25:05 info: All unit tests passed.
+2023-05-22 06:25:13 info: All steps were completed successfully
+2023-05-22 06:25:25 info: --------------------------------------------
+2023-05-22 06:25:25 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-22 06:25:25 info: --------------------------------------------
+2023-05-22 06:25:25 warn: A unit test file was not provided.
+2023-05-22 06:25:32 info: All steps were completed successfully
+2023-05-22 06:25:47 info: ------------------------------------------------
+2023-05-22 06:25:47 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-05-22 06:25:47 info: ------------------------------------------------
+2023-05-22 06:25:47 warn: A unit test file was not provided.
+2023-05-22 06:25:54 info: All steps were completed successfully
+2023-05-22 06:26:07 info: -----------------------------------------
+2023-05-22 06:26:07 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-05-22 06:26:07 info: -----------------------------------------
+2023-05-22 06:26:07 warn: A unit test file was not provided.
+2023-05-22 06:26:15 info: All steps were completed successfully
+2023-05-22 06:26:26 info: -------------------------------------------
+2023-05-22 06:26:26 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2023-05-22 06:26:26 info: -------------------------------------------
+2023-05-22 06:26:26 warn: A unit test file was not provided.
+2023-05-22 06:26:33 info: All steps were completed successfully
+2023-05-22 06:38:17 info: -------------------------------------------
+2023-05-22 06:38:17 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2023-05-22 06:38:17 info: -------------------------------------------
+2023-05-22 06:38:17 warn: A unit test file was not provided.
+2023-05-22 06:38:25 info: All steps were completed successfully
+2023-05-22 06:38:36 info: -----------------------------------------
+2023-05-22 06:38:36 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-05-22 06:38:36 info: -----------------------------------------
+2023-05-22 06:38:36 warn: A unit test file was not provided.
+2023-05-22 06:38:44 info: All steps were completed successfully
+2023-05-22 06:38:55 info: ------------------------------------------------
+2023-05-22 06:38:55 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-05-22 06:38:55 info: ------------------------------------------------
+2023-05-22 06:38:55 warn: A unit test file was not provided.
+2023-05-22 06:39:02 info: All steps were completed successfully
+2023-05-22 06:39:10 info: --------------------------------------------
+2023-05-22 06:39:10 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-22 06:39:10 info: --------------------------------------------
+2023-05-22 06:39:10 warn: A unit test file was not provided.
+2023-05-22 06:39:17 info: All steps were completed successfully
+2023-05-22 06:39:28 info: -------------------------------------------
+2023-05-22 06:39:28 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-22 06:39:28 info: -------------------------------------------
+2023-05-22 06:39:32 info: All unit tests passed.
+2023-05-22 06:39:39 info: All steps were completed successfully
+2023-05-22 06:39:49 info: ----------------------------------------
+2023-05-22 06:39:49 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-05-22 06:39:49 info: ----------------------------------------
+2023-05-22 06:39:53 info: All unit tests passed.
+2023-05-22 06:40:00 info: All steps were completed successfully
+2023-05-22 06:40:08 info: ----------------------------------------------
+2023-05-22 06:40:08 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-22 06:40:08 info: ----------------------------------------------
+2023-05-22 06:40:12 info: All unit tests passed.
+2023-05-22 06:40:18 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Seyma)
+
