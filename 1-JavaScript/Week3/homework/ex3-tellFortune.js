@@ -30,38 +30,34 @@ Note: The DRY principle is put into practice here: instead of repeating the code
 randomly select array elements four times inside the `tellFortune` function 
 body, this code is now written once only in a separated function.
 -----------------------------------------------------------------------------*/
-
-// This function should take an array as its parameter and return
-// a randomly selected element as its return value.
-function selectRandomly(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function selectRandomly(array) {
+  const randomI = Math.floor(Math.random() * array.length);
+  return array[randomI];
 }
 
-function tellFortune(/* TODO add parameter(s) here */) {
-  // TODO complete this function
+function tellFortune(numKids, partnerNames, locations, jobTitles) {
+  const selectedNumKids = selectRandomly(numKids);
+  const selectedPartnerName = selectRandomly(partnerNames);
+  const selectedLocation = selectRandomly(locations);
+  const selectedJobTitle = selectRandomly(jobTitles);
+
+  return `You will be a ${selectedJobTitle} in ${selectedLocation}, married to ${selectedPartnerName} with ${selectedNumKids} kids.`;
 }
 
 function main() {
-  const numKids = [
-    // TODO add elements here
-  ];
-
-  const partnerNames = [
-    // TODO add elements here
-  ];
-
-  const locations = [
-    // TODO add elements here
-  ];
-
-  const jobTitles = [
-    // TODO add elements here
-  ];
+  const numKids = ["1", "2", "3", "4", "5"];
+  const partnerNames = ["John", "Nathan", "Ivan", "Sara", "Rose"];
+  const locations = ["Amsterdam", "Cairo", "Paris", "Budapest", "Rome"];
+  const jobTitles = ["Cook", "Teacher", "Programmer", "Doctor", "Manager"];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
 }
+
+main();
+
+
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
