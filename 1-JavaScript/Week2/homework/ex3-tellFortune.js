@@ -33,35 +33,41 @@ body, this code is now written once only in a separated function.
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function selectRandomly(array) {
+
+  const randomIndex = Math.floor(Math.random() * array.length);
+  return array[randomIndex];
 }
 
-function tellFortune(/* TODO add parameter(s) here */) {
-  // TODO complete this function
+function tellFortune(numKids, partnerNames, locations, jobTitles) {
+  //  Destructuring assignment to get the selected values from the arrays
+
+  const selectedNumKids = selectRandomly(numKids);
+  const selectedPartnerName = selectRandomly(partnerNames);
+  const selectedLocation = selectRandomly(locations);
+  const selectedJobTitle = selectRandomly(jobTitles);
+
+  //  Template literals to create a string with placeholders
+
+  return `You will be a ${selectedJobTitle} in ${selectedLocation}, married to ${selectedPartnerName} with ${selectedNumKids} kids.`;
 }
+
+
 
 function main() {
-  const numKids = [
-    // TODO add elements here
-  ];
 
-  const partnerNames = [
-    // TODO add elements here
-  ];
-
-  const locations = [
-    // TODO add elements here
-  ];
-
-  const jobTitles = [
-    // TODO add elements here
-  ];
+  const numKids = ["numKids1", "numKids2", "numKids3", "numKids4", "numKids5"];
+  const partnerNames = ["partnerName1", "partnerName2", "partnerName3", "partnerName4", "partnerName5"];
+  const locations = ["location1", "location2", "location3", "location4", "location5"];
+  const jobTitles = ["jobTitle1", "jobTitle2", "jobTitle3", "jobTitle4", "jobTitle5"];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
 }
+
+main();
+
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
