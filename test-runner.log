@@ -2,3 +2,46 @@
 2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
 2023-05-17 02:39:39 info: ----------------------------------------------
 2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-05-24 10:19:16 info: ----------------------------------------------
+2023-05-24 10:19:16 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-24 10:19:16 info: ----------------------------------------------
+2023-05-24 10:19:19 info: All unit tests passed.
+2023-05-24 10:19:22 info: All steps were completed successfully
+2023-05-24 10:22:49 info: ----------------------------------------
+2023-05-24 10:22:49 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-05-24 10:22:49 info: ----------------------------------------
+2023-05-24 10:22:51 info: All unit tests passed.
+2023-05-24 10:22:53 info: All steps were completed successfully
+2023-05-24 10:23:15 info: -------------------------------------------
+2023-05-24 10:23:15 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-24 10:23:15 info: -------------------------------------------
+2023-05-24 10:23:17 info: All unit tests passed.
+2023-05-24 10:23:20 info: All steps were completed successfully
+2023-05-24 10:23:43 info: --------------------------------------------
+2023-05-24 10:23:43 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-24 10:23:43 info: --------------------------------------------
+2023-05-24 10:23:43 warn: A unit test file was not provided.
+2023-05-24 10:23:46 info: All steps were completed successfully
+2023-05-24 10:24:37 info: ------------------------------------------------
+2023-05-24 10:24:37 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-05-24 10:24:37 info: ------------------------------------------------
+2023-05-24 10:24:37 warn: A unit test file was not provided.
+2023-05-24 10:24:40 info: All steps were completed successfully
+2023-05-24 10:24:54 info: -----------------------------------------
+2023-05-24 10:24:54 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-05-24 10:24:54 info: -----------------------------------------
+2023-05-24 10:24:54 warn: A unit test file was not provided.
+2023-05-24 10:24:55 error: *** ESLint Report ***
+
+ex6-totalCost.js
+  33:3  warning  Avoid `for in` loops. Prefer `Object.keys()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-05-24 10:25:31 info: Disclaimer turned off
+2023-05-24 10:25:44 info: -------------------------------------------
+2023-05-24 10:25:44 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2023-05-24 10:25:44 info: -------------------------------------------
+2023-05-24 10:25:44 warn: A unit test file was not provided.
+2023-05-24 10:25:47 info: All steps were completed successfully
