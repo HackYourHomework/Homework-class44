@@ -2,3 +2,731 @@
 2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
 2023-05-17 02:39:39 info: ----------------------------------------------
 2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-05-23 11:42:24 info: ------------------------------------------
+2023-05-23 11:42:24 info: >>> Running Unit Test `ex4-observable` <<<
+2023-05-23 11:42:24 info: ------------------------------------------
+2023-05-23 11:42:29 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    √ should exist and be a function (3 ms)
+    √ should return an object with `subscribe` and a `notify` function properties
+    × should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.07 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2023-05-23 11:42:33 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  17:9   error  'subscribers' is assigned a value but never used  no-unused-vars
+  19:26  error  'subscriber' is defined but never used            no-unused-vars
+  22:23  error  'message' is defined but never used               no-unused-vars
+
+✖ 3 problems (3 errors, 0 warnings)
+
+
+2023-05-23 11:44:59 info: ----------------------------------------------
+2023-05-23 11:44:59 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-23 11:44:59 info: ----------------------------------------------
+2023-05-23 11:45:05 info: All unit tests passed.
+2023-05-23 11:45:12 info: All steps were completed successfully
+2023-05-23 11:59:58 info: ----------------------------------------------
+2023-05-23 11:59:58 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-23 11:59:58 info: ----------------------------------------------
+2023-05-24 12:00:03 info: All unit tests passed.
+2023-05-24 12:00:11 info: All steps were completed successfully
+2023-05-24 12:06:58 info: ----------------------------------------
+2023-05-24 12:06:58 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-05-24 12:06:58 info: ----------------------------------------
+2023-05-24 12:07:04 info: All unit tests passed.
+2023-05-24 12:07:11 info: All steps were completed successfully
+2023-05-24 12:18:30 info: -------------------------------------------
+2023-05-24 12:18:30 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-24 12:18:30 info: -------------------------------------------
+2023-05-24 12:18:35 error: *** Unit Test Error Report ***
+
+✕ tellFortune should call function `selectRandomly` for each of its arguments
+✕ tellFortune should tell the fortune by randomly selecting array values
+  selectRandomly() is not called the expected number of times
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\dsham\Desktop\hyf-html-exercises\Homework-class44-Diaa\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-24 12:18:39 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  36:10  error  'selectRandomly' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-05-24 12:23:32 info: -------------------------------------------
+2023-05-24 12:23:32 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-24 12:23:32 info: -------------------------------------------
+2023-05-24 12:26:22 info: -------------------------------------------
+2023-05-24 12:26:22 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-24 12:26:22 info: -------------------------------------------
+2023-05-24 12:26:27 error: *** Unit Test Error Report ***
+
+✕ tellFortune should call function `selectRandomly` for each of its arguments
+✕ tellFortune should tell the fortune by randomly selecting array values
+  selectRandomly() is not called the expected number of times
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\dsham\Desktop\hyf-html-exercises\Homework-class44-Diaa\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-24 12:26:31 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  36:10  error  'selectRandomly' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-05-24 12:27:23 info: Disclaimer turned off
+2023-05-24 12:27:57 info: ----------------------------------------
+2023-05-24 12:27:57 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-05-24 12:27:57 info: ----------------------------------------
+2023-05-24 12:28:06 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    √ HTML should be syntactically valid (203 ms)
+    × should have all TODO comments removed (3 ms)
+    × should contain a <ul> that is a child of <div id="bookList"> (3 ms)
+    × should contain a <ul> with 3 <li> elements (4 ms)
+    × should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    × should contain an <img> element for each book (2 ms)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    expect(received).toBeTruthy()
+
+    Received: null
+
+      46 |   test('should contain a <ul> that is a child of <div id="bookList">', () => {
+      47 |     const ul = document.querySelector('div[id=bookList] > ul');
+    > 48 |     expect(ul).toBeTruthy();
+         |                ^
+      49 |   });
+      50 |
+      51 |   test('should contain a <ul> with 3 <li> elements', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:48:16)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      52 |     const nodeList = document.querySelectorAll('ul > li');
+      53 |     const result = nodeList ? nodeList.length : 0;
+    > 54 |     expect(result).toBe(3);
+         |                    ^
+      55 |   });
+      56 |
+      57 |   test('should contain an <li> with title and author for each book of the `myBooks` array', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:54:20)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "The Design of Everyday Things"
+    Received: ""
+
+      63 |       : '';
+      64 |     state.titlesAndAuthors.forEach((string) =>
+    > 65 |       expect(result).toEqual(expect.stringContaining(string))
+         |                      ^
+      66 |     );
+      67 |   });
+      68 |
+
+      at toEqual (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:65:22)
+          at Array.forEach (<anonymous>)
+      at Object.forEach (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:64:28)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      70 |     const nodeList = document.querySelectorAll('li img');
+      71 |     const result = nodeList ? nodeList.length : 0;
+    > 72 |     expect(result).toBe(3);
+         |                    ^
+      73 |   });
+      74 | });
+      75 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:72:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       5 failed, 1 passed, 6 total
+Snapshots:   0 total
+Time:        4.918 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-05-24 12:28:10 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  20:25  error  'books' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-05-24 12:33:00 info: ------------------------------------------
+2023-05-24 12:33:00 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-05-24 12:33:00 info: ------------------------------------------
+2023-05-24 12:33:06 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    × should have all TODO comments removed (42 ms)
+    × should set the `src` property (1 ms)
+    × should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        1.196 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-05-24 12:34:14 info: ---------------------------------------
+2023-05-24 12:34:14 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-05-24 12:34:14 info: ---------------------------------------
+2023-05-24 12:34:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    √ HTML should be syntactically valid (188 ms)
+    × should have all TODO comments removed (2 ms)
+    × should use `setInterval()` and/or `setTimeout()` (1 ms)
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● catWalk › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● catWalk › should use `setInterval()` and/or `setTimeout()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      46 |
+      47 |   test('should use `setInterval()` and/or `setTimeout()`', () => {
+    > 48 |     expect(state.timer).toBeDefined();
+         |                         ^
+      49 |   });
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:48:25)
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        4.481 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2023-05-24 12:34:27 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  24:10  error  'catWalk' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-05-24 12:39:23 info: ------------------------------------------
+2023-05-24 12:39:23 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-05-24 12:39:23 info: ------------------------------------------
+2023-05-24 12:39:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    × should have all TODO comments removed (3 ms)
+    × should set the `src` property
+    × should set the `srcset` property
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        0.944 s, estimated 2 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-05-24 12:43:49 info: ------------------------------------------
+2023-05-24 12:43:49 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-05-24 12:43:49 info: ------------------------------------------
+2023-05-24 12:43:55 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    × should have all TODO comments removed (4 ms)
+    × should set the `src` property (1 ms)
+    × should set the `srcset` property
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        1.085 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-05-24 12:46:55 info: ------------------------------------------
+2023-05-24 12:46:55 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-05-24 12:46:55 info: ------------------------------------------
+2023-05-24 12:47:00 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    × should have all TODO comments removed (3 ms)
+    × should set the `src` property (1 ms)
+    × should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        1.168 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-05-24 12:49:25 error: *** Unit Test Error Report ***
+
+✕ tellFortune should call function `selectRandomly` for each of its arguments
+✕ tellFortune should tell the fortune by randomly selecting array values
+  selectRandomly() is not called the expected number of times
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\dsham\Desktop\hyf-html-exercises\Homework-class44-Diaa\test-runner\CustomReporter.js"
+Debugger attached.
+Debugger attached.
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-24 12:50:06 info: -------------------------------------------
+2023-05-24 12:50:06 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-24 12:50:06 info: -------------------------------------------
+2023-05-24 12:50:11 error: *** Unit Test Error Report ***
+
+✕ tellFortune should call function `selectRandomly` for each of its arguments
+✕ tellFortune should tell the fortune by randomly selecting array values
+  selectRandomly() is not called the expected number of times
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\dsham\Desktop\hyf-html-exercises\Homework-class44-Diaa\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-24 12:50:14 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  36:10  error  'selectRandomly' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-05-24 12:51:36 info: -------------------------------------------
+2023-05-24 12:51:36 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-24 12:51:36 info: -------------------------------------------
+2023-05-24 12:51:41 error: *** Unit Test Error Report ***
+
+✕ tellFortune should call function `selectRandomly` for each of its arguments
+✕ tellFortune should tell the fortune by randomly selecting array values
+  selectRandomly() is not called the expected number of times
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\dsham\Desktop\hyf-html-exercises\Homework-class44-Diaa\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-24 12:51:45 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  36:10  error  'selectRandomly' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-05-24 12:52:58 info: -------------------------------------------
+2023-05-24 12:52:58 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-24 12:52:58 info: -------------------------------------------
+2023-05-24 12:53:03 error: *** Unit Test Error Report ***
+
+✕ tellFortune should call function `selectRandomly` for each of its arguments
+✕ tellFortune should tell the fortune by randomly selecting array values
+  selectRandomly() is not called the expected number of times
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\dsham\Desktop\hyf-html-exercises\Homework-class44-Diaa\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-24 12:53:07 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  36:10  error  'selectRandomly' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-05-24 12:56:10 info: -------------------------------------------
+2023-05-24 12:56:10 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-24 12:56:10 info: -------------------------------------------
+2023-05-24 12:56:16 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a jobTitle1 in location1, married to partnerName1 with numKids1 kids.
+  Received: You will be a j in l, married to p with n kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\dsham\Desktop\hyf-html-exercises\Homework-class44-Diaa\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-24 01:01:29 info: -------------------------------------------
+2023-05-24 01:01:29 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-24 01:01:29 info: -------------------------------------------
+2023-05-24 01:01:34 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a jobTitle1 in location1, married to partnerName1 with numKids1 kids.
+  Received: You will be a j in l, married to p with n kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\dsham\Desktop\hyf-html-exercises\Homework-class44-Diaa\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-24 01:08:46 info: -------------------------------------------
+2023-05-24 01:08:46 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-24 01:08:46 info: -------------------------------------------
+2023-05-24 01:08:51 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a jobTitle1 in location1, married to partnerName1 with numKids1 kids.
+  Received: You will be a j in l, married to p with n kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\dsham\Desktop\hyf-html-exercises\Homework-class44-Diaa\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-24 01:33:23 info: -------------------------------------------
+2023-05-24 01:33:23 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-24 01:33:23 info: -------------------------------------------
+2023-05-24 01:33:29 info: All unit tests passed.
+2023-05-24 01:33:36 info: All steps were completed successfully
+2023-05-24 01:40:33 info: --------------------------------------------
+2023-05-24 01:40:33 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-24 01:40:33 info: --------------------------------------------
+2023-05-24 01:40:33 warn: A unit test file was not provided.
+2023-05-24 01:40:37 error: *** ESLint Report ***
+
+ex4-shoppingCart.js
+  33:3  error  'shoppingCart' is constant  no-const-assign
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-05-24 01:43:40 info: --------------------------------------------
+2023-05-24 01:43:40 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-24 01:43:40 info: --------------------------------------------
+2023-05-24 01:43:40 warn: A unit test file was not provided.
+2023-05-24 01:43:44 error: *** ESLint Report ***
+
+ex4-shoppingCart.js
+  33:3  error  'shoppingCart' is constant  no-const-assign
+  87:3  error  'main' is not defined       no-undef
+
+✖ 2 problems (2 errors, 0 warnings)
+
+

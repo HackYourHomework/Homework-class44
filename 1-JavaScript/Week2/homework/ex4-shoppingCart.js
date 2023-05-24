@@ -20,14 +20,18 @@ you have more than 3 items in your shopping cart the first item gets taken out.
 
 3. Confirm that your code passes the unit tests.
 -----------------------------------------------------------------------------*/
-const shoppingCart = ['bananas', 'milk'];
+let shoppingCart = ['bananas', 'milk'];
 
-// ! Function to be tested
-function addToShoppingCart(/* parameters go here */) {
-  // TODO complete this function
+function addToShoppingCart(groceryItem) {
+  const newCart = [...shoppingCart, groceryItem];
+
+  const lastThree = newCart.slice(-3);
+
+  shoppingCart = lastThree;
+
+  return 'You bought ' + shoppingCart.join(', ') + '!';
 }
 
-// ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log(
     'Test 1: addShoppingCart() called without an argument should leave the shopping cart unchanged'
@@ -74,3 +78,4 @@ function test() {
 }
 
 test();
+

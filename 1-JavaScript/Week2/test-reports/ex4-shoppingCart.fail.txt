@@ -1,0 +1,9 @@
+
+*** ESLint Report ***
+
+ex4-shoppingCart.js
+  33:3  error  'shoppingCart' is constant  no-const-assign
+  87:3  error  'main' is not defined       no-undef
+
+✖ 2 problems (2 errors, 0 warnings)
+
