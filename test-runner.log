@@ -2,3 +2,248 @@
 2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
 2023-05-17 02:39:39 info: ----------------------------------------------
 2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-05-17 04:00:23 info: ----------------------------------------------
+2023-05-17 04:00:23 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-17 04:00:23 info: ----------------------------------------------
+2023-05-17 04:00:27 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/admin/Documents/web projects/HYF/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-17 04:00:29 error: *** Spell Checker Report ***
+
+
+2023-05-17 04:00:56 info: Disclaimer turned off
+2023-05-17 04:01:03 info: ----------------------------------------------
+2023-05-17 04:01:03 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-17 04:01:03 info: ----------------------------------------------
+2023-05-17 04:01:06 info: All unit tests passed.
+2023-05-17 04:01:08 error: *** Spell Checker Report ***
+
+
+2023-05-18 10:45:35 info: ----------------------------------------------
+2023-05-18 10:45:35 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-18 10:45:35 info: ----------------------------------------------
+2023-05-18 10:45:37 info: All unit tests passed.
+2023-05-18 10:45:39 error: *** Spell Checker Report ***
+
+
+2023-05-18 10:50:08 info: ----------------------------------------------
+2023-05-18 10:50:08 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-18 10:50:08 info: ----------------------------------------------
+2023-05-18 10:50:11 info: All unit tests passed.
+2023-05-18 10:50:13 error: *** Spell Checker Report ***
+
+
+2023-05-18 10:56:53 info: ----------------------------------------------
+2023-05-18 10:56:53 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-18 10:56:53 info: ----------------------------------------------
+2023-05-18 10:56:56 info: All unit tests passed.
+2023-05-18 10:56:58 error: *** Spell Checker Report ***
+
+
+2023-05-18 11:05:14 info: ----------------------------------------------
+2023-05-18 11:05:14 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-18 11:05:14 info: ----------------------------------------------
+2023-05-18 11:05:16 info: All unit tests passed.
+2023-05-18 11:05:19 error: *** Spell Checker Report ***
+
+
+2023-05-18 11:08:15 info: ----------------------------------------------
+2023-05-18 11:08:15 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-18 11:08:15 info: ----------------------------------------------
+2023-05-18 11:08:17 info: All unit tests passed.
+2023-05-18 11:08:20 error: *** Spell Checker Report ***
+
+
+2023-05-18 11:09:16 info: ----------------------------------------------
+2023-05-18 11:09:16 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-18 11:09:16 info: ----------------------------------------------
+2023-05-18 11:09:18 info: All unit tests passed.
+2023-05-18 11:09:20 error: *** Spell Checker Report ***
+
+
+2023-05-18 11:09:48 info: ----------------------------------------------
+2023-05-18 11:09:48 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-18 11:09:48 info: ----------------------------------------------
+2023-05-18 11:09:50 info: All unit tests passed.
+2023-05-18 11:09:52 error: *** Spell Checker Report ***
+
+
+2023-05-18 11:11:28 info: ----------------------------------------------
+2023-05-18 11:11:28 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-18 11:11:28 info: ----------------------------------------------
+2023-05-18 11:11:31 info: All unit tests passed.
+2023-05-18 11:11:33 error: *** Spell Checker Report ***
+
+
+2023-05-18 11:12:48 info: ----------------------------------------------
+2023-05-18 11:12:48 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-18 11:12:48 info: ----------------------------------------------
+2023-05-18 11:12:50 info: All unit tests passed.
+2023-05-18 11:12:53 error: *** Spell Checker Report ***
+
+
+2023-05-19 09:47:39 info: ----------------------------------------
+2023-05-19 09:47:39 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-05-19 09:47:39 info: ----------------------------------------
+2023-05-19 09:47:41 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: 7
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: 14
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: 21
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="/Users/admin/Documents/web projects/HYF/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-19 09:47:44 error: *** Spell Checker Report ***
+
+
+2023-05-19 09:52:56 info: ----------------------------------------
+2023-05-19 09:52:56 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-05-19 09:52:56 info: ----------------------------------------
+2023-05-19 09:52:58 info: All unit tests passed.
+2023-05-19 09:53:00 error: *** Spell Checker Report ***
+
+
+2023-05-19 10:32:04 info: -------------------------------------------
+2023-05-19 10:32:04 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-19 10:32:04 info: -------------------------------------------
+2023-05-19 10:32:07 error: *** Unit Test Error Report ***
+
+✕ tellFortune `numKids` should be an array initialized with 5 elements
+✕ tellFortune `locations` should be an array initialized with 5 elements
+✕ tellFortune `jobTitles` should be an array initialized with 5 elements
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/admin/Documents/web projects/HYF/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-19 10:32:10 error: *** Spell Checker Report ***
+
+
+2023-05-19 10:33:17 info: -------------------------------------------
+2023-05-19 10:33:17 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-19 10:33:17 info: -------------------------------------------
+2023-05-19 10:33:20 info: All unit tests passed.
+2023-05-19 10:33:22 error: *** Spell Checker Report ***
+
+
+2023-05-19 10:38:10 info: -------------------------------------------
+2023-05-19 10:38:10 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-19 10:38:10 info: -------------------------------------------
+2023-05-19 10:38:12 info: All unit tests passed.
+2023-05-19 10:38:15 error: *** Spell Checker Report ***
+
+
+2023-05-19 10:54:49 info: --------------------------------------------
+2023-05-19 10:54:49 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-19 10:54:49 info: --------------------------------------------
+2023-05-19 10:54:49 warn: A unit test file was not provided.
+2023-05-19 10:54:51 error: *** Spell Checker Report ***
+
+
+2023-05-19 11:27:38 info: --------------------------------------------
+2023-05-19 11:27:38 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-19 11:27:38 info: --------------------------------------------
+2023-05-19 11:27:38 warn: A unit test file was not provided.
+2023-05-19 11:27:41 error: *** Spell Checker Report ***
+
+
+2023-05-19 02:29:35 info: -------------------------------------------
+2023-05-19 02:29:35 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2023-05-19 02:29:35 info: -------------------------------------------
+2023-05-19 02:29:35 warn: A unit test file was not provided.
+2023-05-19 02:29:38 error: *** Spell Checker Report ***
+
+
+2023-05-19 02:30:05 info: -----------------------------------------
+2023-05-19 02:30:05 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-05-19 02:30:05 info: -----------------------------------------
+2023-05-19 02:30:05 warn: A unit test file was not provided.
+2023-05-19 02:30:07 error: *** Spell Checker Report ***
+
+
+2023-05-19 02:30:25 info: ------------------------------------------------
+2023-05-19 02:30:25 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-05-19 02:30:25 info: ------------------------------------------------
+2023-05-19 02:30:25 warn: A unit test file was not provided.
+2023-05-19 02:30:28 error: *** Spell Checker Report ***
+
+
+2023-05-20 10:13:05 info: ----------------------------------------------
+2023-05-20 10:13:05 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-20 10:13:05 info: ----------------------------------------------
+2023-05-20 10:13:08 info: All unit tests passed.
+2023-05-20 10:13:11 error: *** Spell Checker Report ***
+
+
+2023-05-20 10:13:22 info: ----------------------------------------
+2023-05-20 10:13:22 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-05-20 10:13:22 info: ----------------------------------------
+2023-05-20 10:13:24 info: All unit tests passed.
+2023-05-20 10:13:26 error: *** Spell Checker Report ***
+
+
+2023-05-20 10:15:47 info: -------------------------------------------
+2023-05-20 10:15:47 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-20 10:15:47 info: -------------------------------------------
+2023-05-20 10:15:50 info: All unit tests passed.
+2023-05-20 10:15:53 error: *** Spell Checker Report ***
+
+
+2023-05-20 04:19:59 info: ----------------------------------------------
+2023-05-20 04:19:59 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-20 04:19:59 info: ----------------------------------------------
+2023-05-20 04:20:02 info: All unit tests passed.
+2023-05-20 04:20:04 error: *** Spell Checker Report ***
+
+
+2023-05-21 10:39:11 info: ----------------------------------------------
+2023-05-21 10:39:11 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-21 10:39:11 info: ----------------------------------------------
+2023-05-21 10:39:14 info: All unit tests passed.
+2023-05-21 10:39:18 info: All steps were completed successfully
+2023-05-21 10:45:46 info: ----------------------------------------
+2023-05-21 10:45:46 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-05-21 10:45:46 info: ----------------------------------------
+2023-05-21 10:45:49 info: All unit tests passed.
+2023-05-21 10:45:53 info: All steps were completed successfully
+2023-05-21 10:46:15 info: -------------------------------------------
+2023-05-21 10:46:15 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-21 10:46:15 info: -------------------------------------------
+2023-05-21 10:46:17 info: All unit tests passed.
+2023-05-21 10:46:21 info: All steps were completed successfully
+2023-05-21 10:46:33 info: --------------------------------------------
+2023-05-21 10:46:33 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-21 10:46:33 info: --------------------------------------------
+2023-05-21 10:46:33 warn: A unit test file was not provided.
+2023-05-21 10:46:36 info: All steps were completed successfully
+2023-05-21 10:46:52 info: ------------------------------------------------
+2023-05-21 10:46:52 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-05-21 10:46:52 info: ------------------------------------------------
+2023-05-21 10:46:52 warn: A unit test file was not provided.
+2023-05-21 10:46:55 info: All steps were completed successfully
+2023-05-21 10:47:07 info: -----------------------------------------
+2023-05-21 10:47:07 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-05-21 10:47:07 info: -----------------------------------------
+2023-05-21 10:47:07 warn: A unit test file was not provided.
+2023-05-21 10:47:10 info: All steps were completed successfully
+2023-05-21 10:47:25 info: -------------------------------------------
+2023-05-21 10:47:25 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2023-05-21 10:47:25 info: -------------------------------------------
+2023-05-21 10:47:25 warn: A unit test file was not provided.
+2023-05-21 10:47:28 info: All steps were completed successfully
