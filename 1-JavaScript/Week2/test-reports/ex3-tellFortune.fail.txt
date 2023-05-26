@@ -1,0 +1,5 @@
+
+*** Spell Checker Report ***
+
+ex3-tellFortune.js:37:9 - Unknown word (ramdom)
+ex3-tellFortune.js:38:14 - Unknown word (ramdom)

@@ -2,3 +2,155 @@
 2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
 2023-05-17 02:39:39 info: ----------------------------------------------
 2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-05-22 02:53:32 info: ----------------------------------------------
+2023-05-22 02:53:32 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-22 02:53:32 info: ----------------------------------------------
+2023-05-22 02:53:34 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are awesome, HackYourFuture!
+  Received: you are awesome,HackYourFuture!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/ahmetavci/Desktop/hyf/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-22 02:53:36 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:41:19 - Unknown word (Ahmet)
+
+2023-05-22 02:55:54 info: ----------------------------------------------
+2023-05-22 02:55:54 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-22 02:55:54 info: ----------------------------------------------
+2023-05-22 02:55:55 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are awesome, HackYourFuture!
+  Received: you are awesome, HackYourFuture!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/ahmetavci/Desktop/hyf/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-22 02:55:58 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Ahmet)
+
+2023-05-22 02:56:35 info: ----------------------------------------------
+2023-05-22 02:56:35 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-22 02:56:35 info: ----------------------------------------------
+2023-05-22 02:56:36 info: All unit tests passed.
+2023-05-22 02:56:39 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Ahmet)
+
+2023-05-22 02:57:18 info: ----------------------------------------
+2023-05-22 02:57:18 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-05-22 02:57:18 info: ----------------------------------------
+2023-05-22 02:57:19 info: All unit tests passed.
+2023-05-22 02:57:22 info: All steps were completed successfully
+2023-05-22 02:57:35 info: -------------------------------------------
+2023-05-22 02:57:35 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-22 02:57:35 info: -------------------------------------------
+2023-05-22 02:57:36 error: *** Unit Test Error Report ***
+
+✕ tellFortune `locations` should be an array initialized with 5 elements
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/ahmetavci/Desktop/hyf/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-22 02:57:39 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:37:9 - Unknown word (ramdom)
+ex3-tellFortune.js:38:14 - Unknown word (ramdom)
+
+2023-05-22 02:58:47 info: -------------------------------------------
+2023-05-22 02:58:47 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-22 02:58:47 info: -------------------------------------------
+2023-05-22 02:58:48 info: All unit tests passed.
+2023-05-22 02:58:51 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:37:9 - Unknown word (ramdom)
+ex3-tellFortune.js:38:14 - Unknown word (ramdom)
+
+2023-05-22 02:59:09 info: --------------------------------------------
+2023-05-22 02:59:09 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-22 02:59:09 info: --------------------------------------------
+2023-05-22 02:59:09 warn: A unit test file was not provided.
+2023-05-22 02:59:10 error: *** ESLint Report ***
+
+ex4-shoppingCart.js
+  23:5  warning  'shoppingCart' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-05-22 02:59:39 info: --------------------------------------------
+2023-05-22 02:59:39 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-22 02:59:39 info: --------------------------------------------
+2023-05-22 02:59:39 warn: A unit test file was not provided.
+2023-05-22 02:59:41 info: All steps were completed successfully
+2023-05-22 03:00:17 info: --------------------------------------------
+2023-05-22 03:00:17 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-22 03:00:17 info: --------------------------------------------
+2023-05-22 03:00:17 warn: A unit test file was not provided.
+2023-05-22 03:00:20 info: All steps were completed successfully
+2023-05-22 03:01:03 info: ------------------------------------------------
+2023-05-22 03:01:03 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-05-22 03:01:03 info: ------------------------------------------------
+2023-05-22 03:01:03 warn: A unit test file was not provided.
+2023-05-22 03:01:05 info: All steps were completed successfully
+2023-05-22 03:01:23 info: -----------------------------------------
+2023-05-22 03:01:23 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-05-22 03:01:23 info: -----------------------------------------
+2023-05-22 03:01:23 warn: A unit test file was not provided.
+2023-05-22 03:01:24 error: *** ESLint Report ***
+
+ex6-totalCost.js
+  33:3   warning  Avoid `for in` loops. Prefer `Object.keys()` instead  no-restricted-syntax
+  33:11  warning  'item' is never reassigned. Use 'const' instead       no-autofix/prefer-const
+  36:3   warning  Remove commented-out code                             hyf/no-commented-out-code
+
+✖ 3 problems (0 errors, 3 warnings)
+
+
+2023-05-22 03:04:22 info: -----------------------------------------
+2023-05-22 03:04:22 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-05-22 03:04:22 info: -----------------------------------------
+2023-05-22 03:04:22 warn: A unit test file was not provided.
+2023-05-22 03:04:23 error: *** ESLint Report ***
+
+ex6-totalCost.js
+  33:3  warning  Avoid `for in` loops. Prefer `Object.keys()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-05-22 03:05:49 info: -------------------------------------------
+2023-05-22 03:05:49 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2023-05-22 03:05:49 info: -------------------------------------------
+2023-05-22 03:05:49 warn: A unit test file was not provided.
+2023-05-22 03:05:50 error: *** ESLint Report ***
+
+ex7-mindPrivacy.js
+  36:11  warning  'item' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  38:5   warning  Remove commented-out code                        hyf/no-commented-out-code
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2023-05-22 03:06:31 info: -------------------------------------------
+2023-05-22 03:06:31 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2023-05-22 03:06:31 info: -------------------------------------------
+2023-05-22 03:06:31 warn: A unit test file was not provided.
+2023-05-22 03:06:34 info: All steps were completed successfully
+2023-05-22 03:10:08 info: ----------------------------------------------
+2023-05-22 03:10:08 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-22 03:10:08 info: ----------------------------------------------
+2023-05-22 03:10:09 info: All unit tests passed.
+2023-05-22 03:10:12 info: All steps were completed successfully
