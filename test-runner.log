@@ -2,3 +2,165 @@
 2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
 2023-05-17 02:39:39 info: ----------------------------------------------
 2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-05-20 01:22:56 info: ----------------------------------------------
+2023-05-20 01:22:56 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-20 01:22:56 info: ----------------------------------------------
+2023-05-20 01:23:00 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment `giveCompliment` should not contain unneeded console.log calls
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are awasome, HackYourFuture!
+  Received: undefined
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-20 01:23:03 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  23:7  warning  'compliments' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  24:7  warning  'randomIndex' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2023-05-20 01:23:06 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:23:21 - Unknown word (awasome)
+ex1-giveCompliment.js:31:19 - Unknown word (Hasan)
+
+2023-05-20 01:26:15 info: ----------------------------------------------
+2023-05-20 01:26:15 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-20 01:26:15 info: ----------------------------------------------
+2023-05-20 01:26:21 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are awesome, HackYourFuture!
+  Received: You are awesome HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-20 01:26:23 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  23:7  warning  'compliments' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  35:7  warning  'randomIndex' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2023-05-20 01:26:27 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:41:19 - Unknown word (Hasan)
+
+2023-05-20 01:28:20 info: ----------------------------------------------
+2023-05-20 01:28:20 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-20 01:28:20 info: ----------------------------------------------
+2023-05-20 01:28:24 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-20 01:28:30 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:41:19 - Unknown word (Hasan)
+
+2023-05-20 01:29:23 info: ----------------------------------------------
+2023-05-20 01:29:23 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-20 01:29:23 info: ----------------------------------------------
+2023-05-20 01:29:27 info: All unit tests passed.
+2023-05-20 01:29:34 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:39:19 - Unknown word (Hasan)
+
+2023-05-20 01:39:25 info: ----------------------------------------
+2023-05-20 01:39:25 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-05-20 01:39:25 info: ----------------------------------------
+2023-05-20 01:39:30 info: All unit tests passed.
+2023-05-20 01:39:36 info: All steps were completed successfully
+2023-05-20 01:54:19 info: -------------------------------------------
+2023-05-20 01:54:19 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-20 01:54:19 info: -------------------------------------------
+2023-05-20 01:54:24 error: *** Unit Test Error Report ***
+
+✕ tellFortune `numKids` should be an array initialized with 5 elements
+✕ tellFortune `locations` should be an array initialized with 5 elements
+✕ tellFortune `partnerNames` should be an array initialized with 5 elements
+✕ tellFortune `jobTitles` should be an array initialized with 5 elements
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a developer in Amsterdam, married to Hasan with 1 kids.
+  Received: You will be a developer, in Amsterdam, married to Hasan with 1 kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-20 01:54:30 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:53:26 - Unknown word (Hasan)
+
+2023-05-20 01:55:32 info: -------------------------------------------
+2023-05-20 01:55:32 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-20 01:55:32 info: -------------------------------------------
+2023-05-20 01:55:35 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a developer in Amsterdam, married to Hasan with 1 kids.
+  Received: You will be a developer, in Amsterdam, married to Hasan with 1 kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-20 01:55:41 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:53:26 - Unknown word (Hasan)
+
+2023-05-20 01:56:40 info: -------------------------------------------
+2023-05-20 01:56:40 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-20 01:56:40 info: -------------------------------------------
+2023-05-20 01:56:44 info: All unit tests passed.
+2023-05-20 01:56:49 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:53:26 - Unknown word (Hasan)
+
+2023-05-20 02:17:16 info: --------------------------------------------
+2023-05-20 02:17:16 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-20 02:17:16 info: --------------------------------------------
+2023-05-20 02:17:16 warn: A unit test file was not provided.
+2023-05-20 02:17:24 info: All steps were completed successfully
+2023-05-20 02:21:19 info: --------------------------------------------
+2023-05-20 02:21:19 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-20 02:21:19 info: --------------------------------------------
+2023-05-20 02:21:19 warn: A unit test file was not provided.
+2023-05-20 02:21:26 info: All steps were completed successfully
+2023-05-20 02:25:21 info: ------------------------------------------------
+2023-05-20 02:25:21 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-05-20 02:25:21 info: ------------------------------------------------
+2023-05-20 02:25:21 warn: A unit test file was not provided.
+2023-05-20 02:25:25 error: *** ESLint Report ***
+
+ex5-shoppingCartPure.js
+  21:7  warning  'newArr' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-05-20 08:18:34 info: -----------------------------------------
+2023-05-20 08:18:34 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-05-20 08:18:34 info: -----------------------------------------
+2023-05-20 08:18:34 warn: A unit test file was not provided.
+2023-05-20 08:18:42 info: All steps were completed successfully
