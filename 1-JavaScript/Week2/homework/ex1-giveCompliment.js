@@ -31,10 +31,10 @@ function giveCompliment(name) {
     "cool",
     "lovely",
   ];
-  const randomIndex = Math.floor(Math.random() * compliments.length);
+
 
   // i created the below const to call the random compliemnts other wise if i call compliemnts will be calling the all 10 //
-  const randomCompliment = compliments[randomIndex];
+  const randomCompliment = compliments[ Math.floor(Math.random() * compliments.length)];
   
   return `You are ${randomCompliment},${name} !`
 
