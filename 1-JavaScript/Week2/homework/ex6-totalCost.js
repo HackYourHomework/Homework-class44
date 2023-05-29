@@ -21,22 +21,43 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
+  beer : 1.75,
+  chips : 0.99,
+  wine : 2.50,
+  peanuts : 1.90,
+  chocolate : 2.30
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
-  // TODO replace this comment with your code
+function calculateTotalPrice(object){
+  let total = 0
+  for (const i in object) {
+    total += object[i];
+  }
+  return total.toFixed(2)
+   
 }
+
+const predictedTotal = 9.44;
+const calculateTotal = Number(calculateTotalPrice(cartForParty))
+console.assert(calculateTotal === predictedTotal, `Expected: ${predictedTotal}, Actual: ${calculateTotal}`);
+console.log(calculateTotalPrice(cartForParty))
+
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
-  console.log('\nTest 1: calculateTotalPrice should take one parameter');
+  console.log(calculateTotalPrice(cartForParty));
   // TODO replace this comment with your code
+  const predictedTotal = '9.44';
+  const calculatedTotal = Number(calculateTotalPrice(cartForParty))
+  console.assert(calculatedTotal === predictedTotal, `Expected: ${predictedTotal}, Actual: ${calculatedTotal}`);
 }
 
 function test2() {
-  console.log('\nTest 2: return correct output when passed cartForParty');
+  console.log(calculateTotalPrice(cartForParty));
   // TODO replace this comment with your code
+  const predictedTotal = '8.50';
+  const calculatedTotal = Number(calculateTotalPrice(cartForParty))
+  console.assert(calculatedTotal === predictedTotal, `Expected: ${predictedTotal}, Actual: ${calculatedTotal}`);
 }
 
 function test() {
