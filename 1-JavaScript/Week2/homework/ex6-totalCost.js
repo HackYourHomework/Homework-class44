@@ -16,32 +16,46 @@ instead!
    - It takes one parameter: an object that contains properties that only contain
      number values.
    - Loop through the object and add all the number values together.
-   - Return a string: "Total: €`amount`".
+   - Return a string: "Total: â‚¬`amount`".
 
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
+    Beer: 2.5,
+    Chips: 6.8,
+    Wine: 10,
+    Nuts: 13.5,
+    Sushi: 50,
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
-  // TODO replace this comment with your code
+
+
+function calculateTotalPrice(cart) {
+    let total = 0;
+    for (let item in cart) {
+        total += cart[item];
+    }
+   
+    return `Total: â‚¬ ${total}`;
+    
 }
+
+
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
-  console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  // TODO replace this comment with your code
+    console.log('\nTest 1: calculateTotalPrice should take one parameter');
+    console.assert(calculateTotalPrice.length === 1);
 }
 
 function test2() {
-  console.log('\nTest 2: return correct output when passed cartForParty');
-  // TODO replace this comment with your code
+    console.log('\nTest 2: return correct output when passed cartForParty');
+    console.assert(calculateTotalPrice (cartForParty) === `Total: â‚¬ 82.8`);
 }
 
 function test() {
-  test1();
-  test2();
+    test1();
+    test2();
 }
 
 test();
