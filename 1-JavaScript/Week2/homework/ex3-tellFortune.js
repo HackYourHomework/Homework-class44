@@ -44,9 +44,7 @@ const jobTitles = ['Graphic Designer', 'Engineer', 'Banker', 'CEO', 'General Man
 
 
 function selectRandomly(fortuneArr) {
-  const randomIndex = Math.floor(Math.random()* fortuneArr.length);
-  const selectRandomly = fortuneArr [randomIndex];
-  return fortuneArr[randomIndex];
+  return fortuneArr[Math.floor(Math.random()* fortuneArr.length)];
 }
 
 function tellFortune(numKids, partnerName, location, jobTitle) {
