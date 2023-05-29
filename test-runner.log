@@ -2,3 +2,202 @@
 2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
 2023-05-17 02:39:39 info: ----------------------------------------------
 2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-05-29 09:26:34 info: ------------------------------------------------------
+2023-05-29 09:26:34 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-05-29 09:26:34 info: ------------------------------------------------------
+2023-05-29 09:26:36 info: All unit tests passed.
+2023-05-29 09:26:39 info: All steps were completed successfully
+2023-05-29 09:26:55 info: -------------------------------------------------
+2023-05-29 09:26:55 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-05-29 09:26:55 info: -------------------------------------------------
+2023-05-29 09:26:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (1 ms)
+    ✕ should compute the earnings as a formatted Euro amount (1 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    TypeError: durationsInHours.reduce is not a function
+
+      35 |   const durationsInMinutes = tasks.map((task) => task.duration);
+      36 |   const durationsInHours = durationsInMinutes / 60;
+    > 37 |   const totalDuration = durationsInHours.reduce((acc, curr) => acc + curr, 0);
+         |                                          ^
+      38 |   const earnings = totalDuration * rate;
+      39 |
+      40 |   return earnings;
+
+      at reduce (1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js:37:42)
+      at Object.computeEarnings (1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js:52:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.393 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-05-29 09:29:45 info: Disclaimer turned off
+2023-05-29 09:30:02 info: -------------------------------------------------
+2023-05-29 09:30:02 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-05-29 09:30:02 info: -------------------------------------------------
+2023-05-29 09:30:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✕ should take two parameters (4 ms)
+    ✕ should not modify the original `fruitBasket` array
+    ✕ should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      35 |   test('should take two parameters', () => {
+      36 |     // TODO replace next line with your code
+    > 37 |     expect(false).toBe(true);
+         |                   ^
+      38 |   });
+      39 |
+      40 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toBe (1-JavaScript/Week3/homework/ex3-lemonAllergy.test.js:37:19)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      42 |     const originalFruitBasketContents = [...fruitBasket];
+      43 |     // TODO replace next line with your code
+    > 44 |     expect(false).toBe(true);
+         |                   ^
+      45 |   });
+      46 |
+      47 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week3/homework/ex3-lemonAllergy.test.js:44:19)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      47 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      48 |     // TODO replace next line with your code
+    > 49 |     expect(false).toBe(true);
+         |                   ^
+      50 |   });
+      51 | });
+      52 |
+
+      at Object.toBe (1-JavaScript/Week3/homework/ex3-lemonAllergy.test.js:49:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        0.397 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2023-05-29 09:30:04 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  29:10  error  'sanitizeFruitBasket' is defined but never used                   no-unused-vars
+  42:11  error  'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+2023-05-29 09:30:41 info: ------------------------------------------
+2023-05-29 09:30:41 info: >>> Running Unit Test `ex4-observable` <<<
+2023-05-29 09:30:41 info: ------------------------------------------
+2023-05-29 09:30:42 info: All unit tests passed.
+2023-05-29 09:30:45 info: All steps were completed successfully
+2023-05-29 09:31:01 info: --------------------------------------
+2023-05-29 09:31:01 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-05-29 09:31:01 info: --------------------------------------
+2023-05-29 09:31:03 error: *** Unit Test Error Report ***
+
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/ahmetavci/Desktop/hyf/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-29 09:32:20 info: --------------------------------------
+2023-05-29 09:32:20 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-05-29 09:32:20 info: --------------------------------------
+2023-05-29 09:32:21 error: *** Unit Test Error Report ***
+
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/ahmetavci/Desktop/hyf/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-29 09:53:20 info: -------------------------------------------------
+2023-05-29 09:53:20 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-05-29 09:53:20 info: -------------------------------------------------
+2023-05-29 09:53:21 info: All unit tests passed.
+2023-05-29 09:53:23 info: All steps were completed successfully
+2023-05-29 10:00:50 info: -------------------------------------------------
+2023-05-29 10:00:50 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-05-29 10:00:50 info: -------------------------------------------------
+2023-05-29 10:00:52 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (1 ms)
+    ✕ should compute the earnings as a formatted Euro amount (3 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: 187.5
+
+      55 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      56 |     const expected = '€187.50';
+    > 57 |     expect(result).toBe(expected);
+         |                    ^
+      58 |   });
+      59 | });
+      60 |
+
+      at Object.toBe (1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js:57:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.389 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-05-29 10:03:02 info: -------------------------------------------------
+2023-05-29 10:03:02 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-05-29 10:03:02 info: -------------------------------------------------
+2023-05-29 10:03:04 info: All unit tests passed.
+2023-05-29 10:03:06 info: All steps were completed successfully
