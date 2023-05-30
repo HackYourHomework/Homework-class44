@@ -31,15 +31,28 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(tasks, rate) {
+  // Check the input
+  tasks.forEach((task) => {
+    if (!task.duration || typeof task.duration !== 'number') {
+      throw Error(
+        'Please check the input, Duration property should provide a Number.'
+      );
+    }
+  });
+  // Sum of all tasks durations in Hour
+  const totalHourDuration = tasks
+    .map((task) => task.duration / 60)
+    .reduce((ac, cu) => ac + cu);
+  // Calculate Total Earning based on hourly rate
+  const totalEarning = totalHourDuration * rate;
+
+  return `€${totalEarning.toFixed(2)}`;
 }
 
 // ! Unit tests (using Jest)
 describe('computeEarnings', () => {
   test('should take two parameters', () => {
-    // The `.length` property indicates the number of parameters expected by
-    // the function.
     expect(computeEarnings).toHaveLength(2);
   });
 
