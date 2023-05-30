@@ -21,13 +21,15 @@ function createWallet(name, cash = 0) {
     cash -= amount;
     return amount;
   }
-
+//console.log(amount);
   function transferInto(wallet, amount) {
     console.log(
       `Transferring ${eurosFormatter.format(amount)} from ${name} to ${
-        wallet.name
+        wallet.getName()
       }`
     );
+    //console.log(wallet);
+    //console.log(name);
     const withdrawnAmount = withdraw(amount);
     wallet.deposit(withdrawnAmount);
   }
@@ -77,7 +79,7 @@ const quiz = {
       b: 'cash, name', 
       c: 'amount, this, wallet'
     },
-    answer: undefined,
+    answer: b,
   },
   q2: {
     question: 'What is in the Call Stack, from top to bottom?',
@@ -86,7 +88,9 @@ const quiz = {
       b: 'anonymous, transferInto', 
       c: 'transferInto, anonymous' 
     },
-    answer: undefined,
+    answer: c, 
+    //i know the call stack is keep track the place in script that calls multiple function, 
+    //but im really not sure about it cuz still not clear to me 
   },
   q3: {
     question: 'What tooltip appears when hovering over the third debug button?',
@@ -95,7 +99,11 @@ const quiz = {
       b: 'Step out of current function', 
       c: 'Step' 
     },
-    answer: undefined,
+    answer: a,
+    //i didn't use any debugger, //
+    //to be honest i don't know even how to use it
+    // i try it just inside website it was in the links from first week js
+    // and i remember while they ve been explain about it 
   },
   q4: {
     question: 'What is displayed in the console?',
@@ -104,7 +112,8 @@ const quiz = {
       b: 'Transferring € 50,00 from Jack to undefined', 
       c: 'Transferring € 50,00 from Jack to Jane' 
     },
-    answer: undefined,
+    answer: a//after i solved it , and b before its solved
+             
   },
   q5: {
     question: 'The owner of the wallet with insufficient funds is:',
@@ -113,6 +122,6 @@ const quiz = {
       b: 'Joe', 
       c: 'Jane' 
     },
-    answer: undefined,
+    answer: a, // .this key
   },
 };
