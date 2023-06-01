@@ -6,10 +6,11 @@ Full description atL https://github.com/HackYourFuture/Homework/tree/main/1-Java
   tasks and an hourly rate as arguments and return a formatted Euro amount
   (e.g: `€11.34`) comprising the total earnings.
 - Use the `map` array function to take out the duration time for each task.
-- Multiply each duration by a hourly rate for billing and sum it all up.
+- Multiply each duration by the hourly rate for billing and sum it all up.
 - Make sure the program can be used on any array of objects that contain a
   `duration` property with a number value.
 ------------------------------------------------------------------------------*/
+
 const mondayTasks = [
   {
     name: 'Daily standup',
@@ -31,8 +32,16 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(tasks, hourlyRate) {
+  if (tasks && hourlyRate) {
+    const result = tasks
+      .map((task) => task.duration * hourlyRate)
+      .reduce((a, b) => a + b, 0);
+
+    return `€${result}`;
+  } else {
+    return 'Please provide both Tasks and Hourly Rate';
+  }
 }
 
 // ! Unit tests (using Jest)
