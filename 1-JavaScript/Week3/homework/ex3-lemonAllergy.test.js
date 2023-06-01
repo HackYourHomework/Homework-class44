@@ -26,9 +26,19 @@ const fruitBasket = [
 ];
 
 // ! Function under test
-function sanitizeFruitBasket(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function sanitizeFruitBasket(purchasedFruits, allergicFruit) {
+  if (purchasedFruits && allergicFruit) {
+    const fruitList = [...purchasedFruits];
+    const safeFruits = fruitList.filter(
+      (fruit) => fruit !== allergicFruit
+    );
+
+    return safeFruits;
+  } else {
+    return 'You need two parameters for the function to run';
+  }
 }
+
 
 // ! Unit tests (using Jest)
 describe('sanitizeFruitBasket', () => {
