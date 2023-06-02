@@ -30,18 +30,25 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
-}
+function filterPrivateData(recordsNonPrivate) {
+  let newArray = []
+  for (const record of recordsNonPrivate){
+  const {name, occupation, email} = record
+   newArray.push({name, occupation, email})
+  } return newArray
 
+  // return recordsNonPrivate.map(({name, occupation, email}) => ({name, occupation, email}))
+ 
+}
+console.log(filterPrivateData(employeeRecords))
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
-  console.log('Test 1: filterPrivateData should take one parameters');
+  console.log(filterPrivateData(employeeRecords));
   console.assert(filterPrivateData.length === 1);
 }
 
 function test2() {
-  console.log('Test 2: gender and salary should be filtered out');
+  console.log(filterPrivateData(employeeRecords));
   const expected = [
     {
       name: 'John',
