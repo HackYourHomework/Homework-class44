@@ -122,6 +122,6 @@ const quiz = {
       b: 'Joe', 
       c: 'Jane' 
     },
-    answer: a, // .this key
+    answer: c, 
   },
 };
