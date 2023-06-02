@@ -121,3 +121,8 @@ dist
 .recent.json
 .disclaimer
 @homework*
+
+package-lock.json
+package.json
+.eslintrc.json
+
