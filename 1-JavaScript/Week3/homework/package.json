@@ -1,0 +1,14 @@
+{
+  "name": "hyf-hw-js-w3",
+  "version": "1.0.0",
+  "description": "homework week3",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "Christina",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
