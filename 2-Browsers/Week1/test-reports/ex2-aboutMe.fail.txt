@@ -1,0 +1,10 @@
+
+*** ESLint Report ***
+
+ex2-aboutMe/index.js
+  12:7  error  'nameEl' is assigned a value but never used  no-unused-vars
+  14:7  error  'foodEl' is assigned a value but never used  no-unused-vars
+  16:7  error  'townEl' is assigned a value but never used  no-unused-vars
+
+✖ 3 problems (3 errors, 0 warnings)
+
