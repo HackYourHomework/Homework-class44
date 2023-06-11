@@ -1,1 +1,24 @@
 /* Write your style here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 2em;
+  margin: 2%;
+}
+ul {
+  display: flex;
+  margin: 15px;
+  padding: 20px;
+  gap: 10px;
+  list-style: none;
+}
+li {
+  padding: 15px;
+  margin: 10px;
+}
+p {
+  padding: 12px;
+}
