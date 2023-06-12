@@ -741,3 +741,81 @@ Browserslist: caniuse-lite is outdated. Please run:
 2023-05-29 04:47:22 info: --------------------------------------
 2023-05-29 04:47:27 info: All unit tests passed.
 2023-05-29 04:47:36 info: All steps were completed successfully
+2023-06-12 03:53:42 info: ----------------------------------------
+2023-06-12 03:53:42 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-12 03:53:42 info: ----------------------------------------
+2023-06-12 03:54:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (10.438 s)
+  Generated HTML
+    × HTML should be syntactically valid (391 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should contain a <ul> that is a child of <div id="bookList"> (39 ms)
+    √ should contain a <ul> with 3 <li> elements (4 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (3 ms)
+    √ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:112  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:252  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:383  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        10.702 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-06-12 03:58:52 info: ----------------------------------------
+2023-06-12 03:58:52 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-12 03:58:52 info: ----------------------------------------
+2023-06-12 03:59:30 info: All unit tests passed.
+2023-06-12 04:00:10 info: All steps were completed successfully
+2023-06-12 04:00:36 info: ---------------------------------------
+2023-06-12 04:00:36 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-12 04:00:36 info: ---------------------------------------
+2023-06-12 04:01:08 info: All unit tests passed.
+2023-06-12 04:02:06 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:12:25 - Unknown word (Seyma)
+
+2023-06-12 04:03:18 info: ------------------------------------------
+2023-06-12 04:03:18 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-12 04:03:18 info: ------------------------------------------
+2023-06-12 04:03:35 info: All unit tests passed.
+2023-06-12 04:03:59 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
+
+2023-06-12 04:05:05 info: --------------------------------------------
+2023-06-12 04:05:05 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-06-12 04:05:05 info: --------------------------------------------
+2023-06-12 04:05:28 info: All unit tests passed.
+2023-06-12 04:05:53 info: All steps were completed successfully
+2023-06-12 04:06:38 info: ---------------------------------------
+2023-06-12 04:06:38 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-06-12 04:06:38 info: ---------------------------------------
+2023-06-12 04:07:01 info: All unit tests passed.
+2023-06-12 04:07:30 info: All steps were completed successfully
