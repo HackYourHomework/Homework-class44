@@ -1,1 +1,27 @@
-/* Write your style here */
+h1 {
+  font-size: 18px;
+}
+ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+ul li {
+  height: 300px;
+  width: 200px;
+  list-style: none;
+}
+ul li p {
+  font-size: 8px;
+}
+
+ul li img {
+  height: 85%;
+  width: 80%;
+}
+.read {
+  background-color: green;
+}
+.not-read {
+  background-color: red;
+}
