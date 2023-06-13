@@ -2,3 +2,89 @@
 2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
 2023-05-17 02:39:39 info: ----------------------------------------------
 2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-06-13 12:04:45 info: ----------------------------------------
+2023-06-13 12:04:45 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-13 12:04:45 info: ----------------------------------------
+2023-06-13 12:04:48 info: All unit tests passed.
+2023-06-13 12:04:49 info: All steps were completed successfully
+2023-06-13 12:05:23 info: ---------------------------------------
+2023-06-13 12:05:23 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-13 12:05:23 info: ---------------------------------------
+2023-06-13 12:05:25 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (83 ms)
+    ✕ should have all TODO comments removed
+    ✓ each <li> should have the CSS class `list-item`
+    ✓ each <li> should rendered red (15 ms)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 3 passed, 4 total
+Snapshots:   0 total
+Time:        1.683 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-06-13 12:05:26 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:14:25 - Unknown word (Valentyn)
+ex2-aboutMe/index.js:14:34 - Unknown word (Genkin)
+
+2023-06-13 12:07:57 info: ---------------------------------------
+2023-06-13 12:07:57 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-13 12:07:57 info: ---------------------------------------
+2023-06-13 12:08:00 info: All unit tests passed.
+2023-06-13 12:08:01 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:14:25 - Unknown word (Valentyn)
+ex2-aboutMe/index.js:14:34 - Unknown word (Genkin)
+
+2023-06-13 12:08:22 info: ------------------------------------------
+2023-06-13 12:08:22 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-13 12:08:22 info: ------------------------------------------
+2023-06-13 12:08:23 info: All unit tests passed.
+2023-06-13 12:08:24 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:48 - Unknown word (Xdpd)
+
+2023-06-13 12:08:38 info: --------------------------------------------
+2023-06-13 12:08:38 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-06-13 12:08:38 info: --------------------------------------------
+2023-06-13 12:08:42 info: All unit tests passed.
+2023-06-13 12:08:43 info: All steps were completed successfully
+2023-06-13 12:08:54 info: ---------------------------------------
+2023-06-13 12:08:54 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-06-13 12:08:54 info: ---------------------------------------
+2023-06-13 12:08:56 info: All unit tests passed.
+2023-06-13 12:08:56 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  29:7  warning  'interval' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-06-13 12:09:46 info: ---------------------------------------
+2023-06-13 12:09:46 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-06-13 12:09:46 info: ---------------------------------------
+2023-06-13 12:09:49 info: All unit tests passed.
+2023-06-13 12:09:50 info: All steps were completed successfully
