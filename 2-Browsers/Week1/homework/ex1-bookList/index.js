@@ -18,13 +18,29 @@ https://hackyourfuture.github.io/example-pages/Browsers/Week1/1-booklist/
 //cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const ulElement = document.createElement('ul');
+  books.forEach((book) => {
+    const liElement = document.createElement('li');
+
+    const pElement = document.createElement('p');
+    pElement.innerText = `${book.title} by ${book.author}`;
+    const imgElement = document.createElement('img');
+    imgElement.setAttribute(
+      'src',
+      `./assets/${book.title.replaceAll(' ', '_')}.jpg`
+    );
+    liElement.appendChild(pElement);
+    liElement.appendChild(imgElement);
+    liElement.style.backgroundColor = book.alreadyRead ? 'green' : 'red';
+    ulElement.appendChild(liElement);
+  });
+  return ulElement;
 }
 
 function main() {
   const myBooks = [
     {
-      title: 'The Design of Everyday Things',
+      title: 'The Design of, Everyday Things',
       author: 'Don Norman',
       isbn: '978-0465050659',
       alreadyRead: false,

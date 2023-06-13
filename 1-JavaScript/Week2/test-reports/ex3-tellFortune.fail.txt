@@ -1,0 +1,4 @@
+
+*** Spell Checker Report ***
+
+ex3-tellFortune.js:53:26 - Unknown word (Hasan)

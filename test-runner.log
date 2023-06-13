@@ -2,3 +2,927 @@
 2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
 2023-05-17 02:39:39 info: ----------------------------------------------
 2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-05-20 01:22:56 info: ----------------------------------------------
+2023-05-20 01:22:56 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-20 01:22:56 info: ----------------------------------------------
+2023-05-20 01:23:00 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment `giveCompliment` should not contain unneeded console.log calls
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are awasome, HackYourFuture!
+  Received: undefined
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-20 01:23:03 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  23:7  warning  'compliments' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  24:7  warning  'randomIndex' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2023-05-20 01:23:06 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:23:21 - Unknown word (awasome)
+ex1-giveCompliment.js:31:19 - Unknown word (Hasan)
+
+2023-05-20 01:26:15 info: ----------------------------------------------
+2023-05-20 01:26:15 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-20 01:26:15 info: ----------------------------------------------
+2023-05-20 01:26:21 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are awesome, HackYourFuture!
+  Received: You are awesome HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-20 01:26:23 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  23:7  warning  'compliments' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  35:7  warning  'randomIndex' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2023-05-20 01:26:27 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:41:19 - Unknown word (Hasan)
+
+2023-05-20 01:28:20 info: ----------------------------------------------
+2023-05-20 01:28:20 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-20 01:28:20 info: ----------------------------------------------
+2023-05-20 01:28:24 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-20 01:28:30 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:41:19 - Unknown word (Hasan)
+
+2023-05-20 01:29:23 info: ----------------------------------------------
+2023-05-20 01:29:23 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-20 01:29:23 info: ----------------------------------------------
+2023-05-20 01:29:27 info: All unit tests passed.
+2023-05-20 01:29:34 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:39:19 - Unknown word (Hasan)
+
+2023-05-20 01:39:25 info: ----------------------------------------
+2023-05-20 01:39:25 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-05-20 01:39:25 info: ----------------------------------------
+2023-05-20 01:39:30 info: All unit tests passed.
+2023-05-20 01:39:36 info: All steps were completed successfully
+2023-05-20 01:54:19 info: -------------------------------------------
+2023-05-20 01:54:19 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-20 01:54:19 info: -------------------------------------------
+2023-05-20 01:54:24 error: *** Unit Test Error Report ***
+
+✕ tellFortune `numKids` should be an array initialized with 5 elements
+✕ tellFortune `locations` should be an array initialized with 5 elements
+✕ tellFortune `partnerNames` should be an array initialized with 5 elements
+✕ tellFortune `jobTitles` should be an array initialized with 5 elements
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a developer in Amsterdam, married to Hasan with 1 kids.
+  Received: You will be a developer, in Amsterdam, married to Hasan with 1 kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-20 01:54:30 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:53:26 - Unknown word (Hasan)
+
+2023-05-20 01:55:32 info: -------------------------------------------
+2023-05-20 01:55:32 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-20 01:55:32 info: -------------------------------------------
+2023-05-20 01:55:35 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a developer in Amsterdam, married to Hasan with 1 kids.
+  Received: You will be a developer, in Amsterdam, married to Hasan with 1 kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-20 01:55:41 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:53:26 - Unknown word (Hasan)
+
+2023-05-20 01:56:40 info: -------------------------------------------
+2023-05-20 01:56:40 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-20 01:56:40 info: -------------------------------------------
+2023-05-20 01:56:44 info: All unit tests passed.
+2023-05-20 01:56:49 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:53:26 - Unknown word (Hasan)
+
+2023-05-20 02:17:16 info: --------------------------------------------
+2023-05-20 02:17:16 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-20 02:17:16 info: --------------------------------------------
+2023-05-20 02:17:16 warn: A unit test file was not provided.
+2023-05-20 02:17:24 info: All steps were completed successfully
+2023-05-20 02:21:19 info: --------------------------------------------
+2023-05-20 02:21:19 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-05-20 02:21:19 info: --------------------------------------------
+2023-05-20 02:21:19 warn: A unit test file was not provided.
+2023-05-20 02:21:26 info: All steps were completed successfully
+2023-05-20 02:25:21 info: ------------------------------------------------
+2023-05-20 02:25:21 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-05-20 02:25:21 info: ------------------------------------------------
+2023-05-20 02:25:21 warn: A unit test file was not provided.
+2023-05-20 02:25:25 error: *** ESLint Report ***
+
+ex5-shoppingCartPure.js
+  21:7  warning  'newArr' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-05-20 08:18:34 info: -----------------------------------------
+2023-05-20 08:18:34 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-05-20 08:18:34 info: -----------------------------------------
+2023-05-20 08:18:34 warn: A unit test file was not provided.
+2023-05-20 08:18:42 info: All steps were completed successfully
+2023-05-30 04:06:33 info: ------------------------------------------------------
+2023-05-30 04:06:33 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-05-30 04:06:33 info: ------------------------------------------------------
+2023-05-30 04:06:39 info: All unit tests passed.
+2023-05-30 04:06:45 info: All steps were completed successfully
+2023-05-30 04:24:18 info: -------------------------------------------------
+2023-05-30 04:24:18 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-05-30 04:24:18 info: -------------------------------------------------
+2023-05-30 04:24:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (4 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: 11250
+
+      51 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      52 |     const expected = '€187.50';
+    > 53 |     expect(result).toBe(expected);
+         |                    ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBe (1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js:53:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.954 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-05-30 04:24:39 info: Disclaimer turned off
+2023-05-30 04:25:54 info: -------------------------------------------------
+2023-05-30 04:25:54 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-05-30 04:25:54 info: -------------------------------------------------
+2023-05-30 04:25:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (4 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: 187.5
+
+      51 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      52 |     const expected = '€187.50';
+    > 53 |     expect(result).toBe(expected);
+         |                    ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBe (1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js:53:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.887 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-05-30 04:36:11 info: -------------------------------------------------
+2023-05-30 04:36:11 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-05-30 04:36:11 info: -------------------------------------------------
+2023-05-30 04:36:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (4 ms)
+    ✕ should compute the earnings as a formatted Euro amount (4 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    TypeError: totalEarning.toString.concat is not a function
+
+      38 |     .reduce((sum, duration) => sum + duration, 0);
+      39 |   const totalEarning = durationSum * hourlyRate;
+    > 40 |   return '€'.concat('', totalEarning.toString.concat('', '0'));
+         |                                               ^
+      41 | }
+      42 |
+      43 | // ! Unit tests (using Jest)
+
+      at concat (1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js:40:47)
+      at Object.computeEarnings (1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js:52:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.925 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-05-30 04:37:06 info: -------------------------------------------------
+2023-05-30 04:37:06 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-05-30 04:37:06 info: -------------------------------------------------
+2023-05-30 04:37:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    TypeError: totalEarning.concat is not a function
+
+      38 |     .reduce((sum, duration) => sum + duration, 0);
+      39 |   const totalEarning = durationSum * hourlyRate;
+    > 40 |   return '€'.concat('', totalEarning.concat('', '0'));
+         |                                      ^
+      41 | }
+      42 |
+      43 | // ! Unit tests (using Jest)
+
+      at concat (1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js:40:38)
+      at Object.computeEarnings (1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js:52:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.894 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-05-30 04:42:39 info: -------------------------------------------------
+2023-05-30 04:42:39 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-05-30 04:42:39 info: -------------------------------------------------
+2023-05-30 04:42:44 info: All unit tests passed.
+2023-05-30 04:42:50 info: All steps were completed successfully
+2023-05-30 04:46:14 info: -------------------------------------------------
+2023-05-30 04:46:14 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-05-30 04:46:14 info: -------------------------------------------------
+2023-05-30 04:46:19 info: All unit tests passed.
+2023-05-30 04:46:22 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  40:21  error  A function with a name starting with an uppercase letter should only be used as a constructor  new-cap
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-05-30 04:47:43 info: -------------------------------------------------
+2023-05-30 04:47:43 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-05-30 04:47:43 info: -------------------------------------------------
+2023-05-30 04:47:48 info: All unit tests passed.
+2023-05-30 04:47:51 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  39:21  error  A function with a name starting with an uppercase letter should only be used as a constructor  new-cap
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-05-30 05:04:19 info: -------------------------------------------------
+2023-05-30 05:04:19 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-05-30 05:04:19 info: -------------------------------------------------
+2023-05-30 05:04:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✕ should take two parameters (6 ms)
+    ✕ should not modify the original `fruitBasket` array (1 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      37 |   test('should take two parameters', () => {
+      38 |     // TODO replace next line with your code
+    > 39 |     expect(false).toBe(true);
+         |                   ^
+      40 |   });
+      41 |
+      42 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toBe (1-JavaScript/Week3/homework/ex3-lemonAllergy.test.js:39:19)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      44 |     const originalFruitBasketContents = [...fruitBasket];
+      45 |     // TODO replace next line with your code
+    > 46 |     expect(false).toBe(true);
+         |                   ^
+      47 |   });
+      48 |
+      49 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week3/homework/ex3-lemonAllergy.test.js:46:19)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      49 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      50 |     // TODO replace next line with your code
+    > 51 |     expect(false).toBe(true);
+         |                   ^
+      52 |   });
+      53 | });
+      54 |
+
+      at Object.toBe (1-JavaScript/Week3/homework/ex3-lemonAllergy.test.js:51:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        0.963 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2023-05-30 05:04:26 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  29:10  error  'sanitizeFruitBasket' is defined but never used                   no-unused-vars
+  44:11  error  'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+2023-05-30 05:11:48 info: -------------------------------------------------
+2023-05-30 05:11:48 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-05-30 05:11:48 info: -------------------------------------------------
+2023-05-30 05:11:54 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✓ should not modify the original `fruitBasket` array (2 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (3 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    TypeError: Cannot read properties of undefined (reading 'toBe')
+
+      49 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      50 |     // TODO replace next line with your code
+    > 51 |     expect(sanitizeFruitBasket(fruitBasket)).toContain('lemon').toBe(false);
+         |     ^
+      52 |   });
+      53 | });
+      54 |
+
+      at Object.<anonymous> (1-JavaScript/Week3/homework/ex3-lemonAllergy.test.js:51:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.911 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2023-05-30 05:21:52 info: -------------------------------------------------
+2023-05-30 05:21:52 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-05-30 05:21:52 info: -------------------------------------------------
+2023-05-30 05:21:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✓ should not modify the original `fruitBasket` array (2 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (6 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 3
+
+      Array [
+        "apple",
+    +   "lemon",
+        "grapefruit",
+    +   "lemon",
+        "banana",
+        "watermelon",
+    +   "lemon",
+      ]
+
+      49 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      50 |     // TODO replace next line with your code
+    > 51 |     expect(sanitizeFruitBasket(fruitBasket)).toEqual([
+         |                                              ^
+      52 |       'apple',
+      53 |       'grapefruit',
+      54 |       'banana',
+
+      at Object.toEqual (1-JavaScript/Week3/homework/ex3-lemonAllergy.test.js:51:46)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.916 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2023-05-30 05:22:40 info: -------------------------------------------------
+2023-05-30 05:22:40 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-05-30 05:22:40 info: -------------------------------------------------
+2023-05-30 05:22:43 info: All unit tests passed.
+2023-05-30 05:22:50 info: All steps were completed successfully
+2023-05-30 05:39:36 info: ------------------------------------------
+2023-05-30 05:39:36 info: >>> Running Unit Test `ex4-observable` <<<
+2023-05-30 05:39:36 info: ------------------------------------------
+2023-05-30 05:39:42 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (5 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    RangeError: Maximum call stack size exceeded
+
+      21 |     },
+      22 |     notify: function (message) {
+    > 23 |       subscribers.forEach((subscriber) => this.notify(message));
+         |                                                ^
+      24 |     },
+      25 |   };
+      26 | }
+
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:19)
+      at notify (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:48)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.968 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2023-05-30 05:39:45 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  23:28  error  'subscriber' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-05-30 05:41:56 info: ------------------------------------------
+2023-05-30 05:41:56 info: >>> Running Unit Test `ex4-observable` <<<
+2023-05-30 05:41:56 info: ------------------------------------------
+2023-05-30 05:42:01 error: *** Unit Test Error Report ***
+
+console.log
+    Hi! [Function: mockConstructor] {
+      _isMockFunction: true,
+      getMockImplementation: [Function (anonymous)],
+      mock: [Getter/Setter],
+      mockClear: [Function (anonymous)],
+      mockReset: [Function (anonymous)],
+      mockRestore: [Function (anonymous)],
+      mockReturnValueOnce: [Function (anonymous)],
+      mockResolvedValueOnce: [Function (anonymous)],
+      mockRejectedValueOnce: [Function (anonymous)],
+      mockReturnValue: [Function (anonymous)],
+      mockResolvedValue: [Function (anonymous)],
+      mockRejectedValue: [Function (anonymous)],
+      mockImplementationOnce: [Function (anonymous)],
+      withImplementation: [Function: bound withImplementation],
+      mockImplementation: [Function (anonymous)],
+      mockReturnThis: [Function (anonymous)],
+      mockName: [Function (anonymous)],
+      getMockName: [Function (anonymous)]
+    }
+
+      at log (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:51)
+          at Array.forEach (<anonymous>)
+
+  console.log
+    Hi! [Function: mockConstructor] {
+      _isMockFunction: true,
+      getMockImplementation: [Function (anonymous)],
+      mock: [Getter/Setter],
+      mockClear: [Function (anonymous)],
+      mockReset: [Function (anonymous)],
+      mockRestore: [Function (anonymous)],
+      mockReturnValueOnce: [Function (anonymous)],
+      mockResolvedValueOnce: [Function (anonymous)],
+      mockRejectedValueOnce: [Function (anonymous)],
+      mockReturnValue: [Function (anonymous)],
+      mockResolvedValue: [Function (anonymous)],
+      mockRejectedValue: [Function (anonymous)],
+      mockImplementationOnce: [Function (anonymous)],
+      withImplementation: [Function: bound withImplementation],
+      mockImplementation: [Function (anonymous)],
+      mockReturnThis: [Function (anonymous)],
+      mockName: [Function (anonymous)],
+      getMockName: [Function (anonymous)]
+    }
+
+      at log (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:51)
+          at Array.forEach (<anonymous>)
+
+
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (29 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.959 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2023-05-30 05:43:05 info: ------------------------------------------
+2023-05-30 05:43:05 info: >>> Running Unit Test `ex4-observable` <<<
+2023-05-30 05:43:05 info: ------------------------------------------
+2023-05-30 05:43:10 error: *** Unit Test Error Report ***
+
+console.log
+    Hi! function () {
+            return fn.apply(this, arguments);
+          }
+
+      at log (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:51)
+          at Array.forEach (<anonymous>)
+
+  console.log
+    Hi! function () {
+            return fn.apply(this, arguments);
+          }
+
+      at log (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:51)
+          at Array.forEach (<anonymous>)
+
+
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (9 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties
+    ✕ should notify all subscribers of any notification (119 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.178 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2023-05-30 05:43:13 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  22:23  error  'message' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-05-30 05:43:45 info: ------------------------------------------
+2023-05-30 05:43:45 info: >>> Running Unit Test `ex4-observable` <<<
+2023-05-30 05:43:45 info: ------------------------------------------
+2023-05-30 05:43:49 error: *** Unit Test Error Report ***
+
+console.log
+    Hi! function () {
+            return fn.apply(this, arguments);
+          }
+
+      at log (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:24:17)
+          at Array.forEach (<anonymous>)
+
+  console.log
+    Hi! function () {
+            return fn.apply(this, arguments);
+          }
+
+      at log (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:24:17)
+          at Array.forEach (<anonymous>)
+
+
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties
+    ✕ should notify all subscribers of any notification (24 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.921 s, estimated 2 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2023-05-30 05:45:11 info: ------------------------------------------
+2023-05-30 05:45:11 info: >>> Running Unit Test `ex4-observable` <<<
+2023-05-30 05:45:11 info: ------------------------------------------
+2023-05-30 05:45:15 error: *** Unit Test Error Report ***
+
+console.log
+    Hi!
+
+      at log (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:51)
+          at Array.forEach (<anonymous>)
+
+  console.log
+    Hi!
+
+      at log (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.js:23:51)
+          at Array.forEach (<anonymous>)
+
+
+
+Command failed: npx jest ex4-observable.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (25 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week3/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.911 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2023-05-30 05:45:17 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  23:28  error  'subscriber' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-05-30 05:47:02 info: ------------------------------------------
+2023-05-30 05:47:02 info: >>> Running Unit Test `ex4-observable` <<<
+2023-05-30 05:47:02 info: ------------------------------------------
+2023-05-30 05:47:07 info: All unit tests passed.
+2023-05-30 05:47:13 info: All steps were completed successfully
+2023-05-30 06:14:51 info: --------------------------------------
+2023-05-30 06:14:51 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-05-30 06:14:51 info: --------------------------------------
+2023-05-30 06:14:57 info: All unit tests passed.
+2023-05-30 06:15:03 info: All steps were completed successfully
