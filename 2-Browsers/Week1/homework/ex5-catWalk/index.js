@@ -22,20 +22,26 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
 
-const catImage = document.getElementById('cat');
-  catImage.style.left = '0px';
-  function catWalk() {
-const currentLeft = parseInt(catImage.style.left);
-//console.log(currentLeft);
- catImage.style.left = (currentLeft + 10) + 'px';
- if (currentLeft >= window.innerWidth - catImage.width) { 
-   catImage.style.left = '0px';
+
+window.addEventListener('load', () => {
+   const image = document.querySelector('img');
+    let interval;
+   function catWalk() {
+     const currentPosition = parseInt(image.style.left) || 0;
+     const moveAmount = 10;
+     image.style.left = currentPosition + moveAmount + 'px';
+     const currentMidPosition = Math.floor((window.innerWidth - image.clientWidth) / 2);
+     if (currentPosition >= currentMidPosition) {
+
+       clearInterval(interval);
+
+       image.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+       setTimeout(() => {
+         image.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+        }, 5000);
+      } else if (currentPosition >= window.innerWidth) {
+      image.style.left = -(image.clientWidth) + 'px';
+    }
   }
-if (currentLeft >= window.innerWidth / 2 - catImage.width / 2) {
-   catImage.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
- setTimeout(() => { 
-   catImage.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
- }, 5000); 
-} 
-  }
-setInterval(catWalk, 50);
+   interval = setInterval(catWalk, 50);
+ });
