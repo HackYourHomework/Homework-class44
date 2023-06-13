@@ -1,0 +1,4 @@
+
+*** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:32 - Unknown word (Ahmet)

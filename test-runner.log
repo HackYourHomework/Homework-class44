@@ -2,3 +2,185 @@
 2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
 2023-05-17 02:39:39 info: ----------------------------------------------
 2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-06-12 01:04:21 info: ----------------------------------------
+2023-06-12 01:04:21 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-12 01:04:21 info: ----------------------------------------
+2023-06-12 01:04:25 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid (101 ms)
+    ✓ should have all TODO comments removed
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (1 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:100  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:222  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:335  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        2.974 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-06-12 01:05:38 info: ----------------------------------------
+2023-06-12 01:05:38 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-12 01:05:38 info: ----------------------------------------
+2023-06-12 01:05:41 info: All unit tests passed.
+2023-06-12 01:05:43 info: All steps were completed successfully
+2023-06-12 01:20:51 info: ---------------------------------------
+2023-06-12 01:20:51 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-12 01:20:51 info: ---------------------------------------
+2023-06-12 01:20:54 info: All unit tests passed.
+2023-06-12 01:20:57 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:32 - Unknown word (Ahmet)
+
+2023-06-12 01:27:42 info: --------------------------------------------
+2023-06-12 01:27:42 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-06-12 01:27:42 info: --------------------------------------------
+2023-06-12 01:27:48 info: All unit tests passed.
+2023-06-12 01:27:50 info: All steps were completed successfully
+2023-06-12 03:11:21 info: ------------------------------------------
+2023-06-12 03:11:21 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-12 03:11:21 info: ------------------------------------------
+2023-06-12 03:11:23 info: All unit tests passed.
+2023-06-12 03:11:25 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:50 - Unknown word (Xdpd)
+
+2023-06-13 12:12:42 info: ---------------------------------------
+2023-06-13 12:12:42 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-06-13 12:12:42 info: ---------------------------------------
+2023-06-13 12:12:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    ✓ HTML should be syntactically valid (93 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `setInterval()` and/or `setTimeout()`
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.532 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2023-06-13 12:12:47 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  29:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-06-13 12:14:24 info: ---------------------------------------
+2023-06-13 12:14:24 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-06-13 12:14:24 info: ---------------------------------------
+2023-06-13 12:14:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    ✓ HTML should be syntactically valid (90 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `setInterval()` and/or `setTimeout()`
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.347 s, estimated 3 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2023-06-13 12:14:29 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  29:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-06-13 12:15:29 info: ---------------------------------------
+2023-06-13 12:15:29 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-06-13 12:15:29 info: ---------------------------------------
+2023-06-13 12:15:32 info: All unit tests passed.
+2023-06-13 12:15:33 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  29:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-06-13 12:16:01 info: ---------------------------------------
+2023-06-13 12:16:01 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-06-13 12:16:01 info: ---------------------------------------
+2023-06-13 12:16:04 info: All unit tests passed.
+2023-06-13 12:16:07 info: All steps were completed successfully

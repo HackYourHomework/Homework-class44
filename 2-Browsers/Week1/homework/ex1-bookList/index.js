@@ -18,7 +18,33 @@ https://hackyourfuture.github.io/example-pages/Browsers/Week1/1-booklist/
 //cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const ulElement = document.createElement('ul');
+
+  for (let i = 0; i < books.length; i++) {
+    const book = books[i];
+    const liElement = document.createElement('li');
+    const pElement = document.createElement('p');
+    const titleText = document.createTextNode(
+      `${book.title} by ${book.author}`
+    );
+    pElement.appendChild(titleText);
+    liElement.appendChild(pElement);
+
+    if (!book.alreadyRead) {
+      liElement.classList.add('not-read');
+    } else {
+      liElement.classList.add('read');
+    }
+
+    const imgElement = document.createElement('img');
+    imgElement.src = book.cover;
+    imgElement.alt = book.title;
+    liElement.appendChild(imgElement);
+
+    ulElement.appendChild(liElement);
+  }
+
+  return ulElement;
 }
 
 function main() {
@@ -28,18 +54,21 @@ function main() {
       author: 'Don Norman',
       isbn: '978-0465050659',
       alreadyRead: false,
+      cover: './assets/the_design_of_everyday_things.jpg',
     },
     {
       title: 'The Most Human Human',
       author: 'Brian Christian',
       isbn: '978-1617933431',
       alreadyRead: true,
+      cover: './assets/the_most_human_human.jpg',
     },
     {
       title: 'The Pragmatic Programmer',
       author: 'Andrew Hunt',
       isbn: '978-0201616224',
       alreadyRead: true,
+      cover: './assets/the_pragmatic_programmer.jpg',
     },
   ];
 
