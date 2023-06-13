@@ -1207,3 +1207,140 @@ Browserslist: caniuse-lite is outdated. Please run:
 2023-05-29 04:47:14 info: --------------------------------------
 2023-05-29 04:47:19 info: All unit tests passed.
 2023-05-29 04:47:26 info: All steps were completed successfully
+2023-06-12 03:51:23 info: ----------------------------------------
+2023-06-12 03:51:23 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-12 03:51:23 info: ----------------------------------------
+2023-06-12 03:51:34 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (5.796 s)
+  Generated HTML
+    × HTML should be syntactically valid (193 ms)
+    × should have all TODO comments removed
+    √ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    √ should contain a <ul> with 3 <li> elements (2 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    √ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:112  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:252  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:383  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        5.97 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-06-12 03:58:09 info: ----------------------------------------
+2023-06-12 03:58:09 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-12 03:58:09 info: ----------------------------------------
+2023-06-12 03:58:18 info: All unit tests passed.
+2023-06-12 03:58:26 info: All steps were completed successfully
+2023-06-12 03:58:47 info: ---------------------------------------
+2023-06-12 03:58:47 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-12 03:58:47 info: ---------------------------------------
+2023-06-12 03:58:55 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    √ should be syntactically valid (181 ms)
+    × should have all TODO comments removed (2 ms)
+    √ each <li> should have the CSS class `list-item` (1 ms)
+    √ each <li> should rendered red (48 ms)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 3 passed, 4 total
+Snapshots:   0 total
+Time:        4.555 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-06-12 03:59:04 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:15:25 - Unknown word (Enes)
+ex2-aboutMe/index.js:17:24 - Unknown word (Kokorec)
+
+2023-06-12 04:00:10 info: ---------------------------------------
+2023-06-12 04:00:10 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-12 04:00:10 info: ---------------------------------------
+2023-06-12 04:00:18 info: All unit tests passed.
+2023-06-12 04:00:27 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:25 - Unknown word (Enes)
+ex2-aboutMe/index.js:15:24 - Unknown word (Kokorec)
+
+2023-06-12 04:00:39 info: ------------------------------------------
+2023-06-12 04:00:39 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-12 04:00:39 info: ------------------------------------------
+2023-06-12 04:00:44 info: All unit tests passed.
+2023-06-12 04:00:52 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
+
+2023-06-12 04:01:05 info: --------------------------------------------
+2023-06-12 04:01:05 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-06-12 04:01:05 info: --------------------------------------------
+2023-06-12 04:01:16 info: All unit tests passed.
+2023-06-12 04:01:24 info: All steps were completed successfully
+2023-06-12 04:01:37 info: ---------------------------------------
+2023-06-12 04:01:37 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-06-12 04:01:37 info: ---------------------------------------
+2023-06-12 04:01:46 info: All unit tests passed.
+2023-06-12 04:01:54 info: All steps were completed successfully
