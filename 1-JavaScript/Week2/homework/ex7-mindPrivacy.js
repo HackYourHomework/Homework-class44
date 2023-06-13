@@ -30,10 +30,16 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function filterPrivateData(records) {
+  const filteredRecords = [];
+  for (let i = 0; i < records.length; i++) {
+    const {name, occupation, email} = records[i];
+    const filteredRecord = {name, occupation, email};
+    filteredRecords.push(filteredRecord);
+  }
+  return filteredRecords;
 }
-
+   
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('Test 1: filterPrivateData should take one parameters');
@@ -64,3 +70,68 @@ function test() {
 }
 
 test();
+/*
+const employeeRecords = [
+  {
+    name: 'John',
+    occupation: 'developer',
+    gender: 'M',
+    email: 'john.doe@somewhere.net',
+    salary: 50000,
+  },
+  {
+    name: 'Jane',
+    occupation: 'manager',
+    gender: 'F',
+    email: 'jane.eyre@somewhere.net',
+    salary: 60000,
+  },
+];
+
+function filterPrivateData(newArray) {
+  const filteredRecords = [];     
+
+  for (let i = 0; i < newArray.length; i++) {
+    let record = newArray[i];
+    let filteredRecord = {
+      name: record.name,
+      occupation: record.occupation,
+      email: record.email,
+    };
+    filteredRecords.push(filteredRecord);
+  }
+
+  return filteredRecords;
+}
+
+function test1() {
+  console.log('Test 1: filterPrivateData should take one parameter');
+  console.assert(filterPrivateData.length === 1);
+}
+
+function test2() {
+  console.log('Test 2: gender and salary should be filtered out');
+  const expected = [
+    {
+      name: 'John',
+      occupation: 'developer',
+      email: 'john.doe@somewhere.net',
+    },
+    {
+      name: 'Jane',
+      occupation: 'manager',
+      email: 'jane.eyre@somewhere.net',
+    },
+  ];
+  const result = filterPrivateData(employeeRecords);
+  console.assert(JSON.stringify(result) === JSON.stringify(expected));
+}
+
+function test() {
+  test1();
+  test2();
+}
+
+test();
+
+*/ 
