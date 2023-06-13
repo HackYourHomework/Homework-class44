@@ -1,0 +1,44 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    × HTML should be syntactically valid (65 ms)
+    √ should have all TODO comments removed
+    √ should contain a <ul> that is a child of <div id="bookList">
+    √ should contain a <ul> with 3 <li> elements (1 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    √ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:124  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:336  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:539  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        2.129 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.

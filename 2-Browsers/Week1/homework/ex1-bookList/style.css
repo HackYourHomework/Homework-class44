@@ -1,1 +1,15 @@
 /* Write your style here */
+.bookList {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+ul {
+  padding: 10px;
+  display: flex;
+  list-style: none;
+}
+li {
+  margin: 20px;
+  padding: 20px;
+}

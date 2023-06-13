@@ -333,3 +333,695 @@ Browserslist: caniuse-lite is outdated. Please run:
 2023-05-22 11:12:16 error: *** Spell Checker Report ***
 
 
+2023-06-13 07:19:43 info: ----------------------------------------
+2023-06-13 07:19:43 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-13 07:19:43 info: ----------------------------------------
+2023-06-13 07:19:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    × HTML should be syntactically valid (70 ms)
+    × should have all TODO comments removed (1 ms)
+    √ should contain a <ul> that is a child of <div id="bookList"> (1 ms)
+    √ should contain a <ul> with 3 <li> elements (1 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (1 ms)
+    √ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:124  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:336  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:539  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        2.584 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-06-13 07:21:02 info: ----------------------------------------
+2023-06-13 07:21:02 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-13 07:21:02 info: ----------------------------------------
+2023-06-13 07:21:14 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    × HTML should be syntactically valid (65 ms)
+    √ should have all TODO comments removed
+    √ should contain a <ul> that is a child of <div id="bookList">
+    √ should contain a <ul> with 3 <li> elements (1 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    √ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:124  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:336  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:539  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        2.129 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-06-13 07:33:40 info: ---------------------------------------
+2023-06-13 07:33:40 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-13 07:33:40 info: ---------------------------------------
+2023-06-13 07:33:55 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    √ should be syntactically valid (74 ms)
+    × should have all TODO comments removed
+    √ each <li> should have the CSS class `list-item`
+    √ each <li> should rendered red (15 ms)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 3 passed, 4 total
+Snapshots:   0 total
+Time:        2.214 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-06-13 07:33:59 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  13:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+  14:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+  15:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 3 problems (0 errors, 3 warnings)
+
+
+2023-06-13 07:34:05 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:50 - Unknown word (Malahimoooo)
+
+2023-06-13 07:34:29 info: ---------------------------------------
+2023-06-13 07:34:29 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-13 07:34:29 info: ---------------------------------------
+2023-06-13 07:34:45 info: All unit tests passed.
+2023-06-13 07:34:50 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  12:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+  13:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+  14:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 3 problems (0 errors, 3 warnings)
+
+
+2023-06-13 07:34:55 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:12:50 - Unknown word (Malahimoooo)
+
+2023-06-13 07:35:57 info: ---------------------------------------
+2023-06-13 07:35:57 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-13 07:35:57 info: ---------------------------------------
+2023-06-13 07:36:11 info: All unit tests passed.
+2023-06-13 07:36:21 info: All steps were completed successfully
+2023-06-13 07:37:08 info: --------------------------------------------
+2023-06-13 07:37:08 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-06-13 07:37:08 info: --------------------------------------------
+2023-06-13 07:37:26 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js
+  whatsTheTime
+    √ HTML should be syntactically valid (64 ms)
+    √ should have all TODO comments removed
+    √ should use `setInterval()`
+    √ should not call `setInterval()` more than once (2015 ms)
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (6 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 65 |     expect(state.onload).toBeDefined();
+         |                          ^
+      66 |   });
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:65:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        4.171 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-06-13 07:41:51 info: --------------------------------------------
+2023-06-13 07:41:51 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-06-13 07:41:51 info: --------------------------------------------
+2023-06-13 07:42:07 info: All unit tests passed.
+2023-06-13 07:42:17 info: All steps were completed successfully
+2023-06-13 07:58:56 info: ------------------------------------------
+2023-06-13 07:58:56 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-13 07:58:56 info: ------------------------------------------
+2023-06-13 07:59:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    × should have all TODO comments removed (1 ms)
+    × should set the `src` property
+    × should set the `srcset` property
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        0.332 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-06-13 07:59:17 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:12:49 - Unknown word (Xdpd)
+
+2023-06-13 07:59:58 info: ------------------------------------------
+2023-06-13 07:59:58 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-13 07:59:58 info: ------------------------------------------
+2023-06-13 08:00:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    √ should have all TODO comments removed (1 ms)
+    × should set the `src` property
+    × should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.252 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-06-13 08:00:20 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
+
+2023-06-13 08:20:17 info: ------------------------------------------
+2023-06-13 08:20:17 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-13 08:20:17 info: ------------------------------------------
+2023-06-13 08:20:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    √ should have all TODO comments removed (1 ms)
+    × should set the `src` property (1 ms)
+    × should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.263 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-06-13 08:20:38 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
+
+2023-06-13 08:27:53 info: ------------------------------------------
+2023-06-13 08:27:53 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-13 08:27:53 info: ------------------------------------------
+2023-06-13 08:28:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    √ should have all TODO comments removed
+    × should set the `src` property (1 ms)
+    × should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.248 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-06-13 08:28:14 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
+
+2023-06-13 08:29:31 info: ------------------------------------------
+2023-06-13 08:29:31 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-13 08:29:31 info: ------------------------------------------
+2023-06-13 08:29:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    √ should have all TODO comments removed (1 ms)
+    × should set the `src` property (1 ms)
+    × should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.267 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-06-13 08:29:52 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
+
+2023-06-13 08:32:32 info: ---------------------------------------
+2023-06-13 08:32:32 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-06-13 08:32:32 info: ---------------------------------------
+2023-06-13 08:32:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    √ HTML should be syntactically valid (63 ms)
+    × should have all TODO comments removed (1 ms)
+    √ should use `setInterval()` and/or `setTimeout()`
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● catWalk › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        2.215 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2023-06-13 08:36:03 info: ---------------------------------------
+2023-06-13 08:36:03 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-06-13 08:36:03 info: ---------------------------------------
+2023-06-13 08:36:18 info: All unit tests passed.
+2023-06-13 08:36:28 info: All steps were completed successfully
+2023-06-13 08:42:24 info: ------------------------------------------
+2023-06-13 08:42:24 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-13 08:42:24 info: ------------------------------------------
+2023-06-13 08:42:37 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    √ should have all TODO comments removed (1 ms)
+    × should set the `src` property
+    × should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.262 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-06-13 08:42:48 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
+
+2023-06-13 08:46:22 info: ------------------------------------------
+2023-06-13 08:46:22 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-13 08:46:22 info: ------------------------------------------
+2023-06-13 08:46:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    √ should have all TODO comments removed (1 ms)
+    √ should set the `src` property
+    × should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.25 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-06-13 08:46:44 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
+
+2023-06-13 08:47:21 info: ------------------------------------------
+2023-06-13 08:47:21 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-13 08:47:21 info: ------------------------------------------
+2023-06-13 08:47:32 info: All unit tests passed.
+2023-06-13 08:47:42 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
+
+2023-06-13 08:48:00 info: ------------------------------------------
+2023-06-13 08:48:00 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-13 08:48:00 info: ------------------------------------------
+2023-06-13 08:48:11 info: All unit tests passed.
+2023-06-13 08:48:21 info: All steps were completed successfully
