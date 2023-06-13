@@ -10,3 +10,11 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 ------------------------------------------------------------------------------*/
 
 // TODO add your JavaScript code here.
+document.getElementById('nickname').textContent = 'Nancy Alkallas';
+document.getElementById('fav-food').textContent = 'pizza';
+document.getElementById('hometown').textContent = 'Syria';
+const listItem = document.querySelectorAll('li');
+listItem.forEach((li) => {
+   li.classList.toggle('list-item');
+});
+
