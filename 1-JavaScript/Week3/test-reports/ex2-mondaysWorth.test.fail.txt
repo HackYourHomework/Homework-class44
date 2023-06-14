@@ -1,0 +1,8 @@
+
+*** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  39:21  error  A function with a name starting with an uppercase letter should only be used as a constructor  new-cap
+
+✖ 1 problem (1 error, 0 warnings)
+

@@ -1,0 +1,8 @@
+
+*** ESLint Report ***
+
+ex5-shoppingCartPure.js
+  21:7  warning  'newArr' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
