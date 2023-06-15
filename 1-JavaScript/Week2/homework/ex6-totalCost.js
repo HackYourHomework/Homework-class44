@@ -32,12 +32,31 @@ function calculateTotalPrice(/* TODO parameter(s) go here */) {
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
   // TODO replace this comment with your code
+ 
+
+  const expected = 'Total: 0';
+  const result1 = calculateTotalPrice({});
+  if (result1 === expected) {
+    console.log('Test passed!');
+  } else {
+    console.log('Test failed! Expected:', expected, 'but got:', result2);
+  }
 }
+
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
   // TODO replace this comment with your code
+  const expected = "Total: 13.48";
+  const result2 = calculateTotalPrice(cartForParty);
+  if (result2 === expected) {
+    console.log("Test passed!");
+  } else {
+    console.log("Test failed! Expected:", expected, "but got:", result2);
+  }
 }
+
+// PLEASE I STILL DONT KNOW THE CONCEPTS OF TESTING CODE HAVE TRIED BUT CANT FIGURE OUT
 
 function test() {
   test1();
