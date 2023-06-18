@@ -22,7 +22,58 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
 function catWalk() {
-  // TODO complete this function
+  // Select cat img element
+  const catImage = document.querySelector('img');
+  // Save current src
+  const primaryImageSource = catImage.src;
+  // Define alternative src
+  const secondaryImageSource =
+    'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+  // Walking speed
+  const stepSize = 10;
+  // Steps interval
+  const walkInterval = 50;
+  // Dancing timeout
+  const imageSwitchDelay = 5000;
+  // Img left position tracker
+  let currentPosition = 0;
+  catImage.style.left = `${currentPosition}px`;
+  // Calculate center of screen, base on img width, screen width and current location
+  const maxWidth = window.innerWidth;
+  // Returns true if img is close to center with 10px
+  const isScreenCenter = () =>
+    Math.abs(currentPosition - (maxWidth - catImage.width) / 2) < 10;
+  // Reset img left position to 0
+  const resetPosition = () => {
+    currentPosition = 0;
+  };
+  // Toggle between SRCs
+  const setCatImage = (src) => (catImage.src = src);
+
+  const startWalking = () => {
+    const intervalId = setInterval(() => {
+      // Rest position to left side, if img pass the screen's max-width
+      if (currentPosition > maxWidth) {
+        resetPosition();
+      }
+
+      if (isScreenCenter()) {
+        clearInterval(intervalId);
+        setCatImage(secondaryImageSource);
+        // Waiting for her to finish the party
+        setTimeout(() => {
+          setCatImage(primaryImageSource);
+          currentPosition += stepSize;
+          startWalking();
+        }, imageSwitchDelay);
+      }
+      // Handle walking to/from center of screen
+      currentPosition += stepSize;
+      catImage.style.left = `${currentPosition}px`;
+    }, walkInterval)
+  };
+
+  startWalking();
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+window.onload = catWalk;

@@ -1,0 +1,76 @@
+/* Write your style here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 17px;
+  font-family: monospace, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: center no-repeat url(./assets/bookShelf.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(0.1rem);
+    header {
+      h1 {
+        color: #1a1a21;
+        font-weight: bolder;
+        padding-block-end: 1rem;
+      }
+    }
+    #bookList {
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: auto;
+      justify-content: center;
+      align-items: center;
+      height: 80%;
+      padding-block-start: 1rem;
+      .books {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+        text-align: center;
+        padding: 1rem;
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          p {
+            background-color: white;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+            width: 15rem;
+            min-height: 4rem;
+            color: white;
+          }
+          img {
+            width: 15rem;
+            object-fit: fill;
+            aspect-ratio: 1 / 1.4;
+          }
+        }
+      }
+    }
+  }
+}

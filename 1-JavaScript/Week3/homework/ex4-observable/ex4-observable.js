@@ -17,10 +17,12 @@ function createObservable() {
   const subscribers = [];
   return {
     subscribe: function (subscriber) {
-      // TODO complete this function
+      // Add the subscriber to the array
+      subscribers.push(subscriber);
     },
     notify: function (message) {
-      // TODO complete this function
+      // Pass notification message to all subscribers
+      subscribers.forEach((subscriber) => subscriber(message));
     },
   };
 }

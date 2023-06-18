@@ -8,7 +8,25 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    HackYourFuture logo instead.
 ------------------------------------------------------------------------------*/
 function hijackGoogleLogo() {
-  // TODO your code goes in here
+  // Select all img element(s) in the page
+  const images = document.querySelectorAll('img');
+  // Iterate through all images
+  images.forEach((image) => {
+    // Distinguish logo between all selected images
+    if (
+      // image source must have 'googleLogo' in its source address
+      image.src.match(/googlelogo/i) ||
+      // image alt is 'google' or 'Google'
+      image.alt.match(/google/i) ||
+      // it have a class named 'lnXdpd'
+      image.classList.contains('lnXdpd')
+    ) {
+      // Apply HYF's logo
+      image.src = `https://www.hackyourfuture.dk/static/logo-dark.svg`;
+      image.srcset = `https://www.hackyourfuture.dk/static/logo-dark.svg`;
+      image.alt = `Search Your Future`;
+    }
+  });
 }
 
 hijackGoogleLogo();

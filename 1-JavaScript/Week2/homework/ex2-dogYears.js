@@ -16,14 +16,21 @@ calculate it!
    ages.
 -----------------------------------------------------------------------------*/
 
-function calculateDogAge(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function calculateDogAge(humanAge) {
+  if (!humanAge || typeof humanAge !== 'number') {
+    throw Error(
+      'Invalid human age, Please insert the age in a Number between 1 to 80.'
+    );
+  } else {
+    const dogAge = humanAge * 7;
+    return `Your doggie is ${dogAge} years old in dog years!`;
+  }
 }
 
 function main() {
-  console.log(calculateDogAge(1)); // -> "Your doggie is 7 years old in dog years!"
-  console.log(calculateDogAge(2)); // -> "Your doggie is 14 years old in dog years!"
-  console.log(calculateDogAge(3)); // -> "Your doggie is 21 years old in dog years!"
+  for (let i = 0; i < 3; i++) {
+    console.log(calculateDogAge(i + 1));
+  }
 }
 
 // ! Do not change or remove the code below

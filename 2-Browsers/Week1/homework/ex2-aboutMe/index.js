@@ -9,4 +9,18 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 3. Look in the css file!
 ------------------------------------------------------------------------------*/
 
-// TODO add your JavaScript code here.
+// Select all span tags which is nested to a li tag
+const listItems = document.querySelectorAll('li span');
+// Iterate through each selector
+listItems.forEach((listItem) => {
+  // Add list-item class to parent of each span tag which is a li tag
+  listItem.parentElement.classList.add('list-item');
+  // Check id of selected li and assign proper value
+  if (listItem.id === 'nickname') {
+    listItem.textContent = 'Farshad';
+  } else if (listItem.id === 'fav-food') {
+    listItem.textContent = 'Pizza';
+  } else if (listItem.id === 'hometown') {
+    listItem.textContent = 'Amsterdam';
+  }
+});

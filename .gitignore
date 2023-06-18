@@ -1,6 +1,9 @@
 .idea
 sysinfo.json
 
+# mac
+.DS_Store
+
 # Logs
 logs
 npm-debug.log*
