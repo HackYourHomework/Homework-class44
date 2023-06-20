@@ -37,21 +37,16 @@ function createBookList(books) {
   liBookList.classList.toggle('read');
   liBookList.style.backgroundColor = 'green';
 } else {
-  liBookList.classList.toggle('unread');
+  liBookList.classList.add('unread');
   liBookList.style.backgroundColor = 'red';
   
 };
-
-    
+ 
 
   });
   
   return ulBookList;
 };
-
-
-
-
 
 
 function main() {
