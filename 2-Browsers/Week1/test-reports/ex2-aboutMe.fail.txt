@@ -1,0 +1,5 @@
+
+*** Spell Checker Report ***
+
+ex2-aboutMe/index.js:14:25 - Unknown word (Valentyn)
+ex2-aboutMe/index.js:14:34 - Unknown word (Genkin)

@@ -1,1 +1,13 @@
-/* Write your style here */
+li {
+  display: inline-block;
+  width: 400px;
+  margin: 8px;
+  padding: 8px;
+  list-style: none;
+}
+
+ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
