@@ -11,20 +11,15 @@ function addCurrentTime() {
   const div = document.createElement('div');
   document.body.appendChild(div);
 
-  div.style.cssText = `
-    height: 100vh; 
-    font-size: 40px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center`;
+  div.className = 'clockStyle';
 
-  function currentTimeUpdate (){
+  function currentTimeUpdate() {
     const date = new Date().toLocaleTimeString('en-GB');
     div.textContent = `Current time: ${date}`;
-    console.log(div.textContent)
+    console.log(div.textContent);
   }
 
-  setInterval(currentTimeUpdate, 1000)
+  setInterval(currentTimeUpdate, 1000);
 }
 
 window.addEventListener('load', addCurrentTime);
