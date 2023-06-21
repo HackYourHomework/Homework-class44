@@ -21,8 +21,39 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
+let dancing = false;
 function catWalk() {
-  // TODO complete this function
+  function roundToNearestTen(number) {
+    return Math.floor(number / 10) * 10; // because the width of the screen is
+  }
+  const imgRef = document.querySelector('img');
+  const screenWidth = window.innerWidth;
+  const position = imgRef.style.left;
+  const intPosition = parseInt(position, 10);
+  if (!position) {
+    imgRef.style.left = '0px';
+  }
+  if (intPosition === roundToNearestTen(screenWidth / 2 - 150)) {
+    // 150 = img width/2
+    dancing = true;
+    imgRef.src = 'https://c.tenor.com/lpHW7hkRD6MAAAAC/tenor.gif';
+    setTimeout(() => {
+      imgRef.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+    }, 5000);
+  }
+  if (intPosition + 300 > screenWidth) {
+    imgRef.style.left = '0px';
+  } else {
+    const newValue = intPosition + 10;
+    imgRef.style.left = newValue + 'px';
+  }
 }
-
-// TODO execute `catWalk` when the browser has completed loading the page
+setInterval(() => {
+  if (dancing) {
+    setTimeout(() => {
+      dancing = false;
+    }, 5000);
+  } else {
+    catWalk();
+  }
+}, 50);

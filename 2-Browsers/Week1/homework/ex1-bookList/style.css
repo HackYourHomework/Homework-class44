@@ -1,1 +1,9 @@
-/* Write your style here */
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+  width: 400px;
+  margin: 8px;
+  padding: 8px;
+}

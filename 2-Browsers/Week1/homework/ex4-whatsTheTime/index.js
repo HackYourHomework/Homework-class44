@@ -1,14 +1,37 @@
 'use strict';
-/*------------------------------------------------------------------------------
-Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Browsers/Week1#exercise-4-whats-the-time
 
-1. Inside the `index.js`, complete the `addCurrentTime` to add the current time 
-  to the webpage. Make sure it's written in the HH:MM:SS notation (hour, minute,
-  second). Use `setInterval()` to make sure the time stays current.
-2. Have the function execute when it's loading in the browser.
-------------------------------------------------------------------------------*/
 function addCurrentTime() {
-  // TODO complete this function
+  const currentDate = new Date();
+
+  let currentHours = currentDate.getHours();
+  let currentMinutes = currentDate.getMinutes();
+  let currentSeconds = currentDate.getSeconds();
+
+  currentHours = addLeadingZero(currentHours);
+  currentMinutes = addLeadingZero(currentMinutes);
+  currentSeconds = addLeadingZero(currentSeconds);
+
+  function addLeadingZero(value) {
+    if (value < 10) {
+      return '0' + value;
+    }
+    return value;
+  }
+  const time = currentHours + ':' + currentMinutes + ':' + currentSeconds;
+  const body = document.querySelector('body');
+  let text = document.querySelector('p');
+  if (text) {
+    text.textContent = time;
+  } else {
+    text = document.createElement('p');
+    text.textContent = time;
+    body.appendChild(text);
+  }
+  console.log(time);
 }
 
-// TODO execute `addCurrentTime` when the browser has completed loading the page
+window.addEventListener('load', () => {
+  setInterval(() => {
+    addCurrentTime();
+  }, 1000);
+});
