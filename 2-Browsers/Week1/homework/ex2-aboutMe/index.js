@@ -10,3 +10,16 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 ------------------------------------------------------------------------------*/
 
 // TODO add your JavaScript code here.
+
+const nickname = document.getElementById('nickname')
+const favFood = document.getElementById('fav-food')
+const hometown = document.getElementById('hometown')
+
+nickname.textContent = 'Murshed'
+favFood.textContent = 'Pasta'
+hometown.textContent = 'Rotterdam'
+
+const liElements = document.querySelectorAll('li')
+liElements.forEach((li)=> {
+ li.setAttribute('class', 'list-item')
+})
