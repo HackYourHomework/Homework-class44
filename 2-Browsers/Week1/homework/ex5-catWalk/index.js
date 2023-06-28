@@ -23,18 +23,23 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 -----------------------------------------------------------------------------*/
 const image = document.querySelector('img');
 image.style.left = 0;
+
 let catMove = 0;
 let catInterval;
 
 function catWalk() {
-  if (catMove < window.innerWidth) {
+  const windowWidth = document.body.clientWidth;
+  const middleOfScreen = windowWidth / 2;
+
+  if (catMove < windowWidth) {
     catMove += 10;
   } else {
     catMove = 0;
   }
 
   image.style.left = `${catMove}px`;
-  if (catMove === 500) {
+
+  if (catMove === middleOfScreen) {
     image.src =
       'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
 
