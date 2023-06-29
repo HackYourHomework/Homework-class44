@@ -1025,3 +1025,8 @@ ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
 2023-06-13 08:48:00 info: ------------------------------------------
 2023-06-13 08:48:11 info: All unit tests passed.
 2023-06-13 08:48:21 info: All steps were completed successfully
+2023-06-29 05:53:53 info: ------------------------------------------
+2023-06-29 05:53:53 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-29 05:53:53 info: ------------------------------------------
+2023-06-29 05:54:03 info: All unit tests passed.
+2023-06-29 05:54:12 info: All steps were completed successfully
