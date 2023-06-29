@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 'use strict';
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-6-total-cost-is
@@ -21,23 +22,55 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
-};
+  // list of the cart
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
-  // TODO replace this comment with your code
+  beers: 3.75,
+  chips: 2.99,
+  eggs: 3.25,
+  bananas: 2.5,
+  milk: 1.0,
+  apples: 2.0,
+};
+function calculateTotalPrice(myCart) {
+  let total = 0;
+  for (let item in myCart) {
+    total += myCart[item];
+  }
+  return `Total: ${total}`;
 }
+
+const totalPrice = calculateTotalPrice(cartForParty);
+console.log(totalPrice);
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
   // TODO replace this comment with your code
+ 
+
+  const expected = 'Total: 0';
+  const result1 = calculateTotalPrice({});
+  if (result1 === expected) {
+    console.log('Test passed!');
+  } else {
+    console.log('Test failed! Expected:', expected, 'but got:', result2);
+  }
 }
+
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
   // TODO replace this comment with your code
+  const expected = "Total: 13.48";
+  const result2 = calculateTotalPrice(cartForParty);
+  if (result2 === expected) {
+    console.log("Test passed!");
+  } else {
+    console.log("Test failed! Expected:", expected, "but got:", result2);
+  }
 }
+
+// PLEASE I STILL DONT KNOW THE CONCEPTS OF TESTING CODE HAVE TRIED BUT CANT FIGURE OUT
 
 function test() {
   test1();

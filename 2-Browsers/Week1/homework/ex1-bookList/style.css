@@ -1,1 +1,57 @@
-/* Write your style here */
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f1a4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #0084ff;
+}
+
+#bookList {
+  display:flex;
+  
+  justify-content: center;
+}
+
+ul {
+  width: 300px;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+li {
+  padding: 10px;
+  margin-bottom: 25px;
+  
+  
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.green {
+  background-color: #a8e6a0;
+}
+
+.red {
+  background-color: #ff9999;
+}
