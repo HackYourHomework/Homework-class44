@@ -27,9 +27,10 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const arrayOfPromises = dice.map((die) => rollDie(die)); 
+
+  return Promise.all(arrayOfPromises); 
 }
 
 function main() {
@@ -38,8 +39,15 @@ function main() {
     .catch((error) => console.log('Rejected!', error.message));
 }
 
+
+
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+
+// Each promise represents an independent asynchronous operation, 
+//and they are executed concurrently. The rejection of one promise 
+//it does not  interrupt the execution of other promises depending to their own timing.
