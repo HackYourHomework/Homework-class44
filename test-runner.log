@@ -2,3 +2,375 @@
 2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
 2023-05-17 02:39:39 info: ----------------------------------------------
 2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-07-02 02:15:09 info: ---------------------------------------
+2023-07-02 02:15:09 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-07-02 02:15:09 info: ---------------------------------------
+2023-07-02 02:15:13 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    √ should exist and be executable (2 ms)
+    × should have all TODO comments removed (2 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    × should call `new Promise()` (1 ms)
+    × should take a single argument (3 ms)
+    × `resolve()` should be called with a one argument
+    × `reject()` should be called with a one argument
+    × should resolve when called with a string argument (1 ms)
+    × should reject with an Error object when called without an argument
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● getAnonName › should call `new Promise()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      54 |
+      55 |   test('should call `new Promise()`', () => {
+    > 56 |     expect(state.newPromise).toBeDefined();
+         |                              ^
+      57 |   });
+      58 |
+      59 |   test('should take a single argument', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:56:30)
+
+  ● getAnonName › should take a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      58 |
+      59 |   test('should take a single argument', () => {
+    > 60 |     expect(state.paramCount).toBe(1);
+         |                              ^
+      61 |   });
+      62 |
+      63 |   test('`resolve()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:60:30)
+
+  ● getAnonName › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+      62 |
+      63 |   test('`resolve()` should be called with a one argument', () => {
+    > 64 |     expect(state.resolve).toBe(1);
+         |                           ^
+      65 |   });
+      66 |
+      67 |   test('`reject()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:64:27)
+
+  ● getAnonName › `reject()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+      66 |
+      67 |   test('`reject()` should be called with a one argument', () => {
+    > 68 |     expect(state.reject).toBe(1);
+         |                          ^
+      69 |   });
+      70 |
+      71 |   test('should resolve when called with a string argument', async () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:68:26)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    TypeError: callback is not a function
+
+      26 |     const fullName = `${firstName} Doe`;
+      27 |
+    > 28 |     callback(fullName);
+         |     ^
+      29 |   }, 1000);
+      30 | };
+      31 |
+
+      at callback (3-UsingAPIs/Week1/homework/ex1-johnWho.js:28:5)
+      at cb (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:76:35)
+      at setTimeout (3-UsingAPIs/Week1/homework/ex1-johnWho.js:20:3)
+      at Object.getAnonName (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:77:21)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      70 |
+      71 |   test('should resolve when called with a string argument', async () => {
+    > 72 |     expect.assertions(3);
+         |            ^
+      73 |     expect(exported).toBeDefined();
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:72:12)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    TypeError: callback is not a function
+
+      20 |   setTimeout(() => {
+      21 |     if (!firstName) {
+    > 22 |       callback(new Error("You didn't pass in a first name!"));
+         |       ^
+      23 |       return;
+      24 |     }
+      25 |
+
+      at callback (3-UsingAPIs/Week1/homework/ex1-johnWho.js:22:7)
+      at cb (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:88:35)
+      at setTimeout (3-UsingAPIs/Week1/homework/ex1-johnWho.js:20:3)
+      at Object.getAnonName (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:89:21)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      82 |
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+    > 84 |     expect.assertions(3);
+         |            ^
+      85 |     expect(exported).toBeDefined();
+      86 |     const timeoutSpy = jest
+      87 |       .spyOn(global, 'setTimeout')
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:84:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       7 failed, 2 passed, 9 total
+Snapshots:   0 total
+Time:        0.822 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2023-07-02 02:15:16 error: *** ESLint Report ***
+
+ex1-johnWho.js
+  13:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-07-02 02:17:08 info: ---------------------------------------
+2023-07-02 02:17:08 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-07-02 02:17:08 info: ---------------------------------------
+2023-07-02 02:17:12 info: All unit tests passed.
+2023-07-02 02:17:18 info: All steps were completed successfully
+2023-07-02 02:41:49 info: -------------------------------------------------
+2023-07-02 02:41:49 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2023-07-02 02:41:49 info: -------------------------------------------------
+2023-07-02 02:41:53 info: All unit tests passed.
+2023-07-02 02:41:59 info: All steps were completed successfully
+2023-07-02 03:02:38 info: ---------------------------------------
+2023-07-02 03:02:38 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-02 03:02:38 info: ---------------------------------------
+2023-07-02 03:02:41 info: All unit tests passed.
+2023-07-02 03:02:44 error: *** ESLint Report ***
+
+ex3-rollDie.js
+  38:7  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-07-02 03:04:05 info: ---------------------------------------
+2023-07-02 03:04:05 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-02 03:04:05 info: ---------------------------------------
+2023-07-02 03:04:09 info: All unit tests passed.
+2023-07-02 03:04:15 info: All steps were completed successfully
+2023-07-02 03:15:43 info: ---------------------------------------
+2023-07-02 03:15:43 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-02 03:15:43 info: ---------------------------------------
+2023-07-02 03:15:46 info: All unit tests passed.
+2023-07-02 03:15:53 info: All steps were completed successfully
+2023-07-02 03:27:28 info: ----------------------------------------------
+2023-07-02 03:27:28 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-07-02 03:27:28 info: ----------------------------------------------
+2023-07-02 03:27:32 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should take a single parameter
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="D:\Documents\GitHub\Homework-class44\test-runner\CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-07-02 03:30:17 info: --------------------------------------------
+2023-07-02 03:30:17 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2023-07-02 03:30:17 info: --------------------------------------------
+2023-07-02 03:30:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (2 ms)
+    × should have all TODO comments removed (2 ms)
+    √ `rollDice` should not contain unneeded console.log calls
+    × should use `dice.map()`
+    × should use `Promise.all()` (1 ms)
+    × should resolve when all dice settle successfully (9 ms)
+    √ should reject with an Error when a die rolls off the table (75 ms)
+
+  ● ex4-pokerDiceAll › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex4-pokerDiceAll › should use `dice.map()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      38 |
+      39 |   test('should use `dice.map()`', () => {
+    > 40 |     expect(state.diceMap).toBeDefined();
+         |                           ^
+      41 |   });
+      42 |
+      43 |   test('should use `Promise.all()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:40:27)
+
+  ● ex4-pokerDiceAll › should use `Promise.all()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      42 |
+      43 |   test('should use `Promise.all()`', () => {
+    > 44 |     expect(state.promiseAll).toBeDefined();
+         |                              ^
+      45 |   });
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:44:30)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      54 |     expect(promise).toBeInstanceOf(Promise);
+      55 |     const result = await promise;
+    > 56 |     expect(Array.isArray(result)).toBe(true);
+         |                                   ^
+      57 |     expect(result).toHaveLength(5);
+      58 |
+      59 |     promise.finally(() => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:56:35)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 3 passed, 7 total
+Snapshots:   0 total
+Time:        0.871 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+2023-07-02 03:30:24 error: *** ESLint Report ***
+
+ex4-pokerDiceAll.js
+  31:9  error  'dice' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-07-02 10:08:40 info: --------------------------------------------
+2023-07-02 10:08:40 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2023-07-02 10:08:40 info: --------------------------------------------
+2023-07-02 10:08:45 info: All unit tests passed.
+2023-07-02 10:08:51 info: All steps were completed successfully
+2023-07-02 11:24:26 info: ----------------------------------------------
+2023-07-02 11:24:26 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-02 11:24:26 info: ----------------------------------------------
+2023-07-02 11:24:31 info: All unit tests passed.
+2023-07-02 11:24:34 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  17:1   warning  Remove commented-out code                     hyf/no-commented-out-code
+  22:12  warning  'i' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2023-07-02 11:25:31 info: ----------------------------------------------
+2023-07-02 11:25:31 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-02 11:25:31 info: ----------------------------------------------
+2023-07-02 11:25:35 info: All unit tests passed.
+2023-07-02 11:25:41 info: All steps were completed successfully
+2023-07-02 11:26:10 info: ----------------------------------------------
+2023-07-02 11:26:10 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-02 11:26:10 info: ----------------------------------------------
+2023-07-02 11:26:14 info: All unit tests passed.
+2023-07-02 11:26:20 info: All steps were completed successfully

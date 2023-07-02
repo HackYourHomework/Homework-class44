@@ -25,17 +25,16 @@ exercise file.
 // The line below makes the rollDie() function available to this file.
 // Do not change or remove it.
 const rollDie = require('../../helpers/pokerDiceRoller');
-
+let result = [];
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  result = dice.map((die) => rollDie(die));
+  return Promise.all(result);
 }
-
 function main() {
   rollDice()
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+    .then((result) => console.log('Resolved!', result))
+    .then(null, (error) => console.log('Rejected!', error.message));
 }
 
 // ! Do not change or remove the code below
@@ -43,3 +42,7 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// The code inside the rollOnce() function still continues
+// to execute because there is no conditional check to stop
+// the execution after a rejection.
