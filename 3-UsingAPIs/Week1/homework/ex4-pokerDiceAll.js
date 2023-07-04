@@ -24,12 +24,24 @@ exercise file.
 
 // The line below makes the rollDie() function available to this file.
 // Do not change or remove it.
+
+
 const rollDie = require('../../helpers/pokerDiceRoller');
 
+
 function rollDice() {
-  // TODO Refactor this function
+
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const rolledArray = dice.map((num)  => {
+    return new Promise((resolve, reject) => {
+      rollDie(num).then((result) => {
+        resolve(result)
+      }).catch(() =>{
+        reject(new Error(`Rejected! Die ${num} rolled off the table`))
+      })
+    });
+  });
+  return Promise.all(rolledArray);
 }
 
 function main() {
@@ -43,3 +55,6 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+
+//Explanation: the promises for each die are running simultaneously and for that rejecting any of the them because falling off the table will not effect the other promises and they will continue rolling. and that occurring basically because of the promises.all.
