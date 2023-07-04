@@ -1,0 +1,5 @@
+
+*** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:25 - Unknown word (Enes)
+ex2-aboutMe/index.js:15:24 - Unknown word (Kokorec)
