@@ -11,8 +11,10 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-Java
    employee record with just the non-private parts (name, occupation and email).
 4. Return the new array as the return value of the function.
 5. Run the exercise and verify that it passes all the unit tests.
-------------------------------------------------------------------------------*/
+------
+// array of employees------------------------------------------------------------------------*/
 const employeeRecords = [
+
   {
     name: 'John',
     occupation: 'developer',
@@ -30,9 +32,11 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function filterPrivateData(filteredRecords) {
+  
+  return filteredRecords.map(({ name, occupation, email }) => ({ name, occupation, email }));
 }
+console.log(filterPrivateData(employeeRecords));
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {

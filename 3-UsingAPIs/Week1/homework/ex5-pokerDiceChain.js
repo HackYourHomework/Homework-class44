@@ -25,6 +25,18 @@ function rollDice() {
     })
     .then((value) => {
       results.push(value);
+      return rollDice(3)
+    })
+    .then((value) => {
+      results.push(value);
+      return rollDice(4)
+    })
+    .then((value) => {
+      results.push(value);
+      return rollDice(5)
+    })
+    .then((value) => {
+      results.push(value);
       return results;
     });
 }
