@@ -1204,3 +1204,331 @@ Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
 2023-07-02 10:51:53 info: --------------------------------------------
 2023-07-02 10:51:54 info: All unit tests passed.
 2023-07-02 10:51:55 info: All steps were completed successfully
+2023-07-04 01:11:42 info: ----------------------------------------------
+2023-07-04 01:11:42 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-04 01:11:42 info: ----------------------------------------------
+2023-07-04 01:11:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable (1 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ `rollDice` should not contain unneeded console.log calls
+    ✕ should resolve when all dice settle successfully (7 ms)
+    ✓ should reject with an Error when a die rolls off the table (27 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 2
+    Received array:  ["NINE", "NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.toHaveLength (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        0.263 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-07-04 01:12:42 info: ----------------------------------------------
+2023-07-04 01:12:42 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-04 01:12:42 info: ----------------------------------------------
+2023-07-04 01:12:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable (1 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ `rollDice` should not contain unneeded console.log calls
+    ✕ should resolve when all dice settle successfully (6 ms)
+    ✓ should reject with an Error when a die rolls off the table (28 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 1
+    Received array:  ["NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.toHaveLength (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        0.226 s, estimated 1 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-07-04 01:12:43 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  27:7  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-07-04 01:13:14 info: ----------------------------------------------
+2023-07-04 01:13:14 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-04 01:13:14 info: ----------------------------------------------
+2023-07-04 01:13:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable
+    ✓ should have all TODO comments removed
+    ✓ `rollDice` should not contain unneeded console.log calls
+    ✕ should resolve when all dice settle successfully (9 ms)
+    ✓ should reject with an Error when a die rolls off the table (27 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 1
+    Received array:  ["NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.toHaveLength (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        0.219 s, estimated 1 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-07-04 01:13:15 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  26:7  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-07-04 01:16:56 info: ----------------------------------------------
+2023-07-04 01:16:56 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-04 01:16:56 info: ----------------------------------------------
+2023-07-04 01:16:57 info: All unit tests passed.
+2023-07-04 01:16:59 info: All steps were completed successfully
+2023-07-04 01:18:45 info: ----------------------------------------------
+2023-07-04 01:18:45 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-04 01:18:45 info: ----------------------------------------------
+2023-07-04 01:18:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✕ should exist and be executable
+    ✕ should have all TODO comments removed
+    ✕ `rollDice` should not contain unneeded console.log calls
+    ✕ should resolve when all dice settle successfully
+    ✕ should reject with an Error when a die rolls off the table
+
+  ● ex5-pokerDiceChain › should exist and be executable
+
+    ENOENT: no such file or directory, open '/Users/admin/Documents/HackYourFuture/Homework-class44/3-UsingAPIs/Week1/all/ex5-pokerDiceChain.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:11:39)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open '/Users/admin/Documents/HackYourFuture/Homework-class44/3-UsingAPIs/Week1/all/ex5-pokerDiceChain.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:11:39)
+
+  ● ex5-pokerDiceChain › `rollDice` should not contain unneeded console.log calls
+
+    ENOENT: no such file or directory, open '/Users/admin/Documents/HackYourFuture/Homework-class44/3-UsingAPIs/Week1/all/ex5-pokerDiceChain.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:11:39)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    ENOENT: no such file or directory, open '/Users/admin/Documents/HackYourFuture/Homework-class44/3-UsingAPIs/Week1/all/ex5-pokerDiceChain.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:11:39)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    ENOENT: no such file or directory, open '/Users/admin/Documents/HackYourFuture/Homework-class44/3-UsingAPIs/Week1/all/ex5-pokerDiceChain.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:11:39)
+
+Test Suites: 1 failed, 1 total
+Tests:       5 failed, 5 total
+Snapshots:   0 total
+Time:        0.151 s, estimated 1 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-07-04 01:18:46 error: *** Spell Checker Report ***
+
+
+2023-07-04 01:19:35 info: ----------------------------------------------
+2023-07-04 01:19:35 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-04 01:19:35 info: ----------------------------------------------
+2023-07-04 01:19:36 info: All unit tests passed.
+2023-07-04 01:19:37 info: All steps were completed successfully
+2023-07-04 01:19:40 info: ----------------------------------------------
+2023-07-04 01:19:40 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-04 01:19:40 info: ----------------------------------------------
+2023-07-04 01:19:41 info: All unit tests passed.
+2023-07-04 01:19:42 info: All steps were completed successfully
+2023-07-04 01:29:14 info: ----------------------------------------------
+2023-07-04 01:29:14 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-04 01:29:14 info: ----------------------------------------------
+2023-07-04 01:29:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable (1 ms)
+    ✓ should have all TODO comments removed
+    ✓ `rollDice` should not contain unneeded console.log calls
+    ✕ should resolve when all dice settle successfully (9 ms)
+    ✓ should reject with an Error when a die rolls off the table (25 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 2
+    Received array:  ["NINE", "NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.toHaveLength (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        0.254 s, estimated 1 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-07-04 01:31:42 info: ----------------------------------------------
+2023-07-04 01:31:42 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-04 01:31:42 info: ----------------------------------------------
+2023-07-04 01:31:43 info: All unit tests passed.
+2023-07-04 01:31:45 info: All steps were completed successfully
