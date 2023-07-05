@@ -1,0 +1,8 @@
+
+*** ESLint Report ***
+
+ex6-totalCost.js
+  36:12  warning  'item' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
