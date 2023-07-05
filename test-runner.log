@@ -2,3 +2,155 @@
 2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
 2023-05-17 02:39:39 info: ----------------------------------------------
 2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-07-05 12:00:51 info: ----------------------------------------------
+2023-07-05 12:00:51 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-05 12:00:51 info: ----------------------------------------------
+2023-07-05 12:00:55 info: All unit tests passed.
+2023-07-05 12:01:00 info: All steps were completed successfully
+2023-07-05 12:02:02 info: --------------------------------------------
+2023-07-05 12:02:02 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2023-07-05 12:02:02 info: --------------------------------------------
+2023-07-05 12:02:05 info: All unit tests passed.
+2023-07-05 12:02:10 info: All steps were completed successfully
+2023-07-05 12:08:19 info: ---------------------------------------
+2023-07-05 12:08:19 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-05 12:08:19 info: ---------------------------------------
+2023-07-05 12:08:22 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    × should exist and be executable (2 ms)
+    √ should have all TODO comments removed
+    √ should call `new Promise()`
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument
+    × should resolve when the die settles successfully
+    × should reject with an Error when the die rolls off the table
+
+  ● rollDie › should exist and be executable
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      32 |
+      33 |   test('should exist and be executable', () => {
+    > 34 |     expect(exported).toBeDefined();
+         |                      ^
+      35 |   });
+      36 |
+      37 |   testTodosRemoved(() => source);
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:34:22)
+
+  ● rollDie › should resolve when the die settles successfully
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |   test('should resolve when the die settles successfully', () => {
+      52 |     expect.assertions(3);
+    > 53 |     expect(exported).toBeDefined();
+         |                      ^
+      54 |
+      55 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+      56 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:53:22)
+
+  ● rollDie › should resolve when the die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      50 |
+      51 |   test('should resolve when the die settles successfully', () => {
+    > 52 |     expect.assertions(3);
+         |            ^
+      53 |     expect(exported).toBeDefined();
+      54 |
+      55 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:52:12)
+
+  ● rollDie › should reject with an Error when the die rolls off the table
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      74 |   test('should reject with an Error when the die rolls off the table', async () => {
+      75 |     expect.assertions(3);
+    > 76 |     expect(exported).toBeDefined();
+         |                      ^
+      77 |
+      78 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+      79 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:76:22)
+
+  ● rollDie › should reject with an Error when the die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      73 |
+      74 |   test('should reject with an Error when the die rolls off the table', async () => {
+    > 75 |     expect.assertions(3);
+         |            ^
+      76 |     expect(exported).toBeDefined();
+      77 |
+      78 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:75:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 4 passed, 7 total
+Snapshots:   0 total
+Time:        0.668 s, estimated 1 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+2023-07-05 12:08:24 error: *** ESLint Report ***
+
+ex3-rollDie.js
+  38:10  error  'rollDie' is already defined  no-redeclare
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-07-05 12:08:56 info: ---------------------------------------
+2023-07-05 12:08:56 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-05 12:08:56 info: ---------------------------------------
+2023-07-05 12:08:59 info: All unit tests passed.
+2023-07-05 12:09:04 info: All steps were completed successfully
+2023-07-05 12:10:12 info: ---------------------------------------
+2023-07-05 12:10:12 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-05 12:10:12 info: ---------------------------------------
+2023-07-05 12:10:15 info: All unit tests passed.
+2023-07-05 12:10:20 info: All steps were completed successfully
+2023-07-05 12:11:08 info: -------------------------------------------------
+2023-07-05 12:11:08 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2023-07-05 12:11:08 info: -------------------------------------------------
+2023-07-05 12:11:11 info: All unit tests passed.
+2023-07-05 12:11:16 info: All steps were completed successfully
+2023-07-05 12:14:44 info: ---------------------------------------
+2023-07-05 12:14:45 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-05 12:14:45 info: ---------------------------------------
+2023-07-05 12:14:48 info: All unit tests passed.
+2023-07-05 12:14:52 info: All steps were completed successfully
+2023-07-05 12:15:07 info: -------------------------------------------------
+2023-07-05 12:15:07 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2023-07-05 12:15:07 info: -------------------------------------------------
+2023-07-05 12:15:09 info: All unit tests passed.
+2023-07-05 12:15:14 info: All steps were completed successfully
+2023-07-05 12:15:40 info: ---------------------------------------
+2023-07-05 12:15:40 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-07-05 12:15:40 info: ---------------------------------------
+2023-07-05 12:15:45 info: All unit tests passed.
+2023-07-05 12:15:49 info: All steps were completed successfully

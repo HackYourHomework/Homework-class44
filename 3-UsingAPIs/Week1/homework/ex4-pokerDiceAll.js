@@ -24,12 +24,12 @@ exercise file.
 
 // The line below makes the rollDie() function available to this file.
 // Do not change or remove it.
-const rollDie = require('../../helpers/pokerDiceRoller');
+const rollDie = require('../../helpers/pokerDiceRoller'); // Shouldn't we replace the CommonJS require() syntax with the ES module import syntax? I did not change anything because that's what the instructions said.
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const promises = dice.map((die) => rollDie(die));
+  return Promise.all(promises);
 }
 
 function main() {
