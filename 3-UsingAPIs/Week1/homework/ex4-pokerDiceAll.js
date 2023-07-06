@@ -29,7 +29,8 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 function rollDice() {
   // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const promises = dice.map((die) => rollDie(die));
+  return Promise.all(promises);
 }
 
 function main() {
@@ -37,6 +38,22 @@ function main() {
     .then((results) => console.log('Resolved!', results))
     .catch((error) => console.log('Rejected!', error.message));
 }
+
+// ! Do not change or remove the code below
+if (process.env.NODE_ENV !== 'test') {
+  main();
+}
+module.exports = rollDice;
+
+//answer to the question
+//using promiseAll enables us to wait for each response of each promise to be resolved independently so they are not affected by the resolution or rejection of other promises and at the end it will return all the promises together. 
+// in this case in the event of a rejected promise will be executed properly and the resolved promises will ne handled separately .
+
+// ! Do not change or remove the code below
+if (process.env.NODE_ENV !== 'test') {
+  main();
+}
+module.exports = rollDice;
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
