@@ -22,18 +22,60 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchData(url) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP error, status = ${response.status}`);
+  }
+
+  return response.json();
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons(url, selectElement) {
+  try {
+    const data = await fetchData(url);
+
+    const pokemons = data.results;
+    pokemons.forEach((pokemon) => {
+      const option = document.createElement('option');
+      option.value = pokemon.url;
+      option.text = pokemon.name;
+      selectElement.appendChild(option);
+    });
+  } catch (error) {
+    console.log('Error while fetching and populating pokemons:', error);
+  }
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(url, imgElement) {
+  try {
+    const data = await fetchData(url);
+
+    imgElement.src = data.sprites.front_default;
+    imgElement.alt = data.forms[0].name;
+  } catch (error) {
+    console.log('Error while fetching and updating image:', error);
+  }
 }
 
-function main() {
-  // TODO complete this function
+async function main() {
+  const pokemonSelectElement = document.createElement('select');
+  pokemonSelectElement.id = 'pokemon-select';
+  document.body.appendChild(pokemonSelectElement);
+
+  const imageElement = document.createElement('img');
+  imageElement.id = 'pokemon-image';
+  document.body.appendChild(imageElement);
+
+  const apiURL = 'https://pokeapi.co/api/v2/pokemon?limit=10';
+
+  await fetchAndPopulatePokemons(apiURL, pokemonSelectElement);
+
+  pokemonSelectElement.addEventListener('change', () => {
+    const selectedPokemonURL = pokemonSelectElement.value;
+
+    fetchImage(selectedPokemonURL, imageElement);
+  });
 }
+
+window.addEventListener('load', main);
