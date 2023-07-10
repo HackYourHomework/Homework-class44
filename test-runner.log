@@ -2,3 +2,1144 @@
 2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
 2023-05-17 02:39:39 info: ----------------------------------------------
 2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-06-30 01:39:07 info: -------------------------------------------------
+2023-06-30 01:39:07 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2023-06-30 01:39:07 info: -------------------------------------------------
+2023-06-30 01:39:13 error: *** Unit Test Error Report ***
+
+jest-haste-map: Haste module naming collision: homework
+  The following files share their name; please adjust your hasteImpl:
+    * <rootDir>/package.json
+    * <rootDir>/2-Browsers/Week1/homework/Homework-class44/package.json
+
+
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  ● checkDoubleDigits › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+ FAIL  2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  ● checkDoubleDigits › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (2-Browsers/Week1/homework/Homework-class44/test-runner/unit-test-helpers.js:105:42)
+
+  ● checkDoubleDigits › should call new Promise()
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      43 |
+      44 |   test('should call new Promise()', () => {
+    > 45 |     expect(state.newPromise).toBeDefined();
+         |                              ^
+      46 |   });
+      47 |
+      48 |   test('`resolve()` should be called with a one argument', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:45:30)
+
+  ● checkDoubleDigits › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+      47 |
+      48 |   test('`resolve()` should be called with a one argument', () => {
+    > 49 |     expect(state.resolve).toBe(1);
+         |                           ^
+      50 |   });
+      51 |
+      52 |   test('`reject()` should be called with a one argument', () => {
+
+      at Object.toBe (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:49:27)
+
+  ● checkDoubleDigits › `reject()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+      51 |
+      52 |   test('`reject()` should be called with a one argument', () => {
+    > 53 |     expect(state.reject).toBe(1);
+         |                          ^
+      54 |   });
+      55 |
+      56 |   test('should be a function that takes a single argument', () => {
+
+      at Object.toBe (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:53:26)
+
+  ● checkDoubleDigits › should be a function that takes a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      58 |     expect(
+      59 |       typeof checkDoubleDigits === 'function' && checkDoubleDigits.length === 1
+    > 60 |     ).toBe(true);
+         |       ^
+      61 |   });
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+
+      at Object.toBe (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:60:7)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      64 |     expect.assertions(2);
+      65 |     const promise = checkDoubleDigits(9);
+    > 66 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+      68 |   });
+      69 |
+
+      at Object.toBeInstanceOf (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:66:21)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+    > 64 |     expect.assertions(2);
+         |            ^
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:64:12)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      72 |     expect(exported).toBeDefined();
+      73 |     const promise = checkDoubleDigits(10);
+    > 74 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      75 |     return expect(promise).resolves.toEqual(
+      76 |       expect.stringContaining('This is a double digit number!')
+      77 |     );
+
+      at Object.toBeInstanceOf (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:74:21)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+    > 71 |     expect.assertions(3);
+         |            ^
+      72 |     expect(exported).toBeDefined();
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+
+      at Object.assertions (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:71:12)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      81 |     expect.assertions(2);
+      82 |     const promise = checkDoubleDigits(99);
+    > 83 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      84 |     return expect(promise).resolves.toEqual(
+      85 |       expect.stringContaining('This is a double digit number!')
+      86 |     );
+
+      at Object.toBeInstanceOf (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:83:21)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      79 |
+      80 |   test('(99) should return a promise that resolves to "This is a double digit number!"', () => {
+    > 81 |     expect.assertions(2);
+         |            ^
+      82 |     const promise = checkDoubleDigits(99);
+      83 |     expect(promise).toBeInstanceOf(Promise);
+      84 |     return expect(promise).resolves.toEqual(
+
+      at Object.assertions (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:81:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      90 |     expect.assertions(2);
+      91 |     const promise = checkDoubleDigits(100);
+    > 92 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+      94 |   });
+      95 | });
+
+      at Object.toBeInstanceOf (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:92:21)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      88 |
+      89 |   test('(100) should return a rejected promise with an Error object', () => {
+    > 90 |     expect.assertions(2);
+         |            ^
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.assertions (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:90:12)
+
+Test Suites: 2 failed, 2 total
+Tests:       10 failed, 12 passed, 22 total
+Snapshots:   0 total
+Time:        2.08 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2023-07-06 01:20:44 info: ---------------------------------------------
+2023-07-06 01:20:44 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-07-06 01:20:44 info: ---------------------------------------------
+2023-07-06 01:20:59 error: *** Unit Test Error Report ***
+
+jest-haste-map: Haste module naming collision: homework
+  The following files share their name; please adjust your hasteImpl:
+    * <rootDir>/package.json
+    * <rootDir>/3-UsingAPIs/Week1/homework/Homework-class44/package.json
+
+
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js (8.766 s)
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● programmerFun › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      48 |
+      49 |   test('should use `fetch()`', () => {
+    > 50 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      51 |   });
+      52 |
+      53 |   test('should use async/wait', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:50:25)
+
+  ● programmerFun › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      52 |
+      53 |   test('should use async/wait', () => {
+    > 54 |     expect(state.async).toBeDefined();
+         |                         ^
+      55 |     expect(state.await).toBeDefined();
+      56 |   });
+      57 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:54:25)
+
+  ● programmerFun › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use try/catch', () => {
+    > 59 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:59:28)
+
+ FAIL  3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js (8.758 s)
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (3-UsingAPIs/Week1/homework/Homework-class44/test-runner/unit-test-helpers.js:105:42)
+
+  ● programmerFun › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      48 |
+      49 |   test('should use `fetch()`', () => {
+    > 50 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      51 |   });
+      52 |
+      53 |   test('should use async/wait', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:50:25)
+
+  ● programmerFun › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      52 |
+      53 |   test('should use async/wait', () => {
+    > 54 |     expect(state.async).toBeDefined();
+         |                         ^
+      55 |     expect(state.await).toBeDefined();
+      56 |   });
+      57 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:54:25)
+
+  ● programmerFun › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use try/catch', () => {
+    > 59 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:59:28)
+
+ FAIL  2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js (8.783 s)
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (2-Browsers/Week1/homework/Homework-class44/test-runner/unit-test-helpers.js:105:42)
+
+  ● programmerFun › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      48 |
+      49 |   test('should use `fetch()`', () => {
+    > 50 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      51 |   });
+      52 |
+      53 |   test('should use async/wait', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:50:25)
+
+  ● programmerFun › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      52 |
+      53 |   test('should use async/wait', () => {
+    > 54 |     expect(state.async).toBeDefined();
+         |                         ^
+      55 |     expect(state.await).toBeDefined();
+      56 |   });
+      57 |
+
+      at Object.toBeDefined (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:54:25)
+
+  ● programmerFun › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use try/catch', () => {
+    > 59 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBeDefined (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:59:28)
+
+Test Suites: 3 failed, 3 total
+Tests:       12 failed, 3 passed, 15 total
+Snapshots:   0 total
+Time:        9.403 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2023-07-06 01:21:05 error: *** ESLint Report ***
+
+ex1-programmerFun/index.js
+  49:9  error  Parsing error: Identifier 'error' has already been declared
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-07-06 02:48:36 info: ------------------------------------------
+2023-07-06 02:48:36 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-07-06 02:48:36 info: ------------------------------------------
+2023-07-06 02:48:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (7.758 s)
+  ● pokemonApp › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (2-Browsers/Week1/homework/Homework-class44/test-runner/unit-test-helpers.js:105:42)
+
+  ● pokemonApp › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      43 |
+      44 |   test('should use `fetch()`', () => {
+    > 45 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:45:25)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+ FAIL  3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (7.757 s)
+  ● pokemonApp › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (3-UsingAPIs/Week1/homework/Homework-class44/test-runner/unit-test-helpers.js:105:42)
+
+  ● pokemonApp › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      43 |
+      44 |   test('should use `fetch()`', () => {
+    > 45 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:45:25)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (7.798 s)
+  ● pokemonApp › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 3 failed, 3 total
+Tests:       11 failed, 4 passed, 15 total
+Snapshots:   0 total
+Time:        8.303 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-07-06 02:48:56 error: *** Spell Checker Report ***
+
+ex2-pokemonApp/index.js:47:21 - Unknown word (appeand)
+ex2-pokemonApp/index.js:64:50 - Unknown word (pkemon)
+
+2023-07-06 03:30:08 info: Disclaimer turned off
+2023-07-06 03:30:25 info: ------------------------------------------
+2023-07-06 03:30:25 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-07-06 03:30:25 info: ------------------------------------------
+2023-07-06 03:30:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (6.957 s)
+  ● pokemonApp › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (3-UsingAPIs/Week1/homework/Homework-class44/test-runner/unit-test-helpers.js:105:42)
+
+  ● pokemonApp › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      43 |
+      44 |   test('should use `fetch()`', () => {
+    > 45 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:45:25)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+ FAIL  2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (6.943 s)
+  ● pokemonApp › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (2-Browsers/Week1/homework/Homework-class44/test-runner/unit-test-helpers.js:105:42)
+
+  ● pokemonApp › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      43 |
+      44 |   test('should use `fetch()`', () => {
+    > 45 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:45:25)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (7.007 s)
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:540  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:540  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+  ● pokemonApp › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 3 failed, 3 total
+Tests:       12 failed, 3 passed, 15 total
+Snapshots:   0 total
+Time:        7.453 s, estimated 8 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-07-06 03:49:21 info: -----------------------------------------
+2023-07-06 03:49:21 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-07-06 03:49:21 info: -----------------------------------------
+2023-07-06 03:49:26 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "ACE"
+    Received: undefined
+
+      90 |       expect(promise).toBeInstanceOf(Promise);
+      91 |       const result = await promise;
+    > 92 |       expect(result).toBe('ACE');
+         |                      ^
+      93 |     } finally {
+      94 |       randomSpy.mockRestore();
+      95 |     }
+
+      at Object.toBe (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:92:22)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+ FAIL  2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (2-Browsers/Week1/homework/Homework-class44/test-runner/unit-test-helpers.js:105:42)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      53 |
+      54 |   test('should not include a recursive call', () => {
+    > 55 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      56 |   });
+      57 |
+      58 |   test('should use async/wait', () => {
+
+      at Object.toBeUndefined (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:55:29)
+
+  ● ex3-rollAnAce › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use async/wait', () => {
+    > 59 |     expect(state.async).toBeDefined();
+         |                         ^
+      60 |     expect(state.await).toBeDefined();
+      61 |   });
+      62 |
+
+      at Object.toBeDefined (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:59:25)
+
+  ● ex3-rollAnAce › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      62 |
+      63 |   test('should use try/catch', () => {
+    > 64 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      65 |   });
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:64:28)
+
+ FAIL  3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (3-UsingAPIs/Week1/homework/Homework-class44/test-runner/unit-test-helpers.js:105:42)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      53 |
+      54 |   test('should not include a recursive call', () => {
+    > 55 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      56 |   });
+      57 |
+      58 |   test('should use async/wait', () => {
+
+      at Object.toBeUndefined (3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:55:29)
+
+  ● ex3-rollAnAce › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use async/wait', () => {
+    > 59 |     expect(state.async).toBeDefined();
+         |                         ^
+      60 |     expect(state.await).toBeDefined();
+      61 |   });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:59:25)
+
+  ● ex3-rollAnAce › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      62 |
+      63 |   test('should use try/catch', () => {
+    > 64 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      65 |   });
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/homework/Homework-class44/3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:64:28)
+
+Test Suites: 3 failed, 3 total
+Tests:       11 failed, 10 passed, 21 total
+Snapshots:   0 total
+Time:        2.547 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-07-06 03:49:30 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  17:9  error  Unexpected constant condition  no-constant-condition
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-07-10 10:24:27 info: ----------------------------------------
+2023-07-10 10:24:27 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-07-10 10:24:27 info: ----------------------------------------
+2023-07-10 10:24:27 info: Exercise has not yet been modified
+2023-07-10 10:24:27 warn: A unit test file was not provided.
+2023-07-10 10:24:36 info: All steps were completed successfully
+2023-07-10 10:28:07 info: ----------------------------------------
+2023-07-10 10:28:07 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-07-10 10:28:07 info: ----------------------------------------
+2023-07-10 10:28:07 warn: A unit test file was not provided.
+2023-07-10 10:28:11 info: All steps were completed successfully

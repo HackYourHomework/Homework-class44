@@ -29,7 +29,8 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 function rollDice() {
   // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const rollRromises = dice.map((die)=> rollDie(die))
+    return Promise.all(rollRromises)
 }
 
 function main() {
@@ -43,3 +44,11 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// When a promise is rejected, the code inside the promise is interrupted, and the rejection 
+// is immediately goes to the `catch()` method, but other promises that are still pending or 
+// actively executing their code will continue to run independently. In this case, if a die 
+// has already started rolling and the promise for that die is rejected, the rolling process 
+// will not be interrupted. The rejection will be caught in the `catch()` handler, but the code
+// execution for the rolling die will continue until it completes its roll.
+

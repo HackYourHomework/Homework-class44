@@ -22,18 +22,62 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
+function fetchData(url) {
   // TODO complete this function
+  return fetch(url)
+  .then((response)=>{
+    if(!response.ok){
+      throw new Error(`${response.status}`)
+    }
+    return response.json()
+  })
+  .catch((error)=>{
+    console.error('Network error', error)
+  })
+  
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
+function fetchAndPopulatePokemons(selectElement) {
   // TODO complete this function
+  const url = 'https://pokeapi.co/api/v2/pokemon'
+  fetchData(url)
+  .then((data)=>{
+     data.results.forEach(pokemon => {
+      const option = document.createElement('option')
+      option.textContent = pokemon.name
+      selectElement.appendChild(option)
+    
+     });
+  })
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
+function fetchImage(image, pokemonName) {
   // TODO complete this function
+  const url = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
+  fetchData(url)
+  .then((data)=>{
+    const imageUrl = data.sprites.front_default
+    image.src = imageUrl
+  })
 }
 
 function main() {
   // TODO complete this function
+  const selectElement = document.createElement('select');
+  selectElement.id = 'pokemon-select';
+
+  const image = document.createElement('img');
+  image.id = 'pokemon-image';
+
+  document.body.appendChild(selectElement);
+  document.body.appendChild(image);
+
+  selectElement.addEventListener('change', function(){
+    const selectedPokemon = selectElement.value;
+    fetchImage(image, selectedPokemon)
+  })
+  fetchAndPopulatePokemons(selectElement);
+
 }
+window.addEventListener('load', main);
+
