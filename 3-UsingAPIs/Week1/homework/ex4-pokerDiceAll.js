@@ -26,17 +26,23 @@ exercise file.
 // Do not change or remove it.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
-function rollDice() {
-  // TODO Refactor this function
+const rollDice = () => {
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const promises = dice.map((die) => rollDie(die));
+  return Promise.all(promises);
 }
 
-function main() {
+const main = () => {
   rollDice()
     .then((results) => console.log('Resolved!', results))
     .catch((error) => console.log('Rejected!', error.message));
 }
+/*
+I guess, Promises can send rejection in case of failures but they can't stop the running code,
+which known as Uncaught Errors, until we define a condition to throw an error when we get rejection from a promise.
+Also I think because Promise.all() is an async function in Js, 
+so all promises added to the task queue and, event-loop added them one by one into the stack every time stack is empty.
+*/
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
