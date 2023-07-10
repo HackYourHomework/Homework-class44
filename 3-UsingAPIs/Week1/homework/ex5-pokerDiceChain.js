@@ -14,19 +14,21 @@ to expand the given promise chain to include five dice.
 // Do not change or remove it.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
-function rollDice() {
+async function rollDice() {
   const results = [];
+  const maxNum = 5;
+  let currentNumber = 1;
 
-  // TODO: expand the chain to include five dice
-  return rollDie(1)
-    .then((value) => {
+  while (currentNumber <= maxNum) {
+    try {
+      const value = await rollDie(currentNumber);
       results.push(value);
-      return rollDie(2);
-    })
-    .then((value) => {
-      results.push(value);
-      return results;
-    });
+      currentNumber++;
+    } catch (error) {
+      throw new Error('oops');
+    }
+  }
+  return results;
 }
 
 function main() {
