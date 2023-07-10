@@ -53,3 +53,8 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
+
+// After using promise problem is solved: now we haven't "Success" after "Oops".
+// It is because after being rejected promise doesn't change its status (but code still runs and die continues rolling).
+// In callback case each time when setTimeout fires both conditions ((roll > 6) or (roll === randomRollsToDo)) could
+// be passed and callback can get both types of arguments (error or value).
