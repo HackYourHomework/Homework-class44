@@ -1,4 +1,1202 @@
-2023-05-17 02:39:39 info: ----------------------------------------------
-2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
-2023-05-17 02:39:39 info: ----------------------------------------------
-2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-05-30 03:37:51 info: ------------------------------------------
+2023-05-30 03:37:51 info: >>> Running Unit Test `ex4-observable` <<<
+2023-05-30 03:37:51 info: ------------------------------------------
+2023-05-30 03:37:51 info: Exercise has not yet been modified
+2023-05-30 03:37:55 info: All unit tests passed.
+2023-05-30 03:38:04 info: All steps were completed successfully
+2023-06-13 01:49:46 info: ----------------------------------------
+2023-06-13 01:49:46 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-13 01:49:46 info: ----------------------------------------
+2023-06-13 01:49:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (5.221 s)
+  Generated HTML
+    × HTML should be syntactically valid (202 ms)
+    √ should have all TODO comments removed
+    √ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    √ should contain a <ul> with 3 <li> elements (1 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    √ should contain an <img> element for each book (5 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:114  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:256  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:389  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        5.395 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-06-13 01:51:34 info: ----------------------------------------
+2023-06-13 01:51:34 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-13 01:51:34 info: ----------------------------------------
+2023-06-13 01:51:43 info: All unit tests passed.
+2023-06-13 01:51:51 info: All steps were completed successfully
+2023-06-13 02:08:13 info: ---------------------------------------
+2023-06-13 02:08:14 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-13 02:08:14 info: ---------------------------------------
+2023-06-13 02:08:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    √ should be syntactically valid (117 ms)
+    × should have all TODO comments removed (2 ms)
+    √ each <li> should have the CSS class `list-item` (1 ms)
+    × each <li> should rendered red (40 ms)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      34 |       (node) => window.getComputedStyle(node).color
+      35 |     );
+    > 36 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      37 |   });
+      38 | });
+      39 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:36:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 2 passed, 4 total
+Snapshots:   0 total
+Time:        5.025 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-06-13 02:08:31 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:14:29 - Unknown word (shou)
+
+2023-06-13 02:09:49 info: ---------------------------------------
+2023-06-13 02:09:49 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-13 02:09:49 info: ---------------------------------------
+2023-06-13 02:09:57 info: All unit tests passed.
+2023-06-13 02:10:04 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:4:29 - Unknown word (Shou)
+
+2023-06-13 02:35:34 info: ------------------------------------------
+2023-06-13 02:35:34 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-13 02:35:34 info: ------------------------------------------
+2023-06-13 02:35:40 info: All unit tests passed.
+2023-06-13 02:35:50 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:51 - Unknown word (Xdpd)
+
+2023-06-13 04:07:00 info: ---------------------------------------
+2023-06-13 04:07:01 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-06-13 04:07:01 info: ---------------------------------------
+2023-06-13 04:07:10 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    √ HTML should be syntactically valid (155 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `setInterval()` and/or `setTimeout()`
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (4 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (2 ms)
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.813 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2023-06-13 04:07:13 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  37:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-06-13 04:40:05 info: --------------------------------------------
+2023-06-13 04:40:05 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-06-13 04:40:05 info: --------------------------------------------
+2023-06-13 04:40:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (6.79 s)
+  whatsTheTime
+    √ HTML should be syntactically valid (183 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `setInterval()` (1 ms)
+    √ should not call `setInterval()` more than once (2013 ms)
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (5 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 65 |     expect(state.onload).toBeDefined();
+         |                          ^
+      66 |   });
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:65:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        6.946 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-06-13 04:44:47 info: --------------------------------------------
+2023-06-13 04:44:47 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-06-13 04:44:47 info: --------------------------------------------
+2023-06-13 04:44:57 info: All unit tests passed.
+2023-06-13 04:45:05 info: All steps were completed successfully
+2023-07-03 04:01:03 info: ---------------------------------------
+2023-07-03 04:01:03 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-07-03 04:01:03 info: ---------------------------------------
+2023-07-03 04:01:10 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    √ should exist and be executable (2 ms)
+    × should have all TODO comments removed (5 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    √ should call `new Promise()`
+    √ should take a single argument (1 ms)
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should resolve when called with a string argument (2 ms)
+    √ should reject with an Error object when called without an argument (2 ms)
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        1.693 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2023-07-03 04:01:55 info: ---------------------------------------
+2023-07-03 04:01:55 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-07-03 04:01:55 info: ---------------------------------------
+2023-07-03 04:02:00 info: All unit tests passed.
+2023-07-03 04:02:11 info: All steps were completed successfully
+2023-07-03 04:14:09 info: -------------------------------------------------
+2023-07-03 04:14:09 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2023-07-03 04:14:09 info: -------------------------------------------------
+2023-07-03 04:14:15 info: All unit tests passed.
+2023-07-03 04:14:24 info: All steps were completed successfully
+2023-07-03 04:31:59 info: ---------------------------------------
+2023-07-03 04:31:59 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-03 04:31:59 info: ---------------------------------------
+2023-07-03 04:32:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:12
+        reject(new Error('Oops... Die rolled off the table.'));
+               ^
+
+Error: Oops... Die rolled off the table.
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:12:16
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at rollDie (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:26:3)
+    at Object.rollDie (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:85:23)
+    at Promise.then.completed (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\utils.js:333:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\utils.js:259:10)
+    at _callCircusTest (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:209:3)
+    at _runTestsForDescribeBlock (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:97:9)
+    at _runTestsForDescribeBlock (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:91:9)
+    at run (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:31:3)
+    at runAndTransformResultsToJestFormat (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:136:21)
+    at jestAdapter (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:92:19)
+    at runTestInternal (C:\Users\choua\Homework-class44\node_modules\jest-runner\build\runTest.js:407:16)
+    at runTest (C:\Users\choua\Homework-class44\node_modules\jest-runner\build\runTest.js:491:34)
+
+Node.js v18.16.0
+2023-07-03 04:32:49 info: ---------------------------------------
+2023-07-03 04:32:49 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-03 04:32:49 info: ---------------------------------------
+2023-07-03 04:32:54 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:12
+        reject(Error('Oops... Die rolled off the table.'));
+               ^
+
+Error: Oops... Die rolled off the table.
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:12:16
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at rollDie (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:26:3)
+    at Object.rollDie (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:85:23)
+    at Promise.then.completed (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\utils.js:333:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\utils.js:259:10)
+    at _callCircusTest (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:209:3)
+    at _runTestsForDescribeBlock (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:97:9)
+    at _runTestsForDescribeBlock (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:91:9)
+    at run (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:31:3)
+    at runAndTransformResultsToJestFormat (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:136:21)
+    at jestAdapter (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:92:19)
+    at runTestInternal (C:\Users\choua\Homework-class44\node_modules\jest-runner\build\runTest.js:407:16)
+    at runTest (C:\Users\choua\Homework-class44\node_modules\jest-runner\build\runTest.js:491:34)
+
+Node.js v18.16.0
+2023-07-03 04:34:02 info: ---------------------------------------
+2023-07-03 04:34:02 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-03 04:34:02 info: ---------------------------------------
+2023-07-03 04:34:08 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+[UnhandledPromiseRejection: This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason "Oops... Die rolled off the table.".] {
+  code: 'ERR_UNHANDLED_REJECTION'
+}
+
+Node.js v18.16.0
+2023-07-03 04:38:17 info: ---------------------------------------
+2023-07-03 04:38:17 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-03 04:38:17 info: ---------------------------------------
+2023-07-03 04:38:22 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:12
+        reject(new Error('Oops... Die rolled off the table.'));
+               ^
+
+Error: Oops... Die rolled off the table.
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:12:16
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:26
+    at cb (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:82:35)
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\choua\Homework-class44\node_modules\jest-mock\build\index.js:154:19)
+    at C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:21:9
+    at new Promise (<anonymous>)
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:10:12)
+    at rollDie (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\homework\ex3-rollDie.js:26:3)
+    at Object.rollDie (C:\Users\choua\Homework-class44\3-UsingAPIs\Week1\unit-tests\ex3-rollDie.test.js:85:23)
+    at Promise.then.completed (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\utils.js:333:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\utils.js:259:10)
+    at _callCircusTest (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:209:3)
+    at _runTestsForDescribeBlock (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:97:9)
+    at _runTestsForDescribeBlock (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:91:9)
+    at run (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\run.js:31:3)
+    at runAndTransformResultsToJestFormat (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:136:21)
+    at jestAdapter (C:\Users\choua\Homework-class44\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:92:19)
+    at runTestInternal (C:\Users\choua\Homework-class44\node_modules\jest-runner\build\runTest.js:407:16)
+    at runTest (C:\Users\choua\Homework-class44\node_modules\jest-runner\build\runTest.js:491:34)
+
+Node.js v18.16.0
+2023-07-03 04:39:07 info: ---------------------------------------
+2023-07-03 04:39:07 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-03 04:39:07 info: ---------------------------------------
+2023-07-03 04:39:12 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+[UnhandledPromiseRejection: This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason "Oops... Die rolled off the table.".] {
+  code: 'ERR_UNHANDLED_REJECTION'
+}
+
+Node.js v18.16.0
+2023-07-03 04:40:15 info: ---------------------------------------
+2023-07-03 04:40:15 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-03 04:40:15 info: ---------------------------------------
+2023-07-03 04:40:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+[UnhandledPromiseRejection: This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason "Oops... Die rolled off the table.".] {
+  code: 'ERR_UNHANDLED_REJECTION'
+}
+
+Node.js v18.16.0
+2023-07-03 04:44:23 info: ---------------------------------------
+2023-07-03 04:44:23 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-03 04:44:23 info: ---------------------------------------
+2023-07-03 04:44:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    √ should exist and be executable (1 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should call `new Promise()` (1 ms)
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument
+    √ should resolve when the die settles successfully (2 ms)
+    × should reject with an Error when the die rolls off the table (3 ms)
+
+  ● rollDie › should reject with an Error when the die rolls off the table
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Error
+
+    Received value has no prototype
+    Received value: "Oops... Die rolled off the table."
+
+      87 |       await promise;
+      88 |     } catch (err) {
+    > 89 |       expect(err).toBeInstanceOf(Error);
+         |                   ^
+      90 |     } finally {
+      91 |       setTimeoutSpy.mockRestore();
+      92 |       randomSpy.mockRestore();
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:89:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.084 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+2023-07-03 04:45:04 info: ---------------------------------------
+2023-07-03 04:45:04 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-07-03 04:45:04 info: ---------------------------------------
+2023-07-03 04:45:09 info: All unit tests passed.
+2023-07-03 04:45:16 info: All steps were completed successfully
+2023-07-03 04:53:38 info: --------------------------------------------
+2023-07-03 04:53:38 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2023-07-03 04:53:38 info: --------------------------------------------
+2023-07-03 04:53:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls
+    √ should use `dice.map()`
+    √ should use `Promise.all()`
+    × should resolve when all dice settle successfully (3 ms)
+    √ should reject with an Error when a die rolls off the table (2 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(Array.isArray(result)).toBe(true);
+      57 |     expect(result).toHaveLength(5);
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:54:21)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.166 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+C:\Users\choua\Homework-class44\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\helpers\pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (C:\Users\choua\Homework-class44\3-UsingAPIs\helpers\pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:569:17)
+    at processTimers (node:internal/timers:512:7)
+
+Node.js v18.16.0
+2023-07-03 04:55:33 info: --------------------------------------------
+2023-07-03 04:55:33 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2023-07-03 04:55:33 info: --------------------------------------------
+2023-07-03 04:55:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (4 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()`
+    √ should use `Promise.all()`
+    × should resolve when all dice settle successfully (3 ms)
+    √ should reject with an Error when a die rolls off the table (2 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(Array.isArray(result)).toBe(true);
+      57 |     expect(result).toHaveLength(5);
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:54:21)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.889 s, estimated 2 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+C:\Users\choua\Homework-class44\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\choua\Homework-class44\3-UsingAPIs\helpers\pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (C:\Users\choua\Homework-class44\3-UsingAPIs\helpers\pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:569:17)
+    at processTimers (node:internal/timers:512:7)
+
+Node.js v18.16.0
+2023-07-03 04:57:16 info: --------------------------------------------
+2023-07-03 04:57:16 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2023-07-03 04:57:16 info: --------------------------------------------
+2023-07-03 04:57:22 info: All unit tests passed.
+2023-07-03 04:57:31 info: All steps were completed successfully
+2023-07-03 05:13:47 info: ----------------------------------------------
+2023-07-03 05:13:47 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-03 05:13:47 info: ----------------------------------------------
+2023-07-03 05:13:52 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (2 ms)
+    × should have all TODO comments removed (2 ms)
+    × `rollDice` should not contain unneeded console.log calls (3 ms)
+    × should resolve when all dice settle successfully (147 ms)
+    × should reject with an Error when a die rolls off the table (96 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex5-pokerDiceChain › `rollDice` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.toBe (test-runner/unit-test-helpers.js:139:29)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      32 |     expect(promise).toBeInstanceOf(Promise);
+      33 |     const result = await promise;
+    > 34 |     expect(Array.isArray(result)).toBe(true);
+         |                                   ^
+      35 |     expect(result).toHaveLength(5);
+      36 |
+      37 |     promise.finally(() => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:34:35)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+      24 |
+      25 |   test('should resolve when all dice settle successfully', async () => {
+    > 26 |     expect.assertions(4);
+         |            ^
+      27 |     expect(exported).toBeDefined();
+      28 |
+      29 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:26:12)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      41 |
+      42 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 43 |     expect.assertions(3);
+         |            ^
+      44 |     expect(exported).toBeDefined();
+      45 |
+      46 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:43:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 1 passed, 5 total
+Snapshots:   0 total
+Time:        1.247 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-07-03 05:22:05 info: ----------------------------------------------
+2023-07-03 05:22:05 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-03 05:22:05 info: ----------------------------------------------
+2023-07-03 05:22:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (2 ms)
+    × should have all TODO comments removed (2 ms)
+    × `rollDice` should not contain unneeded console.log calls (3 ms)
+    × should resolve when all dice settle successfully (129 ms)
+    × should reject with an Error when a die rolls off the table (88 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex5-pokerDiceChain › `rollDice` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.toBe (test-runner/unit-test-helpers.js:139:29)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      32 |     expect(promise).toBeInstanceOf(Promise);
+      33 |     const result = await promise;
+    > 34 |     expect(Array.isArray(result)).toBe(true);
+         |                                   ^
+      35 |     expect(result).toHaveLength(5);
+      36 |
+      37 |     promise.finally(() => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:34:35)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+      24 |
+      25 |   test('should resolve when all dice settle successfully', async () => {
+    > 26 |     expect.assertions(4);
+         |            ^
+      27 |     expect(exported).toBeDefined();
+      28 |
+      29 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:26:12)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      41 |
+      42 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 43 |     expect.assertions(3);
+         |            ^
+      44 |     expect(exported).toBeDefined();
+      45 |
+      46 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:43:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 1 passed, 5 total
+Snapshots:   0 total
+Time:        1.691 s, estimated 2 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-07-03 05:26:00 info: ----------------------------------------------
+2023-07-03 05:26:00 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-03 05:26:00 info: ----------------------------------------------
+2023-07-03 05:26:10 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js (6.12 s)
+  ex5-pokerDiceChain
+    √ should exist and be executable (3 ms)
+    × should have all TODO comments removed (3 ms)
+    √ `rollDice` should not contain unneeded console.log calls (2 ms)
+    × should resolve when all dice settle successfully (5013 ms)
+    √ should reject with an Error when a die rolls off the table (93 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test."
+
+      23 |   testNoConsoleLog('rollDice', () => rootNode);
+      24 |
+    > 25 |   test('should resolve when all dice settle successfully', async () => {
+         |   ^
+      26 |     expect.assertions(4);
+      27 |     expect(exported).toBeDefined();
+      28 |
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:25:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:7:1)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received two assertion calls.
+
+      24 |
+      25 |   test('should resolve when all dice settle successfully', async () => {
+    > 26 |     expect.assertions(4);
+         |            ^
+      27 |     expect(exported).toBeDefined();
+      28 |
+      29 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:26:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        6.248 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-07-03 05:26:38 info: ----------------------------------------------
+2023-07-03 05:26:38 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-03 05:26:38 info: ----------------------------------------------
+2023-07-03 05:26:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js (6.072 s)
+  ex5-pokerDiceChain
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    × should resolve when all dice settle successfully (5010 ms)
+    √ should reject with an Error when a die rolls off the table (99 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test."
+
+      23 |   testNoConsoleLog('rollDice', () => rootNode);
+      24 |
+    > 25 |   test('should resolve when all dice settle successfully', async () => {
+         |   ^
+      26 |     expect.assertions(4);
+      27 |     expect(exported).toBeDefined();
+      28 |
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:25:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:7:1)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received two assertion calls.
+
+      24 |
+      25 |   test('should resolve when all dice settle successfully', async () => {
+    > 26 |     expect.assertions(4);
+         |            ^
+      27 |     expect(exported).toBeDefined();
+      28 |
+      29 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:26:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        6.187 s, estimated 7 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-07-03 05:27:50 info: ----------------------------------------------
+2023-07-03 05:27:50 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-03 05:27:50 info: ----------------------------------------------
+2023-07-03 05:29:13 info: ----------------------------------------------
+2023-07-03 05:29:13 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-03 05:29:13 info: ----------------------------------------------
+2023-07-03 05:31:43 info: ----------------------------------------------
+2023-07-03 05:31:43 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-03 05:31:43 info: ----------------------------------------------
+2023-07-03 05:31:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    × should exist and be executable (3 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls
+    × should resolve when all dice settle successfully
+    × should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex5-pokerDiceChain › should exist and be executable
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      16 |
+      17 |   test('should exist and be executable', () => {
+    > 18 |     expect(exported).toBeDefined();
+         |                      ^
+      19 |   });
+      20 |
+      21 |   testTodosRemoved(() => source);
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:18:22)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      25 |   test('should resolve when all dice settle successfully', async () => {
+      26 |     expect.assertions(4);
+    > 27 |     expect(exported).toBeDefined();
+         |                      ^
+      28 |
+      29 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+      30 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:27:22)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received one assertion call.
+
+      24 |
+      25 |   test('should resolve when all dice settle successfully', async () => {
+    > 26 |     expect.assertions(4);
+         |            ^
+      27 |     expect(exported).toBeDefined();
+      28 |
+      29 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:26:12)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      42 |   test('should reject with an Error when a die rolls off the table', async () => {
+      43 |     expect.assertions(3);
+    > 44 |     expect(exported).toBeDefined();
+         |                      ^
+      45 |
+      46 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+      47 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:44:22)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      41 |
+      42 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 43 |     expect.assertions(3);
+         |            ^
+      44 |     expect(exported).toBeDefined();
+      45 |
+      46 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:43:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        1.151 s, estimated 7 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-07-03 05:31:52 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  38:1  error  Parsing error: Unexpected token
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-07-03 05:35:34 info: ----------------------------------------------
+2023-07-03 05:35:34 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-03 05:35:34 info: ----------------------------------------------
+2023-07-03 05:38:26 info: ----------------------------------------------
+2023-07-03 05:38:26 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-03 05:38:26 info: ----------------------------------------------
+2023-07-03 05:38:31 info: All unit tests passed.
+2023-07-03 05:38:39 info: All steps were completed successfully
+2023-07-03 05:42:38 info: ----------------------------------------------
+2023-07-03 05:42:38 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-07-03 05:42:38 info: ----------------------------------------------
+2023-07-03 05:42:43 info: All unit tests passed.
+2023-07-03 05:42:51 info: All steps were completed successfully
