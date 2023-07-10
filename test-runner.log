@@ -3072,3 +3072,586 @@ Node.js v20.1.0
 2023-07-04 10:05:38 info: ---------------------------------------
 2023-07-04 10:05:51 info: All unit tests passed.
 2023-07-04 10:06:03 info: All steps were completed successfully
+2023-07-09 09:56:54 info: ---------------------------------------------
+2023-07-09 09:56:54 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-07-09 09:56:54 info: ---------------------------------------------
+2023-07-09 09:56:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    × HTML should be syntactically valid (65 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    √ should use async/wait
+    √ should use try/catch
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      8:27  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.325 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2023-07-09 10:03:53 info: ---------------------------------------------
+2023-07-09 10:03:53 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-07-09 10:03:53 info: ---------------------------------------------
+2023-07-09 10:03:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    × HTML should be syntactically valid (69 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()` (1 ms)
+    √ should use async/wait
+    √ should use try/catch
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.98 s, estimated 3 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2023-07-09 01:31:07 info: ---------------------------------------------
+2023-07-09 01:31:07 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-07-09 01:31:07 info: ---------------------------------------------
+2023-07-09 01:31:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    × HTML should be syntactically valid (70 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    √ should use async/wait
+    √ should use try/catch
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.084 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2023-07-09 09:28:34 info: ------------------------------------------
+2023-07-09 09:28:34 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-07-09 09:28:34 info: ------------------------------------------
+2023-07-09 09:28:37 info: All unit tests passed.
+2023-07-09 09:28:40 info: All steps were completed successfully
+2023-07-09 09:51:53 info: -----------------------------------------
+2023-07-09 09:51:53 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-07-09 09:51:53 info: -----------------------------------------
+2023-07-09 09:51:55 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    × should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    × should not include a recursive call
+    × should use async/wait
+    × should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (178 ms)
+    √ should reject with an Error when a die rolls off the table (123 ms)
+
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      53 |
+      54 |   test('should not include a recursive call', () => {
+    > 55 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      56 |   });
+      57 |
+      58 |   test('should use async/wait', () => {
+
+      at Object.toBeUndefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:55:29)
+
+  ● ex3-rollAnAce › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use async/wait', () => {
+    > 59 |     expect(state.async).toBeDefined();
+         |                         ^
+      60 |     expect(state.await).toBeDefined();
+      61 |   });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:59:25)
+
+  ● ex3-rollAnAce › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      62 |
+      63 |   test('should use try/catch', () => {
+    > 64 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      65 |   });
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:64:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 3 passed, 7 total
+Snapshots:   0 total
+Time:        0.652 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-07-09 10:00:31 info: -----------------------------------------
+2023-07-09 10:00:31 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-07-09 10:00:31 info: -----------------------------------------
+2023-07-09 10:00:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    × should have all TODO comments removed (1 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls
+    × should not include a recursive call
+    √ should use async/wait (1 ms)
+    × should use try/catch
+    √ should resolve as soon as a die settles on an ACE (141 ms)
+    √ should reject with an Error when a die rolls off the table (110 ms)
+
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      53 |
+      54 |   test('should not include a recursive call', () => {
+    > 55 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      56 |   });
+      57 |
+      58 |   test('should use async/wait', () => {
+
+      at Object.toBeUndefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:55:29)
+
+  ● ex3-rollAnAce › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      62 |
+      63 |   test('should use try/catch', () => {
+    > 64 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      65 |   });
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:64:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 4 passed, 7 total
+Snapshots:   0 total
+Time:        0.567 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-07-09 10:07:40 info: -----------------------------------------
+2023-07-09 10:07:40 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-07-09 10:07:40 info: -----------------------------------------
+2023-07-09 10:07:42 info: All unit tests passed.
+2023-07-09 10:07:44 info: All steps were completed successfully
+2023-07-10 09:29:53 info: ----------------------------------------
+2023-07-10 09:29:53 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-07-10 09:29:53 info: ----------------------------------------
+2023-07-10 09:29:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ex4-diceRace
+    × should exist and be executable (1 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    × should use `dice.map()`
+    × should use `Promise.race()`
+    × should resolve as soon as a die settles successfully (1 ms)
+    × should reject with an Error as soon as a die rolls off the table
+
+  ● ex4-diceRace › should exist and be executable
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      30 |
+      31 |   test('should exist and be executable', () => {
+    > 32 |     expect(exported).toBeDefined();
+         |                      ^
+      33 |   });
+      34 |
+      35 |   testTodosRemoved(() => source);
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:32:22)
+
+  ● ex4-diceRace › should use `dice.map()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      38 |
+      39 |   test('should use `dice.map()`', () => {
+    > 40 |     expect(state.diceMap).toBeDefined();
+         |                           ^
+      41 |   });
+      42 |
+      43 |   test('should use `Promise.race()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:40:27)
+
+  ● ex4-diceRace › should use `Promise.race()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      42 |
+      43 |   test('should use `Promise.race()`', () => {
+    > 44 |     expect(state.promiseAll).toBeDefined();
+         |                              ^
+      45 |   });
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:44:30)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+      48 |     expect.assertions(3);
+    > 49 |     expect(exported).toBeDefined();
+         |                      ^
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+      52 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:49:22)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+    > 48 |     expect.assertions(3);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:48:12)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |   test('should reject with an Error as soon as a die rolls off the table', async () => {
+      64 |     expect.assertions(3);
+    > 65 |     expect(exported).toBeDefined();
+         |                      ^
+      66 |
+      67 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+      68 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:65:22)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('should reject with an Error as soon as a die rolls off the table', async () => {
+    > 64 |     expect.assertions(3);
+         |            ^
+      65 |     expect(exported).toBeDefined();
+      66 |
+      67 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:64:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       5 failed, 2 passed, 7 total
+Snapshots:   0 total
+Time:        0.495 s
+Ran all test suites matching /ex4-diceRace.test.js/i.
+2023-07-10 09:29:57 error: *** ESLint Report ***
+
+ex4-diceRace.js
+  19:17  error  Parsing error: Unexpected token rollDie
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-07-10 09:37:27 info: ----------------------------------------
+2023-07-10 09:37:27 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-07-10 09:37:27 info: ----------------------------------------
+2023-07-10 09:37:30 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ex4-diceRace
+    √ should exist and be executable (1 ms)
+    √ should have all TODO comments removed
+    × `rollDice` should not contain unneeded console.log calls (2 ms)
+    √ should use `dice.map()`
+    √ should use `Promise.race()`
+    × should resolve as soon as a die settles successfully (1 ms)
+    √ should reject with an Error as soon as a die rolls off the table (5 ms)
+
+  ● ex4-diceRace › `rollDice` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.toBe (test-runner/unit-test-helpers.js:139:29)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      52 |
+      53 |     const promise = rollDice();
+    > 54 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      55 |     const result = await promise;
+      56 |     expect(typeof result).toBe('string');
+      57 |
+
+      at Object.toBeInstanceOf (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:54:21)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+    > 48 |     expect.assertions(3);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        0.423 s, estimated 1 s
+Ran all test suites matching /ex4-diceRace.test.js/i.
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "dice resolved".
+
+      20 |       rollDie(die)
+      21 |       .then(resolve)
+    > 22 |       .catch(reject);
+         |                                                 ^
+      23 |     })
+      24 |   })
+      25 |   Promise.race(promiseArray)
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:141:10)
+      at 3-UsingAPIs/Week2/homework/ex4-diceRace.js:22:49
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "dice rolled of the table".
+
+      20 |       rollDie(die)
+      21 |       .then(resolve)
+    > 22 |       .catch(reject);
+         |                                                    ^
+      23 |     })
+      24 |   })
+      25 |   Promise.race(promiseArray)
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:141:10)
+      at 3-UsingAPIs/Week2/homework/ex4-diceRace.js:22:91
+2023-07-10 09:43:31 info: ----------------------------------------
+2023-07-10 09:43:31 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-07-10 09:43:31 info: ----------------------------------------
+2023-07-10 09:43:33 info: All unit tests passed.
+2023-07-10 09:43:36 info: All steps were completed successfully
+2023-07-10 09:48:37 info: ----------------------------------------
+2023-07-10 09:48:37 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-07-10 09:48:37 info: ----------------------------------------
+2023-07-10 09:48:40 info: All unit tests passed.
+2023-07-10 09:48:43 info: All steps were completed successfully
+2023-07-10 09:52:38 info: ----------------------------------------
+2023-07-10 09:52:38 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-07-10 09:52:38 info: ----------------------------------------
+2023-07-10 09:52:40 info: All unit tests passed.
+2023-07-10 09:52:43 info: All steps were completed successfully
+2023-07-10 09:39:12 info: --------------------------------------------
+2023-07-10 09:39:12 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2023-07-10 09:39:12 info: --------------------------------------------
+2023-07-10 09:39:12 warn: A unit test file was not provided.
+2023-07-10 09:39:15 info: All steps were completed successfully
+2023-07-10 09:40:47 info: ----------------------------------------
+2023-07-10 09:40:47 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-07-10 09:40:47 info: ----------------------------------------
+2023-07-10 09:40:47 warn: A unit test file was not provided.
+2023-07-10 09:40:48 error: *** ESLint Report ***
+
+ex5-vscDebug.js
+  14:10  error  'renderLaureate' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+

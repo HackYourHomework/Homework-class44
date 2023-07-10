@@ -1,4 +1,4 @@
-'use strict';
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-UsingAPIs/Week2/README.md#exercise-4-dice-race
 
@@ -15,14 +15,27 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
   const dice = [1, 2, 3, 4, 5];
-  // TODO complete this function; use Promise.race() and rollDie()
+  const promiseArray = dice.map((die) => {
+    return new Promise((resolve,reject) => {
+      rollDie(die)
+      .then(resolve)
+      .catch(reject);
+    });
+  });
+
+    return Promise.race(promiseArray)
+    .then ()
+    .catch(()=>{
+    throw new Error("dice rolled of the table");
+  }) 
 }
 
 // Refactor this function to use async/await and try/catch
-function main() {
-  rollDice()
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+async function main() {
+    try {
+    const results = await rollDice();
+    console.log('Resolved!', results);
+    } catch (error) {console.log('Rejected!', error.message)}
 }
 
 // ! Do not change or remove the code below
@@ -30,3 +43,6 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+
+//Some dice will continue rolling after resolving because Promise.race return the first resolved promise while the other promises are still running but they are ignored 

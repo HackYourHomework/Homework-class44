@@ -1,1 +1,14 @@
 /* add your styling here */
+
+#selectPokemon {
+  width: 150px;
+  height: 25px;
+  font-size: 18px;
+  text-align: center;
+  border: solid;
+  box-shadow: 3px 2px;
+}
+
+#imageContainer {
+
+}
