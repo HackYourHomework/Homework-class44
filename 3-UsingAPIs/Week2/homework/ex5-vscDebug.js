@@ -4,6 +4,8 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
 
 Use the VSCode Debugger to fix the bugs
 --------------------------------------------------------------- --------------*/
+
+
 const fetch = require('node-fetch');
 
 async function getData(url) {
@@ -11,25 +13,26 @@ async function getData(url) {
   return response.json();
 }
 
-function renderLaureate({ knownName, birth, death }) {
+function renderLaureate(laureate) {
+  const { knownName, birth, death } = laureate;
   console.log(`\nName: ${knownName.en}`);
   console.log(`Birth: ${birth.date}, ${birth.place.locationString}`);
-  console.log(`Death: ${death.date}, ${death.place.locationString}`);
+  if (death) {
+    console.log(`Death: ${death.date}, ${death.place.locationString}`);
+  }
 }
 
-function renderLaureates(laureates) {
-  laureates.forEach(renderLaureate);
-}
-
-async function fetchAndRender() {
+async function renderLaureates() {
   try {
-    const laureates = getData(
+    const data = await getData(
       'http://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
-    renderLaureates(laureates);
+    const laureates = data.laureates;
+    laureates.forEach(renderLaureate);
   } catch (err) {
     console.error(`Something went wrong: ${err.message}`);
   }
 }
 
-fetchAndRender();
+renderLaureates();
+

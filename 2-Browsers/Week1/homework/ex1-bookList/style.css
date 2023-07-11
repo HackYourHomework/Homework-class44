@@ -1,1 +1,29 @@
 /* Write your style here */
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+li {
+   
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+img {
+    text-align: center;
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    margin: 10px;
+    border-radius: 10px;
+}

@@ -10,27 +10,31 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
 3. Refactor the function `main()` to use async/await and try/catch.
 ------------------------------------------------------------------------------*/
 // ! Do not change or remove the next two lines
+'use strict';
+
 const rollDie = require('../../helpers/pokerDiceRoller');
 
-function rollDieUntil(wantedValue) {
+async function rollDieUntil(wantedValue) {
   // TODO: rewrite this function using async/await
-  return rollDie().then((value) => {
-    if (value !== wantedValue) {
-      return rollDieUntil(wantedValue);
-    }
-    return value;
-  });
+ 
+  let value = await rollDie();
+  while (value !== wantedValue) {
+    value = await rollDie();
+  }
+  return value;
 }
 
-// TODO refactor this function to use try/catch
-function main() {
-  rollDieUntil('ACE')
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+async function main() {
+  try {
+    const results = await rollDieUntil('ACE');
+    console.log('Resolved!', results);
+  } catch (error) {
+    console.log('Rejected!', error.message);
+  }
 }
 
-// ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
+
 module.exports = rollDieUntil;
