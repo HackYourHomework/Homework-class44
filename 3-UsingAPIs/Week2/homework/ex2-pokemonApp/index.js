@@ -22,18 +22,58 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log('Error:', error);
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons(url) {
+  const selectElement = document.getElementById('pokemon-select');
+  try {
+    const data = await fetchData(url);
+
+    data.results.forEach((pokemon) => {
+      const option = document.createElement('option');
+      option.text = pokemon.name;
+      selectElement.add(option);
+    });
+  } catch (error) {
+    console.log('Error:', error);
+  }
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(url) {
+  const imageElement = document.getElementById('pokemon-image');
+  try {
+    const data = await fetchData(url);
+
+    imageElement.src = data.sprites.front_default;
+    imageElement.alt = 'Pokemon Image';
+  } catch (error) {
+    console.log('Error:', error);
+  }
 }
 
-function main() {
-  // TODO complete this function
+async function main() {
+  const pokemonUrl = 'https://pokeapi.co/api/v2/pokemon?limit=151';
+  const selectElement = document.getElementById('pokemon-select');
+
+  selectElement.addEventListener('change', async () => {
+    const selectedPokemon = selectElement.value;
+    const pokemonDataUrl = `https://pokeapi.co/api/v2/pokemon/${selectedPokemon}`;
+
+    await fetchImage(pokemonDataUrl);
+  });
+
+  await fetchAndPopulatePokemons(pokemonUrl);
 }
+
+window.addEventListener('load', main);
