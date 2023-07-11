@@ -43,3 +43,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// Because of Promise is working async and waiting in que for executing while function still working

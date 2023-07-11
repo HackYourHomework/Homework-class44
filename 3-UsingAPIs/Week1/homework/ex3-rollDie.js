@@ -1,6 +1,5 @@
 'use strict';
 
-// eslint-disable-next-line no-unused-vars
 const { reject } = require('lodash');
 
 /*------------------------------------------------------------------------------
@@ -62,3 +61,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
+
+// The problem is gone because we are now using Promise and now there are two ways to resolve or reject instead callback witch executed whenever of situation.
