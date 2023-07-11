@@ -34,3 +34,6 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+
+// If i understud correctly Function that executes a roll, called recursively until the mandated number of rolls (`randomRollsToDo`) has been done and function keep going while Promise.race() will be executed
