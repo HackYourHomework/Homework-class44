@@ -1,1 +1,26 @@
-/* add your styling here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container * {
+  display: block;
+  margin: 0.5em;
+  padding: 0.1em;
+}
+
+#get-pokemon-button {
+  font-size: 1.2em;
+}
+
+#pokemon-select {
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #afaeae;
+}
+
+#pokemon-image {
+  width: 8em;
+  margin-top: 1em;
+}

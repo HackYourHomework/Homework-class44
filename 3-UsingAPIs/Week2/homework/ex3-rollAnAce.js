@@ -6,28 +6,31 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
    that the die must be thrown an indeterminate number of times until we get an 
    ACE or until it rolls off the table.
 2. Now, rewrite the body of the `rollDieUntil()` function using async/await and 
-   without using recursion. Hint: a `while` loop may come handy.
+   without using recursion. Hint: a `while` loop may come in handy.
 3. Refactor the function `main()` to use async/await and try/catch.
 ------------------------------------------------------------------------------*/
 // ! Do not change or remove the next two lines
 const rollDie = require('../../helpers/pokerDiceRoller');
 
-function rollDieUntil(wantedValue) {
-  // TODO: rewrite this function using async/await
-  return rollDie().then((value) => {
-    if (value !== wantedValue) {
-      return rollDieUntil(wantedValue);
+async function rollDieUntil(wantedValue) {
+  let found = false;
+  while (!found) {
+    const value = await rollDie();
+    if (value === wantedValue) {
+      found = true;
     }
-    return value;
-  });
+  }
+  return wantedValue;
 }
 
-// TODO refactor this function to use try/catch
-function main() {
-  rollDieUntil('ACE')
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
-}
+const main = async () => {
+  try {
+    const result = await rollDieUntil('ACE');
+    console.log('Resolved!', result);
+  } catch (error) {
+    console.log('Rejected!', error.message);
+  }
+};
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {

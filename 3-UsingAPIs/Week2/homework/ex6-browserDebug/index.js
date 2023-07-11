@@ -6,7 +6,9 @@ Full description at:https://github.com/HackYourFuture/Homework/blob/main/3-Using
 
 async function getData(url) {
   const response = await fetch(url);
-  return response.json();
+  const data = await response.json();
+  console.log(data); // Log the data to inspect its structure
+  return data;
 }
 
 function createAndAppend(name, parent, options = {}) {
@@ -32,8 +34,18 @@ function renderLaureate(ul, { knownName, birth, death }) {
   const li = createAndAppend('li', ul);
   const table = createAndAppend('table', li);
   addTableRow(table, 'Name', knownName.en);
-  addTableRow(table, 'Birth', `${birth.date}, ${birth.place.locationString}`);
-  addTableRow(table, 'Death', `${death.date}, ${death.place.locationString}`);
+
+  if (birth && birth.date && birth.place && birth.place.locationString) {
+    addTableRow(table, 'Birth', `${birth.date}, ${birth.place.locationString}`);
+  } else {
+    addTableRow(table, 'Birth', 'Unknown');
+  }
+
+  if (death && death.date && death.place && death.place.locationString) {
+    addTableRow(table, 'Death', `${death.date}, ${death.place.locationString}`);
+  } else {
+    addTableRow(table, 'Death', 'Unknown');
+  }
 }
 
 function renderLaureates(laureates) {
@@ -43,10 +55,10 @@ function renderLaureates(laureates) {
 
 async function fetchAndRender() {
   try {
-    const laureates = getData(
+    const laureates = await getData(
       'https://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
-    renderLaureates(laureates);
+    renderLaureates(laureates.laureates);
   } catch (err) {
     console.error(`Something went wrong: ${err.message}`);
   }
