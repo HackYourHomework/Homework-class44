@@ -22,18 +22,53 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchData(url) {
+  try {
+  const response = await fetch(url);
+  const parseData = await response.json();
+  const dataArray = parseData.results;
+  return dataArray;
+  } catch(error) {
+    console.log(error);
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function fetchAndPopulatePokemons(data) {
+  const pokemonList = document.getElementById("selectPokemon");
+  data.forEach(element => {
+    const optionPokemon = document.createElement("option");
+    optionPokemon.textContent = element.name;
+    pokemonList.appendChild(optionPokemon);
+  });
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
-}
+async function fetchImage(selectedElement) {
+    const imageContainer = document.getElementById("imageContainer");
+    imageContainer.textContent = "";
 
-function main() {
-  // TODO complete this function
+      const imageData = await fetch(selectedElement.url);
+      const imageParse = await imageData.json();
+      const imageLink = imageParse.sprites.front_default;
+      const img = document.createElement("img");
+      img.style.width = "250px";
+      img.src = imageLink;
+      imageContainer.appendChild(img);
+  }
+  
+
+
+
+window.onload = async function main() {
+  try{
+  const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
+  await fetchAndPopulatePokemons(data);
+  const pokemonList = document.querySelector("#selectPokemon");
+  pokemonList.addEventListener("change", function(){
+  const selectedPokemon = pokemonList.value;
+  const selectedElement = data.find(element => element.name === selectedPokemon);
+  fetchImage(selectedElement);
+  });
+  } catch (error) {
+    console.log(error);
+  }
 }

@@ -8,27 +8,44 @@ const fetch = require('node-fetch');
 
 async function getData(url) {
   const response = await fetch(url);
-  return response.json();
+  const data = response.json();
+  return data;
+  
 }
 
 function renderLaureate({ knownName, birth, death }) {
-  console.log(`\nName: ${knownName.en}`);
-  console.log(`Birth: ${birth.date}, ${birth.place.locationString}`);
-  console.log(`Death: ${death.date}, ${death.place.locationString}`);
+  console.log(`Name: ${knownName.en}`);
+  console.log(`Birth: ${birth.date}, ${birth.place.locationString.en}`);
+  if(death!=="still alive"){console.log(`Death: ${death.date}, ${death.place.locationString.en}`)}
+  else {console.log('still alive')}
 }
 
 function renderLaureates(laureates) {
-  laureates.forEach(renderLaureate);
+
+  const laureateArray = laureates.filter((laureate)=> laureate.birth.place.country.en  === "the Netherlands")
+  .map((laureate) => {
+    return {
+      knownName: laureate.knownName,
+      birth: laureate.birth,
+      ...((laureate.death) ? { death: laureate.death } : { death: 'still alive' })
+    };
+  });
+
+  laureateArray.forEach(element => {
+    renderLaureate(element)
+  });
 }
 
 async function fetchAndRender() {
   try {
-    const laureates = getData(
+    const data = await getData(
       'http://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
+    const laureates = data.laureates;
     renderLaureates(laureates);
   } catch (err) {
     console.error(`Something went wrong: ${err.message}`);
+    console.log(err.stack);
   }
 }
 
