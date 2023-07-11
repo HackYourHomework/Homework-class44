@@ -22,18 +22,66 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+'use strict';
+
+'use strict';
+
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    return response.json();
+  } catch (error) {
+    console.error('Error:', error);
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function fetchAndPopulatePokemons() {
+  const selectElement = document.querySelector('select');
+
+  fetchData('https://pokeapi.co/api/v2/pokemon?limit=151')
+    .then(data => {
+      const pokemons = data.results;
+
+      pokemons.forEach(pokemon => {
+        const optionElement = document.createElement('option');
+        optionElement.value = pokemon.name;
+        optionElement.textContent = pokemon.name;
+
+        selectElement.appendChild(optionElement);
+      });
+    });
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage() {
+  try {
+    const selectElement = document.querySelector('select');
+    const pokemonName = selectElement.value;
+
+    const pokemonData = await fetchData(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+    const imageUrl = pokemonData.sprites.front_default;
+
+    const imageElement = document.querySelector('img');
+    imageElement.src = imageUrl;
+  } catch (error) {
+    console.error('Error:', error);
+  }
 }
 
 function main() {
-  // TODO complete this function
+  fetchAndPopulatePokemons();
+
+  const selectElement = document.querySelector('select');
+  selectElement.addEventListener('change', fetchImage);
 }
+
+window.addEventListener('load', main);
+
+
+
+
+
