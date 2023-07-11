@@ -1,0 +1,51 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    ✓ HTML should be syntactically valid (108 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `fetch()`
+    ✕ should use `await fetch()` (2 ms)
+    ✕ should use try/catch
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        2.438 s, estimated 3 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.

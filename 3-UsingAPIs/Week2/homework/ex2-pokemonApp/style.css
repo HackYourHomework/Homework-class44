@@ -1,1 +1,35 @@
-/* add your styling here */
+/* Styling for the button */
+button {
+  padding: 10px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(220, 101, 166);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0.2em;
+}
+
+button:hover {
+  background-color: rgb(0, 255, 68);
+}
+
+/* Styling for the select element */
+select {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  background-color: rgb(0, 255, 8);
+  border-radius: 4px;
+}
+
+/* Styling for the image */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 40px;
+}
