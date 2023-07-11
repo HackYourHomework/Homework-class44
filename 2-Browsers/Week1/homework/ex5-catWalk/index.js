@@ -21,8 +21,31 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
+
+const image = document.querySelector('img');
+image.style.left = 0;
+let catMove = 0;
+let catInterval;
+
 function catWalk() {
-  // TODO complete this function
+  if (catMove < window.innerWidth) {
+    catMove += 10;
+  } else {
+    catMove = 0;
+  }
+
+  image.style.left = `${catMove}px`;
+  if (catMove === 500) {
+    image.src =
+      'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+
+    clearInterval(catInterval);
+    setTimeout(() => {
+      image.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+      catInterval = setInterval(catWalk, 50);
+    }, 5000);
+  }
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+catInterval = setInterval(catWalk, 50);
+window.onload = () => catInterval;
