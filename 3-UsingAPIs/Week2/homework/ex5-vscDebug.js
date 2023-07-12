@@ -8,13 +8,18 @@ const fetch = require('node-fetch');
 
 async function getData(url) {
   const response = await fetch(url);
+
   return response.json();
 }
 
 function renderLaureate({ knownName, birth, death }) {
-  console.log(`\nName: ${knownName.en}`);
-  console.log(`Birth: ${birth.date}, ${birth.place.locationString}`);
-  console.log(`Death: ${death.date}, ${death.place.locationString}`);
+  knownName ? console.log(`\nName: ${knownName.en}`) : null;
+  birth
+    ? console.log(`Birth: ${birth.date}, ${birth.place.locationString.en}`)
+    : null;
+  death
+    ? console.log(`Death: ${death.date}, ${death.place.locationString.en}`)
+    : null;
 }
 
 function renderLaureates(laureates) {
@@ -23,7 +28,7 @@ function renderLaureates(laureates) {
 
 async function fetchAndRender() {
   try {
-    const laureates = getData(
+    const { laureates } = await getData(
       'http://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
     renderLaureates(laureates);

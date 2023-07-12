@@ -22,18 +22,76 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+const renderUi = () => {
+  const ui = document.body;
+  ui.style.display = 'flex';
+  ui.style.flexDirection = 'column';
+  ui.style.alignItems = 'center';
+  ui.style.justifyContent = 'center';
+  ui.style.gap = '10px';
+
+  const button = document.createElement('button');
+  button.setAttribute('type', 'button');
+  button.textContent = 'Get Pokemons!';
+
+  const select = document.createElement('select');
+  const image = document.createElement('img');
+  image.style.width = '250px';
+
+  ui.appendChild(button);
+  ui.appendChild(select);
+  ui.appendChild(image);
+};
+
+async function fetchData(endpoint) {
+  try {
+    const response = await fetch(endpoint);
+    if (!response.ok) {
+      throw Error(response.statusText);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons(data) {
+  const selectElement = document.querySelector('select');
+  data.results.forEach((pokemon) => {
+    const optionElement = document.createElement('option');
+    optionElement.value = pokemon.url;
+    optionElement.textContent = pokemon.name;
+    selectElement.appendChild(optionElement);
+  });
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(url) {
+  try {
+    const data = await fetchData(url);
+    const imgElement = document.querySelector('img');
+    imgElement.src = data.sprites.front_default;
+    imgElement.alt = data.name;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-function main() {
-  // TODO complete this function
+async function main() {
+  renderUi();
+
+  const data = await fetchData(`https://pokeapi.co/api/v2/pokemon?limit=151`);
+
+  const buttonElement = document.querySelector('button');
+  buttonElement.addEventListener('click', () => {
+    fetchAndPopulatePokemons(data);
+  });
+
+  const selectElement = document.querySelector('select');
+  selectElement.addEventListener('change', (event) => {
+    const selectedUrl = event.target.value;
+    fetchImage(selectedUrl);
+  });
 }
+
+document.addEventListener('DOMContentLoaded', main);
