@@ -2,3 +2,125 @@
 2023-05-17 02:39:39 info: >>> Running Unit Test `ex1-giveCompliment` <<<
 2023-05-17 02:39:39 info: ----------------------------------------------
 2023-05-17 02:39:39 info: Exercise has not yet been modified
+2023-07-13 10:01:18 info: ---------------------------------------------
+2023-07-13 10:01:18 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-07-13 10:01:18 info: ---------------------------------------------
+2023-07-13 10:01:25 info: All unit tests passed.
+2023-07-13 10:01:31 info: All steps were completed successfully
+2023-07-13 10:15:16 info: ---------------------------------------------
+2023-07-13 10:15:16 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-07-13 10:15:16 info: ---------------------------------------------
+2023-07-13 10:15:22 info: All unit tests passed.
+2023-07-13 10:15:25 error: *** ESLint Report ***
+
+ex1-programmerFun/index.js
+  29:7  error  'resolve' is not defined  no-undef
+  32:7  error  'reject' is not defined   no-undef
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+2023-07-13 11:34:13 info: ---------------------------------------------
+2023-07-13 11:34:14 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-07-13 11:34:14 info: ---------------------------------------------
+2023-07-13 11:34:20 info: All unit tests passed.
+2023-07-13 11:34:27 info: All steps were completed successfully
+2023-07-13 11:58:11 info: ------------------------------------------
+2023-07-13 11:58:11 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-07-13 11:58:11 info: ------------------------------------------
+2023-07-13 11:58:19 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (245 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()`
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10754  error  <img> is missing required \"src\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.818 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-07-13 11:58:22 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  46:5  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-07-13 11:59:55 info: ------------------------------------------
+2023-07-13 11:59:55 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-07-13 11:59:55 info: ------------------------------------------
+2023-07-14 12:00:02 info: All unit tests passed.
+2023-07-14 12:00:08 info: All steps were completed successfully
+2023-07-14 12:45:39 info: -----------------------------------------
+2023-07-14 12:45:39 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-07-14 12:45:39 info: -----------------------------------------
+2023-07-14 12:45:43 info: All unit tests passed.
+2023-07-14 12:45:50 info: All steps were completed successfully
+2023-07-14 01:05:21 info: -----------------------------------------
+2023-07-14 01:05:21 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-07-14 01:05:21 info: -----------------------------------------
+2023-07-14 01:05:25 info: All unit tests passed.
+2023-07-14 01:05:32 info: All steps were completed successfully
+2023-07-14 02:36:52 info: ----------------------------------------
+2023-07-14 02:36:52 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-07-14 02:36:52 info: ----------------------------------------
+2023-07-14 02:36:57 info: All unit tests passed.
+2023-07-14 02:37:04 info: All steps were completed successfully
+2023-07-14 02:44:28 info: ----------------------------------------
+2023-07-14 02:44:28 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-07-14 02:44:28 info: ----------------------------------------
+2023-07-14 02:44:32 info: All unit tests passed.
+2023-07-14 02:44:35 error: *** ESLint Report ***
+
+ex4-diceRace.js
+  43:3  error  'main' is not defined  no-undef
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-07-14 02:45:19 info: ----------------------------------------
+2023-07-14 02:45:19 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-07-14 02:45:19 info: ----------------------------------------
+2023-07-14 02:45:23 info: All unit tests passed.
+2023-07-14 02:45:30 info: All steps were completed successfully
+2023-07-14 06:45:56 info: ----------------------------------------
+2023-07-14 06:45:56 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-07-14 06:45:56 info: ----------------------------------------
+2023-07-14 06:45:56 warn: A unit test file was not provided.
+2023-07-14 06:46:03 info: All steps were completed successfully
+2023-07-14 07:21:07 info: --------------------------------------------
+2023-07-14 07:21:07 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2023-07-14 07:21:07 info: --------------------------------------------
+2023-07-14 07:21:07 warn: A unit test file was not provided.
+2023-07-14 07:21:14 info: All steps were completed successfully
